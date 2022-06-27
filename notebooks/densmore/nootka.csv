@@ -1,0 +1,162 @@
+id,song_num,page_num,catalogue_num,performer,performer_gender,culture,tonality,bpm_voice,bpm_drum,bpm,beat_duration,meters,lyrics_translation,lyrics,comments,instrument_use,percussion_use,instrumentation
+nootka001,1,54,1377,James Guy,male,Makah,irregular,88|132,,88|132,1,2/4|3/4,The oil of this whale is red because the little bird has made it so.,,,TRUE,TRUE,voice|drum
+nootka002,2,56,1378,James Guy,male,Makah,irregular,132,,132,1,2/4|3/4,We got this whale because the little bird was not at home,,,TRUE,TRUE,voice|drum
+nootka005,5,65,1380,James Guy,male,Makah,irregular,66,,66,1,3/4|2/4,"I come in,
+I am rolling (not walking) but I am a man",,,FALSE,FALSE,voice
+nootka006,6,65,1381,James Guy,male,Makah,irregular,76,,76,1,2/4|3/4,"Here I come from way out, to the land,
+To visit as many places as I can.",,,FALSE,FALSE,voice
+nootka007,7,66,1382,James Guy,male,Makah,irregular,54,,54,1,3/4|2/4,I am coming back to be caught again,,,FALSE,FALSE,voice
+nootka032,32,94,1338,Young Doctor,male,Makah,irregular,60,,60,1,3/4|2/4,,,,FALSE,FALSE,voice
+nootka033,33,95,1351,Young Doctor,male,Makah,irregular,36,,36,1,2/4|3/4,,,,FALSE,FALSE,voice
+nootka035,35,98,1421,Philip Ladder,,Makah,irregular,96,,96,1,2/4|3/4,,,Meaning of the words was unknown,TRUE,TRUE,voice|drum
+nootka036,36,99,1422,Philip Ladder,,Makah,irregular,138,138,138,1,2/4|3/4,Dance slowly,,Drum rhythm: continous quarters,TRUE,TRUE,voice|drum
+nootka037,37,100,1423,Philip Ladder,,Makah,irregular,96,,96,1,2/4,,,,TRUE,TRUE,voice|drum
+nootka038,38,101,1424,Philip Ladder,,Makah,irregular,66,,66,1,2/4|3/4,I am dancing in the air and dancing round and round,,,TRUE,TRUE,voice|drum
+nootka039,39,104,1384,James Guy,male,Makah,irregular,96,,96,1,2/4|3/8|5/8,My dancer is the day,,,FALSE,FALSE,voice
+nootka040,40,105,1385,James Guy,male,Makah,irregular,80,,80,1,2/4|3/4,,,The song has no words,FALSE,FALSE,voice
+nootka041,41,107,1501,Young Doctor,male,Vancouver Island,irregular,76,,76,1,2/4|3/4,"The nuchin who lives in the woods is a man;
+The klechin who lives in the woods is a man.",,,FALSE,FALSE,voice
+nootka055,55,126,1396,Mrs. Helen Irving,female,Makah,irregular,66,66,66,1,2/4|3/4,,,Drum rhythm: continuous sixteenth-notes,TRUE,TRUE,voice|drum
+nootka056,56,132,1499,Charles Swan,male,Vancouver Island,irregular,104,104,104,1,3/4|2/4,,,,TRUE,TRUE,voice|drum
+nootka098,98,185,1407,Mrs. Helen Irving,female,Makah,irregular,69,126,69,1,2/4|3/4,"Who is my equal or can compare with me?
+I have forty whales on my beach.",,Drum rhythm similar to no. 10,TRUE,TRUE,voice|drum
+nootka100,100,187,1431,James Guy,male,Makah,irregular,92,,92,1,3/4|2/4|5/8,,,,FALSE,FALSE,voice
+nootka104,104,191,1388,James Guy,male,Makah,irregular,96,,96,1,2/4,There is my head (that I took).,,,FALSE,FALSE,voice
+nootka106,106,193,1443,Mrs. Sarah Guy,female,Clayoquot,irregular,88,,88,1,2/4|3/4,,,,FALSE,FALSE,voice
+nootka107,107,193,1444,Mrs. Sarah Guy,female,Clayoquot,irregular,144,,144,1,2/4|3/4,"Jump in, Akse'tsus, and take ten.",,,FALSE,FALSE,voice
+nootka119,119,221,1353,Mrs. Wilson Parker,female,Makah,irregular,66,,66,1,3/4|2/4|7/8,"I think we had better go after crabs, they do not hurt so badly when they pinch the hands.",,,FALSE,FALSE,voice
+nootka124,124,226,1349,Young Doctor,male,Makah,irregular,69,,69,1,3/4|2/4,"My baby boy, my little baby boy, my little son.
+You will put a sealing spear into your canoe, without knowing what use you may make of it when you are a man.",,,FALSE,FALSE,voice
+nootka126,126,227,1354,Mrs. Wilson Parker,female,Makah,irregular,96,,96,1,2/4|3/4,"Because my parents want to trade me for a good-for-nothing little old pot, I am going to be a good fisherman.",,,FALSE,FALSE,voice
+nootka131,131,231,1371,Mrs. Wilson Parker,female,Makah,irregular,54,,54,1,3/4|3/8,Kwati's ankles are small from wearing such heavy anklets for so long.,,,FALSE,FALSE,voice
+nootka003,3,59,1379,James Guy,male,Makah,,54,,54,1,3/4|2/4,"Go into that bay, that is the path (meaning the landing place of the canoe)",,,TRUE,TRUE,voice|drum
+nootka004,4,60,1352,Young Doctor,male,Makah,,58,,58,1,2/4|3/4,"Use your other flipper.
+Paddle toward our home.",,,FALSE,FALSE,voice
+nootka008,8,68,1427,Wilson Parker,male,Makah,,80,,80,1,3/4|2/4,"I have come to see how your house is,
+Is it prepared for large crowds?",,,FALSE,FALSE,voice
+nootka009,9,70,1425,Wilson Parker,male,Makah,,76,,76,1,2/4|3/4,Here I have come to the place where people live,,"""Drum in very rapid beats""",TRUE,TRUE,voice|drum
+nootka010,10,71,1426,Wilson Parker,male,Makah,,76,,76,1,4/4|2/4|3/4,,,Drum rhythm: continous quarters,TRUE,TRUE,voice|drum
+nootka011,11,73,1323,Young Doctor,male,Makah,,60,,60,1,2/4|3/4,,,Drum rhythm: continous quarters,TRUE,TRUE,voice|drum
+nootka012,12,74,1322,Young Doctor,male,Makah,,54,,54,1,2/4|5/8|3/4,,,Drum rhythm: continous quarters,TRUE,TRUE,voice|drum
+nootka013,13,75,1504,Young Doctor,male,Quinaelt,,120|84,84,120|84,1,3/4|2/4|3/4,,,Drum rhythm: continuous eigth-notes|The drum and voice use different tempi,TRUE,TRUE,voice|drum
+nootka014,14,76,1324,Young Doctor,male,Makah,,72,84,72,1,2/4,,,"Drum rhythm: continous quarters|The drum and voice use different tempi: voice=72, drum=84",TRUE,TRUE,voice|drum
+nootka015,15,77,1325,Young Doctor,male,Makah,,66,66,66,1,2/4,,,"Drum rhythm: continous quarters|""It was accompanied by pounding with sticks on a large box, this being done by the assembly""",TRUE,TRUE,voice|drum
+nootka016,16,78,1326,Young Doctor,male,Makah,,63,63,63,1,3/4|2/4,,,Drum rhythm: continous quarters,TRUE,TRUE,voice|drum
+nootka017,17,79,1320,Young Doctor,male,Makah,,69,,69,1,2/4|3/4,"I am wealthy, that is why I am singing",,"On the previous page, Densmore writes that ""the next two songs [...] are accompanied by a rapid beating of sticks on plancks, and the dancers clapped their hands sharply at the accented tones of the song""",TRUE,TRUE,voice|drum|clapping
+nootka018,18,80,1321,Young Doctor,male,Makah,,80,80,80,1,2/4|3/4,It is I who am dancing,,"Drum rhythm: continous eight-notes|On the previous page, Densmore writes that ""the next two songs [...] are accompanied by a rapid beating of sticks on plancks, and the dancers clapped their hands sharply at the accented tones of the song""",TRUE,TRUE,voice|drum|clapping
+nootka019,19,81,1399,Mrs. Helen Irving,female,Makah,,56,56,56,1,3/4|2/4,"Mine is a proud village, such as it is,
+We are at our best when dancing.",,Drum rhythm: continuous eigth-notes,TRUE,TRUE,voice|drum
+nootka020,20,82,1319,Young Doctor,male,Makah,,76,,76,1,3/4,We have come to see what you have to give away at your potlatch,,,FALSE,FALSE,voice
+nootka021,21,83,1298,Young Doctor,male,Makah,,84,,84,1,2/4|3/4,I am rich because the rattle is my tumanos,,,TRUE,TRUE,voice|clapping
+nootka022,22,84,1318,Young Doctor,male,Makah,,63,63,63,1,3/4|2/4,It is too bad about the presents that I and the other men were so pleased about,,,TRUE,TRUE,voice|drum
+nootka023,23,85,1327,Young Doctor,male,Makah,,84,,84,1,2/4,,,Meaning of the words is not known,FALSE,FALSE,voice
+nootka024,24,86,1303,Young Doctor,male,Makah,,84,,84,1,2/4|3/4,The man's tumanos is the same as a certain great man's tumanos (naming the man),,,FALSE,FALSE,voice
+nootka025,25,87,1315,Young Doctor,male,Makah,,66,,66,1,3/4,,,"""It is a song of the Wyatch and is so old that the meaning of the words is not known""",FALSE,FALSE,voice
+nootka026,26,88,1316,Young Doctor,male,Makah,,72,,72,1,2/4,,,,FALSE,FALSE,voice
+nootka027,27,89,1317,Young Doctor,male,Makah,,60,,60,1,3/4|2/4,,,,FALSE,FALSE,voice
+nootka028,28,90,1334,Young Doctor,male,Makah,,66,,66,1,3/4|2/4|3/8,,,,TRUE,TRUE,voice|drum
+nootka029,29,91,1335,Young Doctor,male,Makah,,76,,76,1,2/4|3/4,,,"""It is said to be very old, and the words are forgotten""",TRUE,TRUE,voice|drum
+nootka030,30,92,1336,Young Doctor,male,Makah,,69,,69,1,2/4,,,,FALSE,FALSE,voice
+nootka031,31,93,1337,Young Doctor,male,Makah,,96,,96,1,6/8,,,,FALSE,FALSE,voice
+nootka034,34,97,1420,Philip Ladder,,Makah,,84,,84,1,2/4|3/4,"I am telling what the other tribes are talking about.
+I hear everything they say and they are all praising me.",,,TRUE,TRUE,voice|drum
+nootka042,42,108,1502,James Guy,male,Vancouver Island,,72,,72,1,2/4|3/4,,,,FALSE,FALSE,voice
+nootka043,43,113,1442,Mrs. Sarah Guy,female,Clayoquot,,104,,104,1,2/4|3/4,Here we come from above to make you join the Klokali,,,FALSE,FALSE,voice
+nootka044,44,114,1432,Mrs. Sarah Guy,female,Clayoquot,,69,,69,1,2/4|3/4,"At a place far away there are ten large diamonds.
+This is the news which the thunderbird brings to you.",,,FALSE,FALSE,voice
+nootka045,45,115,1433,Mrs. Sarah Guy,female,Clayoquot,,80,,80,1,3/4|2/4,"Listen to me, I have possession of the salt water.
+I feed your herring and fish whenever you are not able to catch them for your use.",,,FALSE,FALSE,voice
+nootka046,46,116,1434,Mrs. Sarah Guy,female,Clayoquot,,42|48,,42|48,1,3/4|2/4,What could be greater than that which I imitate.,,,FALSE,FALSE,voice
+nootka047,47,117,1435,Mrs. Sarah Guy,female,Clayoquot,,60|66,,60|66,1,3/4|2/4,"The wolves are howling,
+Let this be a pleasant day.",,,FALSE,FALSE,voice
+nootka048,48,118,1419,Charles Swan,male,Makah,,120,120,120,1,3/4|2/4,,,Drum rhythm in publication,TRUE,TRUE,voice|drum
+nootka049,49,119,1416,Charles Swan,male,Makah,,92,92,92,1,3/4|2/4,,,Different drum rhythms in different renditions; see publication,TRUE,TRUE,voice|drum
+nootka050,50,121,1395,Mrs. Helen Irving,female,Makah,,108,112,108,1,2/4|3/4,,,Drum rhythm: continous quarters,TRUE,TRUE,voice|drum
+nootka051,51,123,1397,Mrs. Helen Irving,female,Makah,,80,,80,1,2/4|7/8,My hands are my feathers,,,TRUE,TRUE,voice|drum
+nootka052,52,124,1398,Mrs. Helen Irving,female,Makah,,80,80,80,1,2/4|6/8|5/8,"Representing a deer,
+Representing a blackfish",,,TRUE,TRUE,voice|drum
+nootka053,53,125,1403,Mrs. Helen Irving,female,Makah,irregular,72,72,72,1,2/4,,,Drum rhythm: similar to no. 13,TRUE,TRUE,voice|drum
+nootka054,54,125,1339,Young Doctor,male,Makah,,92,,92,1,5/4|3/4,,,,FALSE,FALSE,voice
+nootka057,57,133,1413,Charles Swan,male,Makah,,88,44,88,1,2/4|3/4,,,"""The words are not in the Makah language and the meaning is not known""|Drum tempo is given in half notes|Drum rhythm: continuous half notes",TRUE,TRUE,voice|drum
+nootka058,58,134,1414,Charles Swan,male,Makah,,50,50,50,1,2/4|3/4,,,Drum rhythm similar to no. 10,TRUE,TRUE,voice|drum
+nootka059,59,135,1415,Charles Swan,male,Makah,,54,54,54,1,2/4|3/4,"On all fours on the water is my craft,
+Flashing light is my craft.",,Drum rhythm similar to no. 10,TRUE,TRUE,voice|drum
+nootka060,60,138,1497,Charles Swan,male,Vancouver Island,,76|63,76,76|63,1,3/4|2/4,,,Drum rhythm similar to no. 55,TRUE,TRUE,voice|drum
+nootka061,61,139,1418,Charles Swan,male,Makah,irregular,92,92,92,1,3/4|2/4,,,,TRUE,TRUE,voice|drum
+nootka062,62,140,1498,Charles Swan,male,Vancouver Island,,76,76,76,1,2/4|3/8|5/8,,,Drum rhythm similar to no. 13,TRUE,TRUE,voice|drum
+nootka063,63,142,1417,Charles Swan,male,Makah,,92,,92,1,3/4|2/4,,,,TRUE,TRUE,voice|drum
+nootka064,64,143,1496,Charles Swan,male,Vancouver Island,,176,,176,0.5,3/8|2/4|3/4,,,,FALSE,FALSE,voice
+nootka065,65,145,1500,Edwin Hayte,male,Vancouver Island,,116,,116,1,3/4,,,,FALSE,FALSE,voice
+nootka066,66,146,1503,Edwin Hayte,male,Nootka,,60,60,60,1,3/4|2/4,,,Drum rhythm similar to no. 13,TRUE,TRUE,voice|drum
+nootka067,67,148,1409,Mrs. Helen Irving,female,Makah,,84,84,84,1,3/4|2/4,,,Drum rhythm similar to no. 10,TRUE,TRUE,voice|drum
+nootka068,68,150,1477,Mrs. Annie Long Tom,female,Clayoquot,,88,,88,1,3/4|5/8|2/4|3/8,,,,FALSE,FALSE,voice
+nootka069,69,151,1505,Mrs. Wilson Parker,female,Yakima,,80,,80,1,3/4|2/4|5/8,"You will not find my path, even if you do go.",,,FALSE,FALSE,voice
+nootka070,70,152,1364,Mrs. Wilson Parker,female,Makah,,104,,104,1,2/4|3/4,,,,FALSE,FALSE,voice
+nootka071,71,153,1386,James Guy,male,Makah,,112,132,112,1,2/4|5/4,,,Drum rhythm similar to no. 10|Drum and voice have different tempi,TRUE,TRUE,voice|drum
+nootka072,72,154,1387,James Guy,male,Makah,,66,66,66,1,2/4,,,Drum rhythm similar to no. 13,TRUE,TRUE,voice|drum
+nootka073,73,155,1375,Mrs. Wilson Parker,female,Makah,,80,,80,1,3/4|2/4|5/8,,,,TRUE,TRUE,voice|drum
+nootka074,74,156,1376,Mrs. Wilson Parker,female,Makah,,63,63,63,1,2/4|3/4,"I have seen my tumanos,
+Is your tumanos as good as mine?",,Drum rhythm similar to no. 13,TRUE,TRUE,voice|drum
+nootka075,75,157,1459,Mrs. Sarah Guy,female,Clayoquot,,100,,100,1,2/4|3/4|5/8|3/8,,,,FALSE,FALSE,voice
+nootka076,76,158,1460,Mrs. Sarah Guy,female,Clayoquot,,72,,72,1,2/4|3/4|3/8,,,,FALSE,FALSE,voice
+nootka077,77,159,1408,Mrs. Helen Irving,female,Makah,,72,72,72,1,2/4|3/4,"Do not try to imitate me in my ways,
+If I invented other tribes I would have wolves on the beach,
+Do not try to imitate me",,Drum rhythm similar to no. 13,TRUE,TRUE,voice|drum
+nootka078,78,160,1412,Charles Swan,male,Makah,,104,138,mixed,1,2/4|5/4|3/4,There is no tribe that can beat the chief in dancing.,,Drum rhythm similar to no. 10,TRUE,TRUE,voice|drum
+nootka079,79,161,1308,Young Doctor,male,Makah,,69,,69,1,2/4|3/4,,,,FALSE,FALSE,voice
+nootka080,80,162,1307,Young Doctor,male,Makah,,66,,66,1,2/4|3/4,"[...] A chief is in a canoe with many men"" [...]",,"""The song is so old that the meaning of the words is lost except that one sentence means 'A chief is in a canoe with many men'""",TRUE,TRUE,voice|clapping
+nootka081,81,163,1310,Young Doctor,male,Makah,,80,,80,1,2/4|3/4,,,,FALSE,FALSE,voice
+nootka082,82,164,1311,Young Doctor,male,Makah,,80,,80,1,3/4|2/4,,,,FALSE,FALSE,voice
+nootka083,83,167,1436,Mrs. Sarah Guy,female,Clayoquot,,76,,76,1,2/4,"I am trying to look as pretty as I can because my sweetheart is in the crowd.
+He is the reason for it.",,,FALSE,FALSE,voice
+nootka084,84,168,1429,Chester Wandahart,male,Makah,,88,72,86,1,2/4|3/4,,,"Drum rhythm similar to no. 13|Drum and voice use different tempi (voice=86, drum=72)",TRUE,TRUE,voice|drum
+nootka085,85,169,1471,Mrs. Annie Long Tom,female,Clayoquot,,52,,52,1,3/4|2/4,"Do not go away when I call you. 
+?oanak (meaning very poor, thin, unhealthy woman) came before she was called",,,FALSE,FALSE,voice
+nootka086,86,169,1472,Mrs. Annie Long Tom,female,Clayoquot,,66,,66,1,3/4|2/4,"They come to the surface, whatever lives under the water",,,FALSE,FALSE,voice
+nootka087,87,170,1473,Mrs. Annie Long Tom,female,Clayoquot,,76,,76,1,2/4|3/4,I do believe that person on the horse has taken the ring.,,,FALSE,FALSE,voice
+nootka088,88,171,1474,Mrs. Annie Long Tom,female,Clayoquot,,80,,80,1,2/4|3/4,"It seems that my husband is scolding me all the time.
+(Some one is supposed to reply)
+Perhaps he has a reason for scolding you.",,,FALSE,FALSE,voice
+nootka089,89,172,1466,Mrs. Annie Long Tom,female,Clayoquot,,65,56,65,1,2/4|3/4,"I will not, I will not have him because he is too old.
+His head and shoulders are good looking but
+I will not have him anyway because he is too old.",,Drum rhythm in publication|Drum and voice have different tempi (voice=65; drum=56),TRUE,TRUE,voice|drum
+nootka090,90,173,1343,Young Doctor,male,Makah,,100,,100,1,2/4|3/4,"Of all the things that come with old age, I look like a sea parrot with white patches on the side of my head. Try to become old as quickly as you can, I look so handsome.",,,FALSE,FALSE,voice
+nootka091,91,174,1344,Young Doctor,male,Makah,,92,,92,1,2/4,"How high my forehead is getting.
+This is the first time I have looked in the glass.",,,FALSE,FALSE,voice
+nootka092,92,175,1347,Young Doctor,male,Makah,,84,,84,1,3/4|7/8,What a pity I am getting old,,,FALSE,FALSE,voice
+nootka093,93,176,1305,Young Doctor,male,Makah,,93,,93,1,2/4|3/4,"My dear friend Wislatas is going away,
+My very close friend Wislatas is going away.",,,FALSE,FALSE,voice
+nootka094,94,177,1428,Chester Wandahart,male,Makah,,96,96,96,1,2/4,"Good-by, my sweetheart",,"Sung partly in English, partly in Chinook|Drum rhythm similar to no. 10",TRUE,TRUE,voice|drum
+nootka095,95,178,1306,Young Doctor,male,Makah,,60,,60,1,3/4|2/4,I can see the snow on top of the mountains,,,FALSE,FALSE,voice
+nootka096,96,179,1304,Young Doctor,male,Makah,,86,86,86,1,2/4|3/4,I hear the bird singing in the high mountains,,Drum rhythm similar to no. 10,TRUE,TRUE,voice|drum
+nootka097,97,180,1476,Mrs. Annie Long Tom,female,Clayoquot,,63,,63,1,2/4,"Stop singing, they are beginning to make fun of you.",,,FALSE,FALSE,voice
+nootka099,99,186,1314,Young Doctor,male,Makah,,50,,50,1,2/4,The only reason why I do not cut off your head is that your face would have a crying expression when I carried the head.,,,FALSE,FALSE,voice
+nootka101,101,188,1313,Young Doctor,male,Makah,,60,,60,1,2/4|3/4,"Do not think for a moment that you can defeat us, for we own slaves from all other tribes, even from the coast tribes to the north.",,,FALSE,FALSE,voice
+nootka102,102,189,1312,Young Doctor,male,Makah,,84,84,84,1,3/4|2/4,The Makah have no equals in numbers or strength. It is nothing for us to have 40 whales on the beach in a day.,,,TRUE,TRUE,voice|drum
+nootka103,103,190,1350,Young Doctor,male,Makah,,72,,72,1,2/4|3/4,"I have become weak by speaking of my home.
+My home is a great home.",,,FALSE,FALSE,voice
+nootka105,105,192,1389,James Guy,male,Makah,,92,,92,1,2/4|7/8|3/4,,,,FALSE,FALSE,voice
+nootka108,108,194,1445,Mrs. Sarah Guy,female,Clayoquot,,96,,96,1,2/4|3/4,Mine is bleeding.,,"""The words mean 'The head I cut off is bleeding'""",FALSE,FALSE,voice
+nootka109,109,196,1300,Young Doctor,male,Makah,,72,,72,1,2/4,"Where are you, on whose back the waves break?",,,FALSE,FALSE,voice
+nootka110,110,198,1301,Young Doctor,male,Makah,,72,,72,1,2/4,"Rain, please come down and fill the depressions in the rock",,,FALSE,FALSE,voice
+nootka111,111,199,1302,Young Doctor,male,Makah,,66,,66,1,2/4|3/4,You will always find me by the beating of my drum,,,FALSE,FALSE,voice
+nootka112,112,200,1392,James Guy,male,Makah,,69,,69,1,3/4|2/4,"O brothers, here he has put me in the treetop",,,FALSE,FALSE,voice
+nootka113,113,201,1393,James Guy,male,Makah,,84,,84,1,2/4|5/8,My tumanos is the squirrel,,,FALSE,FALSE,voice
+nootka114,114,203,1394,James Guy,male,Makah,,76,,76,1,2/4,Whoever is knocking at the door is only pretending that he is my master.,,,FALSE,FALSE,voice
+nootka115,115,217,1464,Mrs. Annie Long Tom,female,Clayoquot,,52,,52,1,3/4|2/4,,,,FALSE,FALSE,voice
+nootka116,116,218,1405,Mrs. Helen Irving,female,Makah,,96,96,96,1,2/4|5/8|7/8|3/8|3/4,This little girl will pick black salmonberries when the women go to get berries because she is a sister of Kaka'ochuk and a daughter of Kaka'ochuk (a little bird with brown feathers and high repeated note).,,,TRUE,TRUE,voice|drum
+nootka117,117,219,1470,Mrs. Annie Long Tom,female,Clayoquot,,42,,42,1,3/4|2/4,The only reason I cannot gather more berries is that so many other babies are bothering me,,,FALSE,FALSE,voice
+nootka118,118,220,1462,Mrs. Annie Long Tom,female,Clayoquot,,69,,69,1,2/4|3/4,"I wish I was out on the rocks gathering sidu. the tide is just right.
+I wish I was gathering crabsm the early morning tide is out.",,,FALSE,FALSE,voice
+nootka120,120,222,1356,Mrs. Wilson Parker,female,Makah,,63,,63,1,3/4|2/4,"Go to sleep, baby daughter, mother has work that must be done.",,,FALSE,FALSE,voice
+nootka121,121,223,1404,Mrs. Helen Irving,female,Makah,,76,,76,1,2/4|3/4,My little girl is such a great care,,,FALSE,FALSE,voice
+nootka122,122,224,1406,Mrs. Helen Irving,female,Makah,,69,69,69,1,3/4|2/4,Everybody will be afraid to look upon his little face because on his little round cheeck will be a xixitiyuk (belt of the thunderbird),,,TRUE,TRUE,voice|drum
+nootka123,123,225,1463,Mrs. Annie Long Tom,female,Clayoquot,,52,,52,1,3/4|2/4|7/8,"I am going to be a great warrior, because the crows have given me medicine to make me so.",,,FALSE,FALSE,voice
+nootka125,125,227,1469,Mrs. Annie Long Tom,female,Clayoquot,irregular,56,,56,1,2/4|3/4,"What a nice basket full of snipe you are carrying.
+You got them at Tcatca'tiks.",,,FALSE,FALSE,voice
+nootka127,127,228,1374,Mrs. Wilson Parker,female,Makah,,96,,96,1,2/4|3/4,"Take your basket out and fill it with kelp fish.
+My canoe is full of kelp fish but I threw out the bullheads.",,,FALSE,FALSE,voice
+nootka128,128,229,1355,Mrs. Wilson Parker,female,Makah,,60,,60,1,2/4,,,,FALSE,FALSE,voice
+nootka129,129,239,1369,Mrs. Wilson Parker,female,Makah,,76|108,,76|108,1,3/4|2/4,"I have for sale, for sale, 10 fathoms of wampum shell for a fishing spear.
+It belongs to Klikababit.",,,FALSE,FALSE,voice
+nootka204,204,335,1491,Mrs. Gilbert Holden,female,Quileute,,84,132,84,1,2/4,I am hungry for salmonberries,,"Drum rhythm similar to no. 10|Drum and voice use different tempi (voice=84, drum=132)",TRUE,TRUE,voice|drum

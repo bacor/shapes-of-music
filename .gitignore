@@ -1,0 +1,27 @@
+# Exclude the actual datasets
+datasets/
+GregoBaseMidi/
+old/ 
+serialize/
+similarities/
+
+# Various
+figures/figS01-representation/
+generate.sh
+tmp/
+
+# Python
+env/
+__pycache__/
+.ipynb_checkpoints/
+.vscode/
+.DS_Store
+
+# R
+.RHistory
+
+TRASH/
+contours/
+data/
+
+niels

@@ -1,0 +1,463 @@
+id,song_num,page_num,catalogue_num,performers,performer_genders,location,latitude,longitude,bpm,beat_duration,meters,voice_use,instrument_use,percussion_use,instrumentation,lyrics,free_translation,tonality,comments
+papago001,1,18,1000,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,160,0.5,3/8|2/8,TRUE,FALSE,FALSE,voice,,"I can not walk, I am dragging along, I cried, Ah, Ah!",,
+papago002,2,19,1001,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,84,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Black refuge where I dwell.
+I am going forth with it.
+I am there.",,
+papago003,3,20,996,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,66,1,2/4,TRUE,FALSE,FALSE,voice,,"I have created you here, I have created you here
+The red evening I bring to you",,"The location is written as ""Vomari"" by Densmore."
+papago004,4,20,997,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,100,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"I suffered to the bottom of my heart but at last I created a great deal of wind and at last I created many clouds, so now I am singing for joy.",,"The location is written as ""Vomari"" by Densmore."
+papago005,5,21,1035,Jose Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,92,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Here I sink, and I know all sorts of things",,"The location is written as ""Vomari"" by Densmore."
+papago006,6,22,988,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,69,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I have done the worst thing now in killing you, my brother, but I am going to leave your wind and your clouds",,"The location is written as ""Vomari"" by Densmore."
+papago007,7,22,980,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,76,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"There is an old man sitting down and fixing his vaäko (canteen), fixing his vaäko",,"The location is written as ""Vomari"" by Densmore."
+papago008,8,23,991,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,80,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,,irregular,"The location is written as ""Vomari"" by Densmore."
+papago009,9,24,981,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,72,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,Now we are going to look over the world and see what is going on,,"The location is written as ""Vomari"" by Densmore."
+papago010,10,25,982,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,80,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"The world we have come into looks so grassy,
+We come out to look over the world",,"The location is written as ""Vomari"" by Densmore."
+papago011,11,26,985,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,80,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Here we are on our way and see the distant mountain.
+See, the mountain far from us that has the cloud is Raven Mountain.",,"The location is written as ""Vomari"" by Densmore."
+papago012,12,27,984,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,126,0.5,5/8|2/4|3/4|3/8,TRUE,FALSE,FALSE,voice,,Downy white feathers are moving beneath the sunset and along the edge of the world,Irregular,"The location is written as ""Vomari"" by Densmore."
+papago013,13,28,986,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,69,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,Oh! I have seen many things in this world and I have been in this world a long time,,"The location is written as ""Vomari"" by Densmore."
+papago014,14,29,987,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,69,1,3/4,TRUE,FALSE,FALSE,voice,,"Our grandmother says it will be all right that she dies,
+Because she has been alive a long time.
+That is why she does not mind dying,
+Because we can not keep up with the crowd.",irregular,"The location is written as ""Vomari"" by Densmore."
+papago015,15,30,983,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,84,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"Now, now I have found what you did,
+The world will burn if you do this,
+Now i have found it out.",,"The location is written as ""Vomari"" by Densmore."
+papago016,16,31,998,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,84,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"Good luck, my grandmother.
+All that you have done will be sounded through the world.",,
+papago017,17,32,999,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,76,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Going toward the east where the road goes;
+Where the burden basket walked.",,
+papago018,18,33,989,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,88,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"You must enjoy yourselves in the evening.
+Look at me. See how I look and yet I am happy.",,"The location is written as ""Vomari"" by Densmore."
+papago019,19,34,990,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,104,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Get up and dance.
+Look up and see the end of the pole where my scalp is hanging. 
+I want you to enjoy yourselves.",,"The location is written as ""Vomari"" by Densmore."
+papago020,20,37,954,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,132,0.5,4/8|5/8|3/8,TRUE,FALSE,FALSE,voice,,"Am I an eagle?
+My feathers are filled with mysterious power.",,
+papago021,21,43,955,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,104,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,,,Lyrics aligned with music in publication
+papago022,22,44,956,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,84,1,3/4|2/4,TRUE,FALSE,FALSE,voice,Wanitho [I will become] ci [like] makai [a medicine] coï [man] niäthanur [my feathers] vavazaza [are growing longer],,,Lyrics aligned with music in publication
+papago023,23,45,957,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,96,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Humo [now] kupahaku [the eagle] natho [is made] humo [now] tokiyo [it will destroy us all],,,Lyrics aligned with music in publication
+papago024,24,48,958,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,104,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Kanina [It was] vavahi [rocks] nahpiöni [slippery] wahpola [arrow shafts] tacai [stick in] koitha [on this] caiimuna [walked up],,irregular,Lyrics aligned with music in publication
+papago025,25,49,959,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,104,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Thani [I am] thonai [white] Ethoi [Elder Brother] vavashi [rocks] sithahpiöni [slippery] koina [over this] kaämo [I am] himuna [going],,,Lyrics aligned with music in publication
+papago026,26,50,960,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,88,1,3/4|2/4,TRUE,FALSE,FALSE,voice,Mowali [fly] ha [ho],,,Densmore also reports another text for the same melody (same page)
+papago027,27,53,961,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,72,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"You have done it right, you little bit of an Elder Brother.
+Henceforth the villages will be safe and I am on the ground, I will get along better.",,
+papago028,28,55,962,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,76,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Vahavi [towering rocks] kohona [sounding] hononi [evening] wuma [with them] iasoakima [I am crying],,,Lyrics aligned with music in publication
+papago029,29,57,963,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,76,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,He lies face downward,,
+papago030,30,58,964,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,120,1,3/4,TRUE,FALSE,FALSE,voice,Hayah [Oh] niroika [my pet],Oh my pet,,
+papago031,31,59,965,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,60,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I will take any young birds and raise them.
+When their feathers grow long I will put them out.",irregular,
+papago032,32,60,966,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,69,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Bows now are made,
+Arrows now are made.
+Towards the west we will try them.
+You can watch them fly, my boys.",,
+papago033,33,63,967,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,60,1,2/4,TRUE,FALSE,FALSE,voice,,"One in the corner, in the square on the ground,
+A fire in each corner, four fires on the ground",irregular,
+papago034,34,64,968,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,76,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"Who are you, nice boys?
+Who is going to marry me?",,
+papago035,35,65,969,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,84,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"From the east the girls are approaching.
+They came to the place of the singing,
+They are here.",,
+papago036,36,65,970,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,116,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I am [...], I am showy, with glittering belt and a fillet of white eagle down",irregular,
+papago037,37,68,971,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,120,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,,,
+papago038,38,70,972,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,69,1,2/4,TRUE,FALSE,FALSE,voice,,Hanging motionless in the sky yet terrible in its power to destroy,,
+papago039,39,73,973,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,69,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"My poor grandchild, my poor grandchild,
+It is the head gaming stick that always wins, 
+Throw it forward",,
+papago040,40,75,974,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,88,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Who is the man who killed an enemy and has no joy?
+I am having all the joy alone",,
+papago041,41,75,975,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,132,0.5,6/8|7/8|5/8|4/8|3/8,TRUE,FALSE,FALSE,voice,,"Twin girls, they go from one dancing circle to another, returning to the place from which they started",,
+papago042,42,76,976,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,80,1,2/4|3/4|3/8,TRUE,FALSE,FALSE,voice,,"Where am I running from, that I come here?
+Am I a crazy woman with a painted face?",,
+papago043,43,79,1066,Leonardo Rios,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,88,1,2/4|3/4|5/8,TRUE,FALSE,FALSE,voice,,"Now I toss up the sticks.
+I will throw the sticks for the corner.
+(The highest score was made by this throw.)",,
+papago044,44,80,977,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,76,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"The time is come to pay your wager;
+The time is come.",,
+papago045,45,86,1072,Harry Encinas,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,116,1,3/4|7/8|2/4|4/4,TRUE,FALSE,FALSE,voice,,"From the west a white wind is coming out.
+Stand there and look, it is not near,
+It is beside the ocean, there you will see it.
+By the reflected light of the sun you will see it.",,
+papago046,46,87,1033,Jose Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,63,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"The bright morning begins to shine.
+Get up, three of you, and see Manasi Mountain.
+On top of it there is yellow water,
+I went there, drank the water, and staggered in running.",,"The location is written as ""Vomari"" by Densmore."
+papago047,47,89,1041,Jose Pancho,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,92,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"Are you going to make a doctor out of me?
+You have brought me in here and I see.",,
+papago048,48,92,1036,Jose Pancho,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,88,1,2/4|3/4|5/8,TRUE,FALSE,FALSE,voice,,"[Part 1]
+Sandy Loam Fields, on top of these lands Elder Brother stands and sings.
+Over our heads the clouds are seen, downy white feathers gatherd in a bunch.
+
+[Part 2]
+After hearing these songs the women gather on Sandy Loam Fields,
+Their heads decorated with clouds of feathers",,
+papago049,49,93,1037,Jose Pancho,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,160,0.5,5/8|4/8|3/8,TRUE,FALSE,FALSE,voice,,"[Part 1]
+I am going to sit here and sing, I am going to sit here and sing.
+On top of our ground you will see green scum drying op.
+(This refers to land on which water has recently been standing)
+
+[Part 2]
+I am going to stand here and sing, I am going to stand here and sing.
+On top of our ground you will see foam drying up",,
+papago050,50,93,1038,Jose Pancho,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,100,1,2/4,TRUE,FALSE,FALSE,voice,,"[Part 1]
+That bird comes out back of Frog Mountains.
+It stretches its arms trying to reach Cokwigan Mountains (in Mexico).
+
+[Part 2]
+A measuring worm comes out of Long Mountains (Santa Rita)
+It stretches itself, trying to reach Iohlikum (Queen Mountains, part of Baboquivari rangre).",,
+papago051,51,94,1039,Jose Pancho,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,104,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"[Part 1]
+Crazy woman, crazy woman, trying to sing to mescal leaves,
+How can she sing to them and make the wind come?
+
+[Part 2]
+Young children trying to sing to bahwi flowers,
+How can they sing to bahwi flowers and bring rain?",,
+papago052,52,95,1040,Jose Pancho,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,104,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"[Part 1]
+Hanamikan Mountain calls itself doctor and stands by itself.
+Toward it I am walking.
+
+[Part 2]
+Thatkam calls itself brave, standing toward Hanapkam Mountain.",,
+papago053,53,95,1024,Rafael Mendez,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,76,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"I know everything in the bottom of my heart,
+From coyote I learn all this,
+I get it and keep it within me, and hold it there.",,"The location is written as ""Vomari"" by Densmore."
+papago054,54,96,1021,Rafael Mendez,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,69,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Gray horned toad, the sun shines on you.
+The susnshine they gathered.
+With that they covered me but I got out from it.",,"The location is written as ""Vomari"" by Densmore."
+papago055,55,97,1022,Rafael Mendez,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,69,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Here we begin to talk.
+We call a name toward the east and a snake comes out, nicely painted.",,"The location is written as ""Vomari"" by Densmore."
+papago056,56,98,1023,Rafael Mendez,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,72,1,2/4|3/4|5/8|3/8,TRUE,FALSE,FALSE,voice,,"Little yellow wasp, you throw the dirt in my eyes.
+I do not know what to do with you.
+All I can do is to make a long-drawn breath, hoping you will die in four days.",,"The location is written as ""Vomari"" by Densmore."
+papago057,57,98,1042,Jose Pancho,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,76,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"He hangs it on both sides of himself and rolls around, then he gets up and dances with these on either side.",,
+papago058,58,99,1014,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,92,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"The devil's power shines over us now.
+We can see it shine on the tail of a black horse and we can also see the shining on top of every mountain.
+We know it will cure you.",,
+papago059,59,100,1016,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,104,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"From the east I came half dead with hunger and thirst.
+I came to a little water hole but it was dried up.
+I knew no other.
+I decided to find some other horses or a person who could take me to water.
+This boy took me to water but afterwards he treated me badly.",,
+papago060,60,100,1015,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,100,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Black hair rope is what you used in roping me.
+You treated me badly.
+You even threw me down and tied me.
+Not satisfied with that, you tied a knot in the end of my tail.
+That made me disgusted.",,
+papago061,61,101,1017,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,104,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I could go and get some of this yellow poppy flower and a sore would come where it touched your hand, but I have some pity for you though you had none for me when I was in your hands.",,
+papago062,62,104,910,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,80,1,3/4|2/4,TRUE,FALSE,FALSE,voice,Momoi [many] kokopa [spirits] honunewewa [westward] nuana [leading] ciamowa nakia [hanging] nye [my] moinak [heart] wangihona [strengthening],,,Lyrics aligned with music in publication
+papago063,63,105,911,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,76,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Makai [Medicine man's] ki [house] wi [to] nye [me] vanem [led into] ordanyewa [left me inside] ki [house] nye [my] sikol [older brother] cukoni [owl] aan [feathers] bineminak [flying about] nyuicuna [singing],"To the medicine man's house they have led me,
+To the medicine man's house they have led me,
+Inside the house they have brought me,
+Elder Brother is there and owl feathers fly about,
+The owl feathres sing in the air",,Lyrics aligned with music in publication
+papago064,64,106,912,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,76,1,3/4|2/4,TRUE,FALSE,FALSE,voice,Thotha [white] momoveld [bees] can [over there] novanye [they will] nyeyopa [come out] hodoneko [in the west] miawa [they drop] kamova [yonder] hodoneko [in the west] vowi [toward] muko [distance] smamsim [plainly] thotham [shimmering white] yahusnuhuwa [fluttering],,,Lyrics aligned with music in publication
+papago065,65,107,913,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,72,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Thoa [White] navavany [mountain] mumuko [far away] cyevut [earth] honginana [edge] kuka [stands] wathimohoi [beautiful] thamacoweka [it has] skuukcu [brilliant] thothama [white] kikiyona [arches],"A white mountain is far at the west,
+It stands beautiful,
+It has brilliant white arches of light bending down toward the earth",,Lyrics aligned with music in publication
+papago066,66,108,914,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,58,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Roiinga [It was a sad thing] nehnona [you did to me] nawacik [cigarette] komoithan [smoke] mueda [inside of you] uhumapa [piling up],"It was a sad thing you did,
+It was a sad thing you did,
+But now we smoke together,
+The smoke will pile up inside us",,Lyrics aligned with music in publication
+papago067,67,109,915,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,72,1,2/4,TRUE,FALSE,FALSE,voice,Kunye kamhohimna [I was going there] cirvan [earth] honginana [end] himana [going] cirvan [earth] colikam [corner] Ithoi [Elder Brother] avuvumahaith [from two directions] nanamukim [we meet] hok [the] nye [my] moi [heart] thmiamoma [calling for help],"Going alone to the earth end,
+Going alone to the earth corner,
+Elder Brother comes from the opposite direction
+We meet and my heart is bounding within me",,Lyrics aligned with music in publication
+papago068,68,110,916,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,80,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Aliwerci [(No meaning)] scuk [black] wahpamana [snake] hoduneko [west] vahwi [toward] susulinhimna [going erect] cinawikimtha [walking while moving] cinowang [mountain] mihivi [coiling around],"A black snake goes toward the west,
+It travels erect on its tail,
+It sings as it goes toward the west, and coils around a mountain",,Lyrics aligned with music in publication
+papago069,69,111,917,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,76,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Vahvai [rocks] mongawa [shaking back and forth] onginunu [shaking him] wanur cinihonimur [he trembles] yoina [after] kahimukai [going] waamoh [farther] coingam [what can it mean?] nye [my] moi [heart] hohonemur [all gone],,,Lyrics aligned with music in publication
+papago070,70,112,1027,Rafael Mendez,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,58,1,2/4,TRUE,FALSE,FALSE,voice,,"It has been a long time since the light began to show, my brother
+Just look, my brother,
+Toward us the bows are brightening (referring to shafts of light bent above their heads like long bows)",,"The location is written as ""Vomari"" by Densmore."
+papago071,71,113,1075,Kiyatan,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,126,1,2/4|3/4,TRUE,FALSE,FALSE,voice,"Tharai [Sun] woceracima [rising] hokithab [at the side] kakatho [bows] yahaiwa [at the side] wuwucima [lying] hokithab [at the side] pur [the] mawithur [lion] mamata [babies] vupukumi [pink] thiamo [that is all]
+
+Maratha [Moon] yutuna [setting] hokithab [at the side] pur [the] vapaku [canes] yahaiwa [at the side] wuwucima [lying] hokithab [at the side] kirohu [wild cat] mamatu [babies] yahaiwara [moving around] cucuwoi [uncertainly] kaiima [that is all]","The sun is rising,
+At either side a bow is lying,
+Beside the bows are lion-babies,
+The sky is pink, 
+That is all
+
+The moon is setting,
+At either side are bamboos for arrow-making,
+Beside the bamboos are wild-cat babies,
+They walk uncertainly,
+That is all.",,Densmore does not report the location where this song was collected|Lyrics aligned with music in publication|On p. 114 Densmore reports a 'companion song' sung to the same melody (No 72)
+papago073,73,118,932,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,104,1,2/4|3/8|3/5,TRUE,FALSE,FALSE,voice,,"How shall I begin my song
+In the blue night that is settling
+I will sit here and begin my song",,
+papago074,74,119,933,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,69,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"The owl feather is rolling in this direction and beginning to sing.
+The people listen and come to hear the owl feather
+Rolling in this direction and beginning to sing.",,
+papago075,75,119,934,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,72,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Early in the evening they come hooting about,
+Some have small voices and some have large voices,
+Some have voices of medium strength, hooting about.",,
+papago076,76,120,935,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,69,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"I can not make out what I see.
+In the dark I enter.
+I can not make out what I see.",,
+papago077,77,121,936,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,104,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Poor old sister, you have cared for this man and you want to see him again, but now his heart is almost covered with night. There is just a little left.",,
+papago078,78,122,937,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,116,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"Ahead of me some owl feathers are lying,
+I hear something running toward me,
+They pass by me, and farther ahead
+I see spirit-tufts of downy white feathers",,
+papago079,79,123,938,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,112,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"Yonder lies the spirit land
+Yonder the spirit land I see
+Farther ahead, in front of me,
+I see a spirit stand",,
+papago080,80,124,939,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,88,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"A railroad running west,
+He travels westward
+When he gets a certain distance
+He flaps his wings four times and turns back",,
+papago081,81,125,940,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,76,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Yonder are spirits laughing and talking as though drunk.
+They do the same things that we do.
+Now we will join them.",,
+papago082,82,125,941,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,69,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"I pity you, my feathers
+I pity you, my feathers, that they make fun of,
+They must mean what they say,
+Or perhaps they are crazy in their hearts",,
+papago083,83,126,942,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,69,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,On the west side people are singing as though drunk. The women are singing as though they were drunk.,,
+papago084,84,127,951,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,76,1,4/3|2/4|5/8,TRUE,FALSE,FALSE,voice,,"I am going far to see the land,
+I am running far to see the land,
+While back in my house the songs are intermingling",,
+papago085,85,127,952,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,112,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"Ashes Hill Mountain, toward it I am running,
+I see the Ashes Hill come out clearer.",,
+papago086,86,128,953,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,224,0.5,5/8|2/4|3/4|3/8,TRUE,FALSE,FALSE,voice,,"They brought me to the waters of the spirits.
+In these waters the songs seem to be stringing out.",,
+papago087,87,129,943,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,72,1,3/4|3/8|2/4,TRUE,FALSE,FALSE,voice,,"A low range of mountains, toward them I am running.
+From the top of these mountains I will see the dawn.",,
+papago088,88,129,944,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,116,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I am not sure whether I am running west or east but I run on and on. 
+I find that I am running east.",irregular,
+papago089,89,130,945,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,208,1,2/4|3/8|3/4,TRUE,FALSE,FALSE,voice,,"I am dead here, I die and lie here,
+I am dead here, I die and lie here,
+Over on top of Vihuhput i had my dawn.",,
+papago090,90,131,946,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,80,1,3/4|5/8|2/4|3/8,TRUE,FALSE,FALSE,voice,,"Black Butte is far. Below it I had my dawn.
+I could see the daylight coming back of me.",,
+papago091,91,132,947,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,112,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I am afraid it will be daylight before I reach the place to see.
+I feel that the rays of the sun are striking me.",,
+papago092,92,133,948,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,76,1,2/4|5/8|3/4,TRUE,FALSE,FALSE,voice,,"The owl feather is likely to find the daylight.
+He is looking for it.
+He is looking to see the dawn shine red in the east.",,
+papago093,93,133,949,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,108,1,2/4|3/4|3/8,TRUE,FALSE,FALSE,voice,,"The morning star is up.
+I cross the mountains into the light of the sea.",,
+papago094,94,134,950,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,106,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I think I have found out.
+I think I have found out.
+With the owl songs I have found out and I will return home.",,
+papago095,95,135,1063,Leonardo Rios,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,96,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"At the south side is water covered with green scum. Above it clouds roll toward me. I see this and think perhaps I will be caught in the rain, so I return home.",,
+papago096,96,136,1064,Leonardo Rios,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,96,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"The great white birds that fly over the ocean came to our singing place, and over the ground they strung about.",,
+papago097,97,137,1065,Leonardo Rios,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,88,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"In the east is the dwelling place of the sun.
+On top of this dwelling place the sun comes up and travels over our heads.
+Below we travel.
+I raise my right hand to the sun and then stroke my body in the ceremonial manner",,
+papago098,98,140,1074,Mattias Encinas,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,88,1,3/4|2/4,TRUE,FALSE,FALSE,voice,Siali [East] thanthanio [side] curcungi [clouds] kahowa [approaching] mumko [far] nurkai [rain far away] coko [raining here] thoahi [thunder],"Clouds are standing in the east, they are approaching.
+It rains in the distance.
+Now it is raining here and the thunder rolls.",,
+papago099,99,142,1009,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,76,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Now as the night is over us we are singing the songs that were given to us.
+You see the clouds beginning to form on top of the mountains.
+They look like little white feathers.
+You will see them shake like feathers in a wind.
+Soon the raindrops will fall and make our country beautiful.",,
+papago100,100,145,1050,Jose Ascencio,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,126,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Frog Mountain, on top of it the corn comes up.
+Eat it, eat it.",,"The location is written as ""Vomari"" by Densmore."
+papago101,101,146,1006,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,72,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"(Referring to the images of things desired)
+Now we sit with feathers tied on our heads,
+We make wonderful things which you have not seen,
+But we will show them to you some day.",,
+papago102,102,147,1007,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,88,1,3/4|2/4|7/8,TRUE,FALSE,FALSE,voice,,"Each singer wears a white feather on his head,
+Now it is nightfall,
+We will sing through the night and perhaps we may do some good.",,
+papago103,103,148,1008,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,88,1,2/4|3/4|3/8|5/8,TRUE,FALSE,FALSE,voice,,"We see the light that brightens in the east,
+It seems to turn to flame,
+On the edge of it is something that looks like a white feather,
+But we see that it is white clouds.",,
+papago104,104,150,1073,Jose Antoin,male,"Pisinemo, Arizona, U.S.A.",32.041,-112.314,104,1,2/4,TRUE,FALSE,FALSE,voice,,"Here I am sitting and with my power I draw the south wind toward me. After the wind I draw the clouds, and after the clouds I draw the rain that makes the wild flowers grow on our home ground and look so beautiful.",,"The location is written as ""Pisinemak"" by Densmore."
+papago105,105,152,995,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,88,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Viinikut fields I got into.
+I stayed there and my heart will be wet enough to last.",,"The location is written as ""Vomari"" by Densmore."
+papago106,106,154,1049,Jose Ascencio,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,80,1,3/4,TRUE,FALSE,FALSE,voice,,"The eagle is flying above a in round circle and makes a round shadow on the ground.
+I am walking around under that shadow.
+The blue hawk is flying in a straight line and makes a straight shadow. 
+Under that line I am running.",,"The location is written as ""Vomari"" by Densmore."
+papago107,107,154,1031,Jose Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,52,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"The sun doctor with his body painted in spots
+At the edge of the earth I (the sun doctor) stand and see the ocean with its beautiful rolling waves.
+I call up the beautiful white clouds.
+I am glad to see them rise.",,"The location is written as ""Vomari"" by Densmore."
+papago108,108,156,1032,Jose Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,80,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"The eagle wing, under that I sat with the tiswin,
+I drank that and I am well drunk.
+The water that gathered on the blue hawk feathers at the end of the vasi, 
+I drank of that and was staggered.",,"The location is written as ""Vomari"" by Densmore."
+papago109,109,157,1058,Victoria,male,"Sells, Arizona, U.S.A.",32.326,-112.043,58,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,,,
+papago110,110,159,1026,Rafael Mendez,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,132,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"A blue wind.
+I saw the tracks on the blue mountain.
+Inside that mountain I found a bamboo plant growing.
+From there I saw a seven-headed mountain running low from east to west.",,"The location is written as ""Vomari"" by Densmore."
+papago111,111,160,1025,Rafael Mendez,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,120,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,,,"The location is written as ""Vomari"" by Densmore."
+papago112,112,161,979,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,100,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"A red water you made me drink,
+When I was drunk I went around as though I would fall down,
+I fell on the ground face downward.",,"The location is written as ""Vomari"" by Densmore."
+papago113,113,163,922,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,80,1,3/4|2/4,TRUE,FALSE,FALSE,voice,Thahrai [Sun] honunim [going down] keerna [proper time] nurinuri [songs] rzurzonco [commencing] yohoh [women] kaicokaci [hearing] wowewahpahima [running towards] konsun [hastening] thathaman [on the ground] merliwa [they arrive],"At sunset, the proper time for the beginning of the songs, they begin.
+The women hear the song, and hasten to reach the place.
+They arrive at the place",,
+papago114,114,165,1043,Jose Ascencio,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,72,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I am on my way running, 
+I am an my way running,
+Looking toward me is the edge of the world,
+I am trying to reach it,
+The edge of the world does not look far away,
+To that I am on my way running.",,"The location is written as ""Vomari"" by Densmore."
+papago115,115,166,1044,Jose Ascencio,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,100,1,2/4|3/8|3/4,TRUE,FALSE,FALSE,voice,,"Baboquivari is there on the east side, 
+It has white blossoms on it. 
+Toward that mountain I am on my way,
+I am running to join the singer.",,"The location is written as ""Vomari"" by Densmore."
+papago116,116,166,1045,Jose Ascencio,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,96,1,2/4|3/8|3/4,TRUE,FALSE,FALSE,voice,,"The cottonwood leaves are falling and flying in the air,
+On top of the remaining mountain they are flying around,
+And falling as though they are wet.",,"The location is written as ""Vomari"" by Densmore."
+papago117,117,167,1046,Jose Ascencio,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,66,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Poor man, did you leave me and walk away?
+The morning is shining upward,
+To that I am going.",,"The location is written as ""Vomari"" by Densmore."
+papago118,118,167,1047,Jose Ascencio,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,60,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"Blackish Mountain, he stands there like a ""doctor mointain.""
+On top the wind blows out,
+On top the wind blows out,
+And on top the clouds go out and cover the whole world.",,"The location is written as ""Vomari"" by Densmore."
+papago119,119,168,992,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,104,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"I do not understand where I am going,
+To Anakum I run and turn close to the village,
+Going toward the east.",irregular,"The location is written as ""Vomari"" by Densmore."
+papago120,120,169,1012,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,69,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"We stand and start the singing.
+Cowaka, come out and help us sing.
+We will keep you standing all night long and cure you.",,
+papago121,121,171,1010,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,76,1,3/4|2/4|5/8,TRUE,FALSE,FALSE,voice,,"We are scraping the basket and singing,
+We hear the echoes in all the mountains around us,
+We will make a trip to the salt and are singing to make it easy for us to get it.",,
+papago122,122,172,1011,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,66,1,2/4,TRUE,FALSE,FALSE,voice,,"We will run around the salt bed,
+We will run so fast that the stars will seem to run,
+In this way perhaps one of us may secure magic power.",,
+papago123,123,173,1028,Jose Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,76,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"By the sandy water I breathe in the odor of the sea,
+From there the wind comes and blows over the world,
+By the sandy water I breathe in the odor of the sea,
+From there the clouds come and rain falls over the world.",,"The location is written as ""Vomari"" by Densmore."
+papago124,124,174,1029,Jose Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,63,1,3/4|2/4,,,,,,"Under us the world spreads wide,
+From that the corn comes up,
+On the leaves the water moves in little drops,
+Under us the mountain stands wide,
+On that the squash comes up,
+And the water spreads over the vines.",,"The location is written as ""Vomari"" by Densmore."
+papago125,125,175,1030,Jose Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,54,1,3/4|2/4,TRUE,TRUE,TRUE,voice|rasping sticks,,"A mountain called Hootho, on top of it the sun rises,
+It seems to waver,
+A mountain called Hootho, on top of it the sun sets",,"The location is written as ""Vomari"" by Densmore.|Rasping sticks play unaccented eight notes"
+papago126,126,176,918,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,63,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Hukia potha [I am] himukai [gone] peanyetho [I will not] jijivia [return] hukia nutha [I am] hupaiyu [somewhere] moot [dead] kamayu [yonder] kamhomuihim [flames] kukiwa [stand up],,,
+papago127,127,177,919,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,63,1,3/4|2/4|3/8,TRUE,FALSE,FALSE,voice,,"I am going to walk far, far.
+I hope to have a fine morning somewhere.
+I am going to run far, far.
+I hope to have a good night somewhere.",,
+papago128,128,178,920,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,63,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Yonder, near the enemy's country, stand many great trees behind which they hid.
+They have retreated farther.
+They act like children.
+They hide behind the women or anything that will conceal them.",,
+papago129,129,179,921,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,63,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"We make wine.
+With deliberation we took our revenge.
+We make the scalp poles hop like crows while we drink the wine, but let us keep our self-control while we are rejoicing.",,
+papago130,130,181,923,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,88,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Hodunye [night] gusma [coming down] thahewa [sitting] gutanih [in the night] kunyemaitha [my enemy] miatha [trying to locate],,,
+papago131,131,181,924,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,92,1,3/4|2/4|3/8,TRUE,FALSE,FALSE,voice,,"Crow, hurry and come, sit down, help us locate our enemies",,
+papago132,132,183,925,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,92,1,3/4|5/8,TRUE,FALSE,FALSE,voice,Cyevut [the land] miawa [nearer] yuuld [appears] miawa [in sight nearer] nutha [we can see] nyemaitha [my enemies] miawa [nearer] yuuld [appear in sight],,,
+papago133,133,184,926,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,112,1,2/4|3/4,TRUE,FALSE,FALSE,voice,Cuwakiki [clouds] wumia [together] himtha [going] wumaci [with him] gamuko [far away] himtha [going] nyemaitha [my enemies] zazakali [staggering] nanaki [as if crazy],"Heavy clouds going with him.
+Clouds going far away.
+Our enemies stagger as though drunk.",,
+papago134,134,186,1069,Juana Maria,female,"Sells, Arizona, U.S.A.",32.326,-112.043,48,1,2/4|3/8|3/4,TRUE,FALSE,FALSE,voice,,"When the morning starts and the sun comes up.
+When the morning starts and the sun comes up.
+At that time the voice of the herald sounds sweet.
+It seems to be calling for me.",,
+papago135,135,187,1062,Victoria,male,"Sells, Arizona, U.S.A.",32.326,-112.043,69,1,2/4|5/8|3/4,TRUE,FALSE,FALSE,voice,,"Men shouting ""brother"", men shouting ""brother,""
+Among the mountains they have taken little Apache children where the sun went down in sorrow,
+All women, what shall we do to realize this?",,
+papago136,136,189,1005,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,96,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"Now you are sitting here, acting like a woman, begging for food like a woman. You said you were brave and painted yellow spots on your head like a man, but now you talk like a woman.",,
+papago137,137,189,1004,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,100,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I have gone through all this before you,
+I have run on the ountains and run on the plains with little food or clothing, 
+But I think of my shield that I use when I run up to the Apache and kill him,
+I want you all to feel that way.",,
+papago138,138,190,1002,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,84,1,2/4,TRUE,FALSE,FALSE,voice,,"Sing it so I will hear as you sing.
+It is your own fault that will punish you for what you have done.",,
+papago139,139,191,1003,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,88,1,2/4,TRUE,FALSE,FALSE,voice,,"I have jumped here and there.
+While I am dancing I jump in another place.",,
+papago140,140,192,1019,Rafael Mendez,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,58,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I amrunning on the side of the east.
+The people began to push us to where the land has many springs.
+There is where they left us.",,"The location is written as ""Vomari"" by Densmore."
+papago141,141,193,1020,Rafael Mendez,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,58,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"(First set of words, supposed to be spoken by the Apache)
+Near sunset time I fall down,
+Near sunset time I fall down,
+I am going almost like a drunken man.
+
+(Second set of words, indicating where war cries were given)
+It is toward evening (yell), he falls (yell),
+It is toward evening,
+He falls, he staggers like a drunken man (yell)",,"The location is written as ""Vomari"" by Densmore."
+papago142,142,194,1076,Nuñez,male,,,,96,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"How did you kill?
+Oh, how did you hang the scalp on the pole?",,
+papago143,143,196,1071,Harry Encinas,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,84,1,3/4,TRUE,FALSE,FALSE,voice,,"I will go inside to warm.
+There we will sit a while and rub our tired legs.",,
+papago144,144,197,927,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,108,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I am going to another part of Elder Brother's land,
+I have reached the land,
+With a handsome child (captive) I am returning",,
+papago145,145,198,928,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,112,1,2/4|3/4|3/8,TRUE,FALSE,FALSE,voice,,"Where is that bird going, where is that bird going?
+With that bird I whirl around, whirl around higher and higher,
+Just before we touch the sky, the bird faints and falls to the earth.
+(This song was said to be concerning the ""wind-grandson-bird"")",,
+papago146,146,199,929,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,112,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Who is that bird flying over there?
+Oh, it is the woodpecker,
+He does not seem to want to go anywhere,
+He cries and pecks at a cactus",,
+papago147,147,200,930,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,112,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"The eagle is on the highest point of rocks,
+He is talking,
+I was walking below and I heard the sound echo among the rocks.",,
+papago148,148,201,978,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,112,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Now be ready, my poor brother, and we will start to run,
+Now before us our nice ball goes far,
+After it we run,
+No matter what kind of ground there is,
+We must run over it",,"The location is written as ""Vomari"" by Densmore."
+papago149,149,202,993,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,84,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,,,"The location is written as ""Vomari"" by Densmore."
+papago150,150,203,1051,Jose Ascencio,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,96,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Now the songs are going to begin and I am going away.
+All over the mountains and on top of the mountains I sing.
+Ajo mountain, on top of it I am singing and walking around.",,"The location is written as ""Vomari"" by Densmore."
+papago151,151,204,994,Mattias Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,96,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,The evening looked red and I came out. Into all the houses I went and my wings are making a noise as I fly around the house.,,"The location is written as ""Vomari"" by Densmore."
+papago152,152,205,1048,Jose Ascencio,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,100,1,2/4,TRUE,FALSE,FALSE,voice,,When I got to the side of the mountain my heart began to give out.,,"The location is written as ""Vomari"" by Densmore."
+papago153,153,206,1055,Victoria,male,"Sells, Arizona, U.S.A.",32.326,-112.043,63,1,3/4|5/4|4/4|5/8|2/4,TRUE,FALSE,FALSE,voice,,"Where the mountain crosses.
+On top of the mountain, I do not myself know where.
+I wandered where my mind and my heart seemed to be lost.
+I wandered away.",,
+papago154,154,206,1054,Victoria,male,"Sells, Arizona, U.S.A.",32.326,-112.043,72,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Away off to the mountains where I am going.
+I do not know where I am going",,
+papago155,155,207,1057,Victoria,male,"Sells, Arizona, U.S.A.",32.326,-112.043,72,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,I went down to the edge of the world and from there I saw in the east where the morning was breaking. I saw white stripes.,,
+papago156,156,208,1056,Victoria,male,"Sells, Arizona, U.S.A.",32.326,-112.043,72,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"Back in the east there is a sound like thunder.
+There was a great sound in the east where the thunders were sounding.",,
+papago157,157,209,1059,Victoria,male,"Sells, Arizona, U.S.A.",32.326,-112.043,72,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,White mountain birds where singing sweetly in the east. It sounded like thunders where he was singing.,,
+papago158,158,209,1060,Victoria,male,"Sells, Arizona, U.S.A.",32.326,-112.043,54,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"A crow came down from above to this earth,
+A black crow came down from above to this earth,
+He was jumping on me.",,
+papago159,159,210,1061,Victoria,male,"Sells, Arizona, U.S.A.",32.326,-112.043,60,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"I was under Santa Rita Mountains.
+I sat there and thought of things far away, in distant parts of the world.",,
+papago160,160,211,1013,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,88,1,3/4|2/4,TRUE,FALSE,FALSE,voice,,"We sit here by our camp fire and start to sing our hunting song. I can clearly see the points of the deer's ears on top of the hill. We smoke the pihol flowers that make the night clear, so I can see the points of the deer's ears on the hill.",,
+papago161,161,211,1018,Jose Manuel,male,"Sells, Arizona, U.S.A.",32.326,-112.043,120,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"I am walking a great deal.
+I am sorry I can not find any game.
+I saw lots of tracks, especially on the east side of the mountain, but I found nothing.",,
+papago162,162,212,1068,Juana Maria,female,"Sells, Arizona, U.S.A.",32.326,-112.043,63,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"Gisuk, black-headed gisuk.
+Run and come so the baby's eyes will go to sleep.",,
+papago163,163,213,1052,Jose Ascencio,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,60,1,2/4|3/8,TRUE,FALSE,FALSE,voice,,"Now the beans begin to appear on the mesquite trees. Ground squirrel does not want to wait until the beans are ripe, so he climbs the trees, gets the beans, and scatters them green under the tree.",,"The location is written as ""Vomari"" by Densmore."
+papago164,164,214,1053,Jose Ascencio,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,96,1,2/4|3/4,TRUE,FALSE,FALSE,voice,,"The robin spreads the green wind on us.
+He spreads the coldest wind on us.
+Now knock him down with a stick.",,"The location is written as ""Vomari"" by Densmore."
+papago165,165,215,1067,Leonardo Rios,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,138,0.5,3/8|4/8|5/8,TRUE,FALSE,FALSE,voice,,"No talking, no talking,
+The snow is falling,
+And the wind seems to be blowing backward (circling back again).",,
+papago166,166,216,1070,Juana Maria,female,"Sells, Arizona, U.S.A.",32.326,-112.043,72,1,3/4|2/4|7/8,TRUE,FALSE,FALSE,voice,,"While I was running I met a Mexican who said,
+""How do you do?""
+While I was running I met a Mexican with a long beard who said,
+""How do you do?""",,
+papago167,167,217,1034,Jose Hendricks,male,"Vamori, Arizona, U.S.A.",31.721,-111.905,69,1,3/4|2/4|5/8,TRUE,FALSE,FALSE,voice,,"The pigeon pretended that he was setting up a tiswin lodge. The frog doctor drank his wine, got drunk and shouted, and pulled out his cloud.",,"The location is written as ""Vomari"" by Densmore."
+papago168,,217,,,,,,,160,0.5,5/8|4/8|3/8,FALSE,TRUE,FALSE,flute,,,,
+papago169,,218,,,,,,,60,0.5,3/8,FALSE,TRUE,FALSE,flute,,,,
+,72,117,931,Sivariano Garcia,male,"San Xavier, Arizona, U.S.A.",32.107,-111.008,,,,TRUE,FALSE,FALSE,voice,Tharai [Sun] pi [is] yocwa [slowly] himuna [going] waha [and] pi [is] youvi [slower] ki [in] hononye [setting] cucukur [black] nakamurli [bats] nuinakur [will be] maino [swooping] kuma [that is all] kokopa [spirit] yalli [children] inowayivurcov [beneath] yahaiwara [moving around] iyaalhimur [rolling] inowani [around] wurwurmikur [among] viviki [tufts of eagle down] cucuokima [stuck up at intervals],"The sun is slowly departing,
+It is slower in its setting,
+Black bats will be swooping when the sun is gone,
+That is all.
+
+The spirit children are beneath,
+They are moving back and forth,
+They roll in play among tufts of white eagle down,
+That is all.",,Sung to the same melody as no. 71
