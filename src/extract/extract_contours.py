@@ -23,7 +23,7 @@ from .extraction import extract_phrase_contours
 from .extraction import extract_random_contours
 from .volpiano import extract_volpiano_contours
 
-_LOGGING_OPTIONS = dict(
+LOGGING_OPTIONS = dict(
     filemode="w",
     format="%(levelname)s %(asctime)s %(message)s",
     datefmt="%d-%m-%y %H:%M:%S",
@@ -162,7 +162,7 @@ def generate_kern_contour_data(
         The directory in which to find the datasets, defaults to `datasets/`
     """
     log_fn = os.path.join(CONTOUR_DIR, f"{dataset_id}.log")
-    logging.basicConfig(filename=log_fn, **_LOGGING_OPTIONS)
+    logging.basicConfig(filename=log_fn, **LOGGING_OPTIONS)
     logging.info(f"Generating contour dataset: {dataset_id}")
 
     # Extract all contours
@@ -211,7 +211,7 @@ def generate_gregobase_contour_data(
     genre_key = genres[genre]
     dataset_id = f"liber-{genre}"
     log_fn = os.path.join(CONTOUR_DIR, f"{dataset_id}.log")
-    logging.basicConfig(filename=log_fn, **_LOGGING_OPTIONS)
+    logging.basicConfig(filename=log_fn, **LOGGING_OPTIONS)
     logging.info(f"Generating contour dataset: {dataset_id}")
     logging.info(f"Contours of {genre} from the Liber Usualis in GregoBaseCorpus v0.3")
 
@@ -249,7 +249,7 @@ def generate_cantus_contour_data(
 ):
     """"""
     log_fn = os.path.join(CONTOUR_DIR, f"cantus-{genre}.log")
-    logging.basicConfig(filename=log_fn, **_LOGGING_OPTIONS)
+    logging.basicConfig(filename=log_fn, **LOGGING_OPTIONS)
     logging.info(f"Generating contour dataset: {genre}")
 
     # Extract all contours

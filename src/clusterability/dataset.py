@@ -292,6 +292,7 @@ class Dataset(object):
         """"""
         subset_name = self.subset_name(**subset_kwargs)
         name = f"kde/{representation}/{metric}/{subset_name}"
+        error_occured = False
         with h5py.File(self.fn, "r+") as file:
             if name in file.keys() and not refresh:
                 distribution = file[name][:]
@@ -300,20 +301,27 @@ class Dataset(object):
                 sim = self.similarities(
                     representation, metric, dtw_kws=dtw_kws, **subset_kwargs
                 )
+                xs = np.array([])
+                ys = np.array([])
                 if len(sim) > 1:
-                    kde = gaussian_kde(sim)
-                    margin = (sim.max() - sim.min()) * 0.05
-                    xs = np.linspace(sim.min() - margin, sim.max() + margin, num_points)
-                    ys = kde(xs)
-                else:
-                    xs = np.array([])
-                    ys = np.array([])
+                    try:
+                        kde = gaussian_kde(sim)
+                        margin = (sim.max() - sim.min()) * 0.05
+                        xs = np.linspace(sim.min() - margin, sim.max() + margin, num_points)
+                        ys = kde(xs)
+                    except np.linalg.LinAlgError as e:
+                        logging.error(f'An error occured: {e}')
+                        logging.error(f'Similarity matrix: {sim}')
+                        error_occured = True                    
 
                 distribution = np.c_[xs, ys]
-                if serialize:
+                if serialize and not error_occured:
                     save(distribution, name, file, refresh=refresh)
-
-        return distribution
+        
+        if error_occured:
+            return False
+        else:
+            return distribution
 
     # def similarity_hist(self, *args, **kwargs):
     #     sim = self.similarities(*args, **kwargs)
@@ -346,7 +354,6 @@ class Dataset(object):
                 limit=PRECOMPUTED_LIMIT,
                 refresh=refresh,
             )
-            print(settings)
             self.similarities(**settings)
             self.similarity_kde(**settings)
 
