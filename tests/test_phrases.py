@@ -2,20 +2,18 @@
 # -------------------------------------------------------------------
 # Author: Bas Cornelissen
 # Copyright © 2020 Bas Cornelissen
-# License: 
+# License:
 # -------------------------------------------------------------------
 """Tests for the code used to analyse the kern files
 """
 import unittest
 import os
-import numpy as np
 from music21 import humdrum
-from src.phrases import extract_phrases_from_spine
-from src.phrases import extract_phrases_from_kern_file
-from src.phrases import extract_phrases_from_file
+from src.extract.phrases import extract_phrases_from_spine
+from src.extract.phrases import extract_phrases_from_kern_file
+
 
 class TestKernPhraseExtraction(unittest.TestCase):
-
     def test_phrase_extraction(self):
         data = """**kern
                 {4c
@@ -34,7 +32,9 @@ class TestKernPhraseExtraction(unittest.TestCase):
                 4c}
                 {8c
                 8d}
-                ==""".replace('                ','')
+                ==""".replace(
+            "                ", ""
+        )
         song = humdrum.parseData(data)
         spine = song.spineCollection.spines[0]
         phrases = extract_phrases_from_spine(spine)
@@ -58,7 +58,7 @@ class TestKernPhraseExtraction(unittest.TestCase):
 
     def test_extract_from_file(self):
         cur_dir = os.path.dirname(__file__)
-        path = os.path.join(cur_dir, 'test.krn')
+        path = os.path.join(cur_dir, "test.krn")
         phrases = extract_phrases_from_kern_file(path)
         self.assertEqual(len(phrases), 4)
         phrase1 = [n.pitch.midi for n in phrases[0].notes]
@@ -70,5 +70,6 @@ class TestKernPhraseExtraction(unittest.TestCase):
         phrase4 = [n.pitch.midi for n in phrases[3].notes]
         self.assertListEqual(phrase4, [60, 62])
 
-if __name__ == '__main__':
-    unittest.main()    
+
+if __name__ == "__main__":
+    unittest.main()

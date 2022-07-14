@@ -2,12 +2,9 @@
 datasets/
 GregoBaseMidi/
 old/ 
-serialize/
-similarities/
+serialized
 
 # Various
-figures/figS01-representation/
-generate.sh
 tmp/
 
 # Python
@@ -20,8 +17,4 @@ __pycache__/
 # R
 .RHistory
 
-TRASH/
-contours/
 data/
-
-niels
