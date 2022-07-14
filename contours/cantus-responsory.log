@@ -1,0 +1,37 @@
+INFO 14-07-22 11:47:02 Generating contour dataset: responsory
+INFO 14-07-22 11:47:02 Extracting neumes contours...
+INFO 14-07-22 11:47:05 Stored phrase contours to contours/cantus-responsory-neumes-contours.csv.gz
+INFO 14-07-22 11:47:05 md5 checksum: 9b4af49b307d6fe33f08ae0514ce9d6d
+INFO 14-07-22 11:47:05 >  Removed 8955 duplicates; 1045 contours left.
+INFO 14-07-22 11:47:05 Stored shuffled outputs to contours/cantus-responsory-neumes-contours-subsets.json
+INFO 14-07-22 11:47:05 md5 checksum: 05258f9aaa0b421975c67284beb90d38
+INFO 14-07-22 11:47:05 Extracting syllables contours...
+INFO 14-07-22 11:47:08 Stored phrase contours to contours/cantus-responsory-syllables-contours.csv.gz
+INFO 14-07-22 11:47:08 md5 checksum: c332f03251597eec1ad7805d74c1bccb
+INFO 14-07-22 11:47:08 >  Removed 8248 duplicates; 1752 contours left.
+INFO 14-07-22 11:47:08 Stored shuffled outputs to contours/cantus-responsory-syllables-contours-subsets.json
+INFO 14-07-22 11:47:08 md5 checksum: d124eee3528d929536709afc490bb113
+INFO 14-07-22 11:47:08 Extracting words contours...
+INFO 14-07-22 11:47:12 Stored phrase contours to contours/cantus-responsory-words-contours.csv.gz
+INFO 14-07-22 11:47:12 md5 checksum: c4b6bcecdcde6de77acc21d583169878
+INFO 14-07-22 11:47:12 >  Removed 4417 duplicates; 5583 contours left.
+INFO 14-07-22 11:47:12 Stored shuffled outputs to contours/cantus-responsory-words-contours-subsets.json
+INFO 14-07-22 11:47:12 md5 checksum: a9f87a669934dd05964aafbb5e7f5562
+INFO 14-07-22 11:47:12 Extracting poisson-3 contours...
+INFO 14-07-22 11:47:15 Stored phrase contours to contours/cantus-responsory-poisson-3-contours.csv.gz
+INFO 14-07-22 11:47:15 md5 checksum: 80ff323089e49d14b96f72dcc3e4d1c0
+INFO 14-07-22 11:47:15 >  Removed 7778 duplicates; 2222 contours left.
+INFO 14-07-22 11:47:15 Stored shuffled outputs to contours/cantus-responsory-poisson-3-contours-subsets.json
+INFO 14-07-22 11:47:15 md5 checksum: a4235fc0bcd53bcd19a20a61234a1cc9
+INFO 14-07-22 11:47:15 Extracting poisson-5 contours...
+INFO 14-07-22 11:47:18 Stored phrase contours to contours/cantus-responsory-poisson-5-contours.csv.gz
+INFO 14-07-22 11:47:18 md5 checksum: 9f8cc648650fbb73b2fbe9f7242ae2d9
+INFO 14-07-22 11:47:18 >  Removed 4621 duplicates; 5379 contours left.
+INFO 14-07-22 11:47:18 Stored shuffled outputs to contours/cantus-responsory-poisson-5-contours-subsets.json
+INFO 14-07-22 11:47:18 md5 checksum: 9f43a51d208d0e0b2c49c39b999ddf2c
+INFO 14-07-22 11:47:18 Extracting poisson-7 contours...
+INFO 14-07-22 11:47:21 Stored phrase contours to contours/cantus-responsory-poisson-7-contours.csv.gz
+INFO 14-07-22 11:47:21 md5 checksum: c3135b35ecff62fe2d50bb351652286b
+INFO 14-07-22 11:47:21 >  Removed 2077 duplicates; 7923 contours left.
+INFO 14-07-22 11:47:21 Stored shuffled outputs to contours/cantus-responsory-poisson-7-contours-subsets.json
+INFO 14-07-22 11:47:21 md5 checksum: cd0ad032580f895cc9c80f5001945c21

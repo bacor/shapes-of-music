@@ -1,0 +1,37 @@
+INFO 14-07-22 11:46:41 Generating contour dataset: antiphon
+INFO 14-07-22 11:46:41 Extracting neumes contours...
+INFO 14-07-22 11:46:44 Stored phrase contours to contours/cantus-antiphon-neumes-contours.csv.gz
+INFO 14-07-22 11:46:44 md5 checksum: 3fb208bdc3c7cb66900643a4025b952a
+INFO 14-07-22 11:46:44 >  Removed 9593 duplicates; 407 contours left.
+INFO 14-07-22 11:46:44 Stored shuffled outputs to contours/cantus-antiphon-neumes-contours-subsets.json
+INFO 14-07-22 11:46:44 md5 checksum: 4679e2472fff88c844490350cde787f2
+INFO 14-07-22 11:46:44 Extracting syllables contours...
+INFO 14-07-22 11:46:48 Stored phrase contours to contours/cantus-antiphon-syllables-contours.csv.gz
+INFO 14-07-22 11:46:48 md5 checksum: 6bbfaa03b4f183c28a24d3e0cb086248
+INFO 14-07-22 11:46:48 >  Removed 9467 duplicates; 533 contours left.
+INFO 14-07-22 11:46:48 Stored shuffled outputs to contours/cantus-antiphon-syllables-contours-subsets.json
+INFO 14-07-22 11:46:48 md5 checksum: 06634dcc8b3e991b35c4c46095819899
+INFO 14-07-22 11:46:48 Extracting words contours...
+INFO 14-07-22 11:46:51 Stored phrase contours to contours/cantus-antiphon-words-contours.csv.gz
+INFO 14-07-22 11:46:51 md5 checksum: 94c06e5a50a18442682b059ecb14f932
+INFO 14-07-22 11:46:51 >  Removed 6989 duplicates; 3011 contours left.
+INFO 14-07-22 11:46:51 Stored shuffled outputs to contours/cantus-antiphon-words-contours-subsets.json
+INFO 14-07-22 11:46:51 md5 checksum: 81d13ae26b7ee7152d2edbc9c0bcd42b
+INFO 14-07-22 11:46:51 Extracting poisson-3 contours...
+INFO 14-07-22 11:46:54 Stored phrase contours to contours/cantus-antiphon-poisson-3-contours.csv.gz
+INFO 14-07-22 11:46:54 md5 checksum: b7a92a76ccb3c2341a0783d230a6f47b
+INFO 14-07-22 11:46:54 >  Removed 7893 duplicates; 2107 contours left.
+INFO 14-07-22 11:46:54 Stored shuffled outputs to contours/cantus-antiphon-poisson-3-contours-subsets.json
+INFO 14-07-22 11:46:54 md5 checksum: 10f221e8ca5374aa134313f717442779
+INFO 14-07-22 11:46:54 Extracting poisson-5 contours...
+INFO 14-07-22 11:46:57 Stored phrase contours to contours/cantus-antiphon-poisson-5-contours.csv.gz
+INFO 14-07-22 11:46:57 md5 checksum: 5c6d0c12dfe8830b88c7d2255c8c02fd
+INFO 14-07-22 11:46:57 >  Removed 4850 duplicates; 5150 contours left.
+INFO 14-07-22 11:46:58 Stored shuffled outputs to contours/cantus-antiphon-poisson-5-contours-subsets.json
+INFO 14-07-22 11:46:58 md5 checksum: 85a018d1c8faf4d2bb6c793253bb3b27
+INFO 14-07-22 11:46:58 Extracting poisson-7 contours...
+INFO 14-07-22 11:47:01 Stored phrase contours to contours/cantus-antiphon-poisson-7-contours.csv.gz
+INFO 14-07-22 11:47:01 md5 checksum: 631e43841800657a7c3ea88868cb0129
+INFO 14-07-22 11:47:01 >  Removed 2519 duplicates; 7481 contours left.
+INFO 14-07-22 11:47:01 Stored shuffled outputs to contours/cantus-antiphon-poisson-7-contours-subsets.json
+INFO 14-07-22 11:47:01 md5 checksum: a53aa848b973dbad8c51a259355e36c1
