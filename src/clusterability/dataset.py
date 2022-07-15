@@ -53,6 +53,7 @@ def save(obj: np.array, name: str, file: h5py.File, refresh: Optional[bool] = Fa
 class Dataset(object):
     def __init__(self, dataset: str, refresh: Optional[bool] = False):
         self.dataset = dataset
+        self._df = None
 
         # Load subsets
         indices_fn = os.path.join(CONTOUR_DIR, f"{dataset}-contours-indices.json")
@@ -61,21 +62,16 @@ class Dataset(object):
 
         # Load contours
         self.fn = os.path.join(SERIALIZED_DIR, f"{dataset}.h5")
-
-        self.log("Extracting contours and metadata columns.")
-        df_fn = os.path.join(CONTOUR_DIR, f"{self.dataset}-contours.csv.gz")
-        df = pd.read_csv(df_fn, index_col=0)
-        self.df = df
-
         with h5py.File(self.fn, "a") as file:
             if "contours" not in file.keys() or refresh:
-                contours = contour_array(df)
+                self.log("Extracting contours and metadata columns.")
+                contours = contour_array(self.df)
                 assert np.isinf(contours).any() == False
                 assert np.isnan(contours).any() == False
                 save(contours, "contours", file, refresh=refresh)
 
                 for col in ["tonic_krumhansl", "tonic_mode", "final", "unit_length"]:
-                    column = df[col].values
+                    column = self.df[col].values
                     # Sanity check: all cols except 'tonic_mode' are required
                     if col != "tonic_mode":
                         assert np.isnan(column).any() == False
@@ -90,6 +86,13 @@ class Dataset(object):
 
     def log(self, message):
         logging.info(f"[{self.dataset}] {message}")
+
+    @property
+    def df(self):
+        if self._df is None:
+            df_fn = os.path.join(CONTOUR_DIR, f"{self.dataset}-contours.csv.gz")
+            self._df = pd.read_csv(df_fn, index_col=0)
+        return self._df
 
     ### Subsets
 
@@ -374,5 +377,8 @@ class Dataset(object):
 
 
 if __name__ == "__main__":
-    dataset = Dataset("liber-antiphons-phrase")  # , refresh=True)
-    dataset.precompute_all()
+    dataset = Dataset('combined-phrase')
+    contours = dataset.representation('pitch_tonicized', limit=3000)
+    pass
+    # dataset = Dataset("liber-antiphons-phrase", refresh=True)
+    # dataset.precompute_all()

@@ -54,13 +54,12 @@ def repr_pitch_normalized(contours, **kwargs):
 
 
 def repr_pitch_tonicized(contours, tonic_krumhansl, tonic_mode, **kwargs):
-    """Center a contour around the tonic of the melody. If the dataframe has a
-    nonempty tonic_mode column, these tonics are used. Otherwise tonic_krumhansl
-    is used."""
-    if np.isnan(tonic_mode).all():
-        return contours - tonic_krumhansl[:, np.newaxis]
-    else:
-        return contours - tonic_mode[:, np.newaxis]
+    """Center a contour around the tonic of the melody. If the tonic_mode is not
+    null, that value is used. Otherwise tonic_krumhansl is used."""
+    tonics = tonic_mode
+    indices_without_mode, = np.where(np.isnan(tonic_mode))
+    tonics[indices_without_mode] = tonic_krumhansl[indices_without_mode]
+    return contours - tonics[:, np.newaxis]
 
 
 def repr_pitch_finalized(contours, final, **kwargs):
