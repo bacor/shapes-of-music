@@ -329,5 +329,5 @@ def main():
 
 if __name__ == "__main__":
     np.random.seed(123456)
-    # main()
-    generate_gregobase_contour_data('antiphons', num_samples=50)
+    main()
+    # generate_gregobase_contour_data('antiphons', num_samples=50)
