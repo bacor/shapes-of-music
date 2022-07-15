@@ -218,14 +218,15 @@ def generate_gregobase_contour_data(
     # Load GregoBase Corpus
     csv_dir = os.path.join(DATASETS_DIR, "gregobase", "csv")
     chants = pd.read_csv(os.path.join(csv_dir, "chants.csv"), index_col=0)
+    chants = chants[chants['mode'].isnull() == False]
     sources = pd.read_csv(os.path.join(csv_dir, "sources.csv"), index_col=0)
     chant_sources = pd.read_csv(os.path.join(csv_dir, "chant_sources.csv"))
 
     # Select the right subset
+    right_genre = chants.query(f"office_part == '{genre_key}'").index
+    logging.info(f"Number of {genre} in GregoBase: {len(right_genre)}")
     liber_usualis = chant_sources.query("source==3").chant_id
     logging.info(f"Number of chants in the liber usualis: {len(liber_usualis)}")
-    right_genre = chants.query(f"office_part == '{genre_key}'").index
-    logging.info(f"Number of {genre}: {len(right_genre)}")
     subset = right_genre.intersection(liber_usualis)
     logging.info(f"Number of {genre} in the Liber Usualis: {len(subset)}")
 
@@ -328,4 +329,5 @@ def main():
 
 if __name__ == "__main__":
     np.random.seed(123456)
-    main()
+    # main()
+    generate_gregobase_contour_data('antiphons', num_samples=50)

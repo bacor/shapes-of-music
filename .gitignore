@@ -1,7 +1,7 @@
-# Exclude the actual datasets
-datasets/
-GregoBaseMidi/
-old/ 
+# Only include gzipped csv files (.csv.gz)
+contours/*.csv
+
+# Exclude serialized data in hdf5 format
 serialized
 
 # Various
@@ -16,5 +16,3 @@ __pycache__/
 
 # R
 .RHistory
-
-data/

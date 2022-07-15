@@ -34,6 +34,5 @@ def main():
     dataset = Dataset(args.dataset)
     dataset.precompute_all()
 
-
 if __name__ == "__main__":
     main()

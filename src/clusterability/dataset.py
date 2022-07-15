@@ -61,16 +61,25 @@ class Dataset(object):
 
         # Load contours
         self.fn = os.path.join(SERIALIZED_DIR, f"{dataset}.h5")
+        
+        self.log("Extracting contours and metadata columns.")
+        df_fn = os.path.join(CONTOUR_DIR, f"{self.dataset}-contours.csv.gz")
+        df = pd.read_csv(df_fn, index_col=0)
+        self.df = df
+        
         with h5py.File(self.fn, "a") as file:
-            if "contours" not in file.keys():
-                self.log("Extracting contours and metadata columns.")
-                df_fn = os.path.join(CONTOUR_DIR, f"{self.dataset}-contours.csv.gz")
-                df = pd.read_csv(df_fn, index_col=0)
+            if "contours" not in file.keys() or refresh:
                 contours = contour_array(df)
+                assert np.isinf(contours).any() == False
+                assert np.isnan(contours).any() == False
                 save(contours, "contours", file, refresh=refresh)
 
                 for col in ["tonic_krumhansl", "tonic_mode", "final", "unit_length"]:
                     column = df[col].values
+                    # Sanity check: all cols except 'tonic_mode' are required
+                    if col != 'tonic_mode':
+                        assert np.isnan(column).any() == False
+                        assert np.isinf(column).any() == False
                     save(column, f"meta/{col}", file, refresh=refresh)
 
             self.num_contours = file["contours"].shape[0]
@@ -178,7 +187,6 @@ class Dataset(object):
             return np.zeros((0, self.num_samples))
         else:
             with h5py.File(self.fn, "r+") as file:
-                self.log(f"Computing representation {name}")
                 repr_fn = globals()[f"repr_{name}"]
                 contours = repr_fn(
                     file["contours"][index, :],
@@ -186,6 +194,8 @@ class Dataset(object):
                     tonic_krumhansl=file["meta/tonic_krumhansl"][index],
                     tonic_mode=file["meta/tonic_mode"][index],
                 )[:]
+                assert np.isinf(contours).any() == False
+                assert np.isnan(contours).any() == False
             return contours
 
     def similarities(
@@ -262,7 +272,8 @@ class Dataset(object):
             if name in file.keys() and not refresh:
                 similarities = file[name][:]
             else:
-                self.log(f"Computing dtw similarities and storing at {name}")
+                self.log(f"Computing DTW similarities:")
+                self.log(f"> name = {name}")
                 contours = self.representation(representation, **subset_kwargs)
                 if contours.shape[0] > 0:
                     similarities = cdist_dtw(
@@ -309,7 +320,9 @@ class Dataset(object):
                         margin = (sim.max() - sim.min()) * 0.05
                         xs = np.linspace(sim.min() - margin, sim.max() + margin, num_points)
                         ys = kde(xs)
-                    except np.linalg.LinAlgError as e:
+                    except Exception as e:
+                        S = squareform(sim)
+                        contours = self.representation(representation, **subset_kwargs)
                         logging.error(f'An error occured: {e}')
                         logging.error(f'Similarity matrix: {sim}')
                         error_occured = True                    
@@ -359,5 +372,5 @@ class Dataset(object):
 
 
 if __name__ == "__main__":
-    dataset = Dataset("creighton-phrase")
+    dataset = Dataset("liber-antiphons-phrase")#, refresh=True)
     dataset.precompute_all()
