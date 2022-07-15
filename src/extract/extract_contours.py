@@ -218,7 +218,7 @@ def generate_gregobase_contour_data(
     # Load GregoBase Corpus
     csv_dir = os.path.join(DATASETS_DIR, "gregobase", "csv")
     chants = pd.read_csv(os.path.join(csv_dir, "chants.csv"), index_col=0)
-    chants = chants[chants['mode'].isnull() == False]
+    chants = chants[chants["mode"].isnull() == False]
     sources = pd.read_csv(os.path.join(csv_dir, "sources.csv"), index_col=0)
     chant_sources = pd.read_csv(os.path.join(csv_dir, "chant_sources.csv"))
 

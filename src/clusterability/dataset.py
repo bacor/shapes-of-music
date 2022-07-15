@@ -61,12 +61,12 @@ class Dataset(object):
 
         # Load contours
         self.fn = os.path.join(SERIALIZED_DIR, f"{dataset}.h5")
-        
+
         self.log("Extracting contours and metadata columns.")
         df_fn = os.path.join(CONTOUR_DIR, f"{self.dataset}-contours.csv.gz")
         df = pd.read_csv(df_fn, index_col=0)
         self.df = df
-        
+
         with h5py.File(self.fn, "a") as file:
             if "contours" not in file.keys() or refresh:
                 contours = contour_array(df)
@@ -77,7 +77,7 @@ class Dataset(object):
                 for col in ["tonic_krumhansl", "tonic_mode", "final", "unit_length"]:
                     column = df[col].values
                     # Sanity check: all cols except 'tonic_mode' are required
-                    if col != 'tonic_mode':
+                    if col != "tonic_mode":
                         assert np.isnan(column).any() == False
                         assert np.isinf(column).any() == False
                     save(column, f"meta/{col}", file, refresh=refresh)
@@ -318,19 +318,21 @@ class Dataset(object):
                     try:
                         kde = gaussian_kde(sim)
                         margin = (sim.max() - sim.min()) * 0.05
-                        xs = np.linspace(sim.min() - margin, sim.max() + margin, num_points)
+                        xs = np.linspace(
+                            sim.min() - margin, sim.max() + margin, num_points
+                        )
                         ys = kde(xs)
                     except Exception as e:
                         S = squareform(sim)
                         contours = self.representation(representation, **subset_kwargs)
-                        logging.error(f'An error occured: {e}')
-                        logging.error(f'Similarity matrix: {sim}')
-                        error_occured = True                    
+                        logging.error(f"An error occured: {e}")
+                        logging.error(f"Similarity matrix: {sim}")
+                        error_occured = True
 
                 distribution = np.c_[xs, ys]
                 if serialize and not error_occured:
                     save(distribution, name, file, refresh=refresh)
-        
+
         if error_occured:
             return False
         else:
@@ -372,5 +374,5 @@ class Dataset(object):
 
 
 if __name__ == "__main__":
-    dataset = Dataset("liber-antiphons-phrase")#, refresh=True)
+    dataset = Dataset("liber-antiphons-phrase")  # , refresh=True)
     dataset.precompute_all()

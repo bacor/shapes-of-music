@@ -23,7 +23,8 @@ def main():
     args = parser.parse_args()
 
     log_fn = os.path.join(SERIALIZED_DIR, f"{args.dataset}.log")
-    logging.basicConfig(filename=log_fn, 
+    logging.basicConfig(
+        filename=log_fn,
         filemode="a",
         format="%(levelname)s %(asctime)s %(message)s",
         datefmt="%d-%m-%y %H:%M:%S",
@@ -33,6 +34,7 @@ def main():
 
     dataset = Dataset(args.dataset)
     dataset.precompute_all()
+
 
 if __name__ == "__main__":
     main()
