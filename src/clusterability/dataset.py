@@ -72,10 +72,6 @@ class Dataset(object):
 
                 for col in ["tonic_krumhansl", "tonic_mode", "final", "unit_length"]:
                     column = self.df[col].values
-                    # Sanity check: all cols except 'tonic_mode' are required
-                    if col != "tonic_mode":
-                        assert np.isnan(column).any() == False
-                        assert np.isinf(column).any() == False
                     save(column, f"meta/{col}", file, refresh=refresh)
 
             self.num_contours = file["contours"].shape[0]
@@ -377,8 +373,8 @@ class Dataset(object):
 
 
 if __name__ == "__main__":
-    dataset = Dataset("combined-phrase")
-    contours = dataset.representation("pitch_tonicized", limit=3000)
+    dataset = Dataset("markov", refresh=True)
+    contours = dataset.representation("pitch", limit=100)
     pass
     # dataset = Dataset("liber-antiphons-phrase", refresh=True)
     # dataset.precompute_all()
