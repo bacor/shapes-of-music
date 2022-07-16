@@ -1,0 +1,25 @@
+INFO 15-07-22 14:17:09 Generating contour dataset: combined-phrase
+INFO 15-07-22 14:17:09 Creating combined dataset {name} (sample_size={sample_size})
+INFO 15-07-22 14:17:09 > erk-phrase
+INFO 15-07-22 14:17:09 > boehme-phrase
+INFO 15-07-22 14:17:09 > creighton-phrase
+INFO 15-07-22 14:17:09 > han-phrase
+INFO 15-07-22 14:17:09 > shanxi-phrase
+INFO 15-07-22 14:17:09 > natmin-phrase
+INFO 15-07-22 14:17:09 > liber-antiphons-phrase
+INFO 15-07-22 14:17:09 > liber-responsories-phrase
+INFO 15-07-22 14:17:09 > liber-alleluias-phrase
+INFO 15-07-22 14:17:09 Sampled 1000 contours from dataset erk-phrase
+INFO 15-07-22 14:17:09 Sampled 1000 contours from dataset boehme-phrase
+INFO 15-07-22 14:17:09 Sampled 883 contours from dataset creighton-phrase
+INFO 15-07-22 14:17:09 Sampled 1000 contours from dataset han-phrase
+INFO 15-07-22 14:17:09 Sampled 1000 contours from dataset shanxi-phrase
+INFO 15-07-22 14:17:09 Sampled 1000 contours from dataset natmin-phrase
+INFO 15-07-22 14:17:09 Sampled 1000 contours from dataset liber-antiphons-phrase
+INFO 15-07-22 14:17:09 Sampled 901 contours from dataset liber-responsories-phrase
+INFO 15-07-22 14:17:09 Sampled 1000 contours from dataset liber-alleluias-phrase
+INFO 15-07-22 14:17:10 Stored combined contours to contours/combined-phrase-contours.csv.gz
+INFO 15-07-22 14:17:10 md5 checksum: 883d7f030cb318053d3cad64c81ca4fe
+INFO 15-07-22 14:17:10 >  Removed 827 duplicates; 7957 contours left.
+INFO 15-07-22 14:17:10 Stored shuffled outputs to contours/combined-phrase-contours-indices.json
+INFO 15-07-22 14:17:10 md5 checksum: cfb99b84a8e244735ae88e45b69b0c55

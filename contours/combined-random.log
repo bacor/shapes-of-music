@@ -1,0 +1,25 @@
+INFO 15-07-22 14:17:15 Generating contour dataset: combined-random
+INFO 15-07-22 14:17:15 Creating combined dataset {name} (sample_size={sample_size})
+INFO 15-07-22 14:17:15 > erk-random
+INFO 15-07-22 14:17:15 > boehme-random
+INFO 15-07-22 14:17:15 > creighton-random
+INFO 15-07-22 14:17:15 > han-random
+INFO 15-07-22 14:17:15 > shanxi-random
+INFO 15-07-22 14:17:15 > natmin-random
+INFO 15-07-22 14:17:15 > liber-antiphons-random
+INFO 15-07-22 14:17:15 > liber-responsories-random
+INFO 15-07-22 14:17:15 > liber-alleluias-random
+INFO 15-07-22 14:17:15 Sampled 1000 contours from dataset erk-random
+INFO 15-07-22 14:17:15 Sampled 1000 contours from dataset boehme-random
+INFO 15-07-22 14:17:15 Sampled 708 contours from dataset creighton-random
+INFO 15-07-22 14:17:15 Sampled 1000 contours from dataset han-random
+INFO 15-07-22 14:17:15 Sampled 1000 contours from dataset shanxi-random
+INFO 15-07-22 14:17:15 Sampled 890 contours from dataset natmin-random
+INFO 15-07-22 14:17:15 Sampled 1000 contours from dataset liber-antiphons-random
+INFO 15-07-22 14:17:15 Sampled 834 contours from dataset liber-responsories-random
+INFO 15-07-22 14:17:15 Sampled 1000 contours from dataset liber-alleluias-random
+INFO 15-07-22 14:17:16 Stored combined contours to contours/combined-random-contours.csv.gz
+INFO 15-07-22 14:17:16 md5 checksum: d0b746a33a565ce31c7a8340637cf663
+INFO 15-07-22 14:17:16 >  Removed 23 duplicates; 8409 contours left.
+INFO 15-07-22 14:17:16 Stored shuffled outputs to contours/combined-random-contours-indices.json
+INFO 15-07-22 14:17:16 md5 checksum: f6110e46b6dc939be8d0e6ba3369602f
