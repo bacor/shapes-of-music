@@ -125,8 +125,25 @@ class MarkovSynthesizer:
 
         # Collect in dataframe
         df = pd.DataFrame(contours, index=ids, columns=range(num_samples))
+        df.index.name = "contour_id"
+        df["song_id"] = None
+        df["unit_num"] = None
         df["unit_length"] = lengths
-        columns = ["unit_length"] + [i for i in range(num_samples)]
+        df["unit_duration"] = lengths
+        df["tonic_krumhansl"] = None
+        df["tonic_mode"] = None
+        df["final"] = contours[:, -1]
+        df["mode"] = None
+        columns = [
+            "song_id",
+            "unit_num",
+            "unit_length",
+            "unit_duration",
+            "tonic_krumhansl",
+            "tonic_mode",
+            "final",
+            "mode",
+        ] + [i for i in range(num_samples)]
         df = df.reindex(columns=columns)
         return df
 
