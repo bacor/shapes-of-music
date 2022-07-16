@@ -377,8 +377,8 @@ class Dataset(object):
 
 
 if __name__ == "__main__":
-    dataset = Dataset('combined-phrase')
-    contours = dataset.representation('pitch_tonicized', limit=3000)
+    dataset = Dataset("combined-phrase")
+    contours = dataset.representation("pitch_tonicized", limit=3000)
     pass
     # dataset = Dataset("liber-antiphons-phrase", refresh=True)
     # dataset.precompute_all()
