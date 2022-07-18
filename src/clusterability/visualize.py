@@ -217,58 +217,68 @@ def create_dtw_plot(dataset_id, limit: int = 500, refresh=False):
     output_dir = os.path.join(FIGURES_DIR, "fig-umap-sideplot", dataset_id)
 
     for representation, metrics in CONDITIONS.items():
-        if 'dtw' not in metrics: continue
+        if "dtw" not in metrics:
+            continue
         for length in PRECOMPUTED_LENGTHS:
 
             # Output file
             plot_fn = os.path.join(
-                output_dir, representation,
+                output_dir,
+                representation,
                 f"{dataset_id}-{representation}-DTW-length{length}.pdf",
             )
             directory = os.path.dirname(plot_fn)
             if not os.path.exists(directory):
                 os.makedirs(directory)
             if os.path.exists(plot_fn) and not refresh:
-                print(f'Skipping {relpath(plot_fn)}')
+                print(f"Skipping {relpath(plot_fn)}")
                 continue
-            
+
             try:
                 dataset = Dataset(dataset_id)
                 sims = dataset.similarities(
-                    representation, metric='dtw', limit=limit, length=length, 
-                    unique=False
+                    representation,
+                    metric="dtw",
+                    limit=limit,
+                    length=length,
+                    unique=False,
                 )
 
                 # UMAP
-                mapper = umap.UMAP(random_state=0, metric='precomputed')
+                mapper = umap.UMAP(random_state=0, metric="precomputed")
                 mapper.fit(squareform(sims))
-                
+
                 # Plot
                 fig = plt.figure(figsize=(16, 8), tight_layout=True)
                 umap.plot.points(mapper)
-                title = f"{dataset_id}, representation={representation}, length={length}\n"
+                title = (
+                    f"{dataset_id}, representation={representation}, length={length}\n"
+                )
                 fig.suptitle(title, fontweight="bold")
                 plt.savefig(plot_fn)
-                
+
             except Exception as e:
-                print(f'An error occured: {e}')
-                print(f'> dataset={dataset_id}, repres={representation}, length={length}')
+                print(f"An error occured: {e}")
+                print(
+                    f"> dataset={dataset_id}, repres={representation}, length={length}"
+                )
 
 
 def create_side_plot(dataset_id, limit: int = 5000, refresh=False):
     output_dir = os.path.join(FIGURES_DIR, "fig-umap-sideplot", dataset_id)
     for representation, length in product(PRECOMPUTED_CONDITIONS, PRECOMPUTED_LENGTHS):
-        
+
         # Output file
         plot_fn = os.path.join(
-            output_dir, representation,
+            output_dir,
+            representation,
             f"{dataset_id}-{representation}-length{length}.pdf",
         )
         directory = os.path.dirname(plot_fn)
         if not os.path.exists(directory):
             os.makedirs(directory)
         if os.path.exists(plot_fn) and not refresh:
-            print(f'Skipping {relpath(plot_fn)}')
+            print(f"Skipping {relpath(plot_fn)}")
             continue
 
         try:
@@ -288,8 +298,8 @@ def create_side_plot(dataset_id, limit: int = 5000, refresh=False):
                 mapper.inverse_transform, gridpoints, num_samples=20, eps=0.3
             )
 
-            # for cosine contours show existing 
-            if representation == 'cosine':
+            # for cosine contours show existing
+            if representation == "cosine":
                 inv_contours = idct(inv_contours, axis=0)
 
             # Plot
@@ -300,8 +310,9 @@ def create_side_plot(dataset_id, limit: int = 5000, refresh=False):
             plt.savefig(plot_fn)
 
         except Exception as e:
-            print(f'An error occured: {e}')
-            print(f'> dataset={dataset_id}, repres={representation}, length={length}')
+            print(f"An error occured: {e}")
+            print(f"> dataset={dataset_id}, repres={representation}, length={length}")
+
 
 def main():
     import argparse
