@@ -298,9 +298,11 @@ def create_side_plot(dataset_id, limit: int = 5000, refresh=False):
                 mapper.inverse_transform, gridpoints, num_samples=20, eps=0.3
             )
 
-            # for cosine contours show existing
+            # Inverse operations
             if representation == "cosine":
-                inv_contours = idct(inv_contours, axis=0)
+                inv_contours = idct(inv_contours, axis=1)
+            elif representation in ["interval", "smooth_derivative"]:
+                inv_contours = np.cumsum(inv_contours, axis=1)
 
             # Plot
             fig = plt.figure(figsize=(16, 8), tight_layout=True)
