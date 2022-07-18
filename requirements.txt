@@ -10,6 +10,8 @@ tslearn==0.5.2
 chant21===0.4.6
 music21==5.7.2
 
+unidip
+
 # Development
 jupyter==1.0.0
 jupyterlab==1.2.6
