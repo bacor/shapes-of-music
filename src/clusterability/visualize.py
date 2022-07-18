@@ -214,7 +214,7 @@ def show_side_plot(
 
 
 def create_dtw_plot(dataset_id, limit: int = 500, refresh=False):
-    output_dir = os.path.join(FIGURES_DIR, "fig-umap-sideplot", dataset_id)
+    output_dir = os.path.join(FIGURES_DIR, "fig-umap-dtwplot", dataset_id)
 
     for representation, metrics in CONDITIONS.items():
         if "dtw" not in metrics:
