@@ -11,6 +11,8 @@ chant21===0.4.6
 music21==5.7.2
 
 unidip
+matplotlib
+umap-learn
 
 # Development
 jupyter==1.0.0

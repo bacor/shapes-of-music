@@ -193,8 +193,10 @@ class Dataset(object):
                     tonic_krumhansl=file["meta/tonic_krumhansl"][index],
                     tonic_mode=file["meta/tonic_mode"][index],
                 )[:]
-                assert np.isinf(contours).any() == False
-                assert np.isnan(contours).any() == False
+                if np.isinf(contours).any():
+                    logging.warn("Some contours contain np.inf")
+                if np.isinf(contours).any():
+                    logging.warn("Some contours contain np.nan")
             return contours
 
     def similarities(
@@ -324,6 +326,7 @@ class Dataset(object):
                     except Exception as e:
                         S = squareform(sim)
                         contours = self.representation(representation, **subset_kwargs)
+
                         logging.error(f"An error occured: {e}")
                         logging.error(f"Similarity matrix: {sim}")
                         error_occured = True
@@ -360,6 +363,12 @@ class Dataset(object):
             PRECOMPUTED_LENGTHS,
             [True, False],
         ):
+            # Hacky, but skip these
+            if (
+                self.dataset == "markov" or self.dataset == "binom"
+            ) and repres == "pitch_tonicized":
+                continue
+
             settings = dict(
                 representation=repres,
                 metric=metric,
