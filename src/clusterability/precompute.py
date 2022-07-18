@@ -37,6 +37,4 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    dataset = Dataset('markov')
-    dataset.precompute_all()
+    main()
