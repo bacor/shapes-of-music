@@ -164,6 +164,11 @@ class Dataset(object):
         subset_index = self.subset_index(**subset_kwargs)
         return len(subset_index)
 
+    def subset_column(self, column: str, **subset_kwargs):
+        index = self.subset_index(**subset_kwargs)
+        column = self.df[column].values
+        return column[index]
+
     def representation(self, name: str, **subset_kwargs) -> np.array:
         """Return an array of contours in a certain representation. You can pass
         keyword arguments to select a particular subset of contours.
