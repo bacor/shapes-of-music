@@ -9,3 +9,5 @@ DATASETS_DIR = os.path.abspath(
 CONTOUR_DIR = os.path.join(ROOT_DIR, "contours")
 
 SERIALIZED_DIR = os.path.join(ROOT_DIR, "serialized")
+
+FIGURES_DIR = os.path.join(ROOT_DIR, "figures")

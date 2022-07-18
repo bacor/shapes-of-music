@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,8 +8,11 @@ import umap.plot
 
 from itertools import product
 from scipy.spatial import ConvexHull
+from scipy.spatial.distance import squareform
 from matplotlib.path import Path
 from matplotlib.gridspec import GridSpec
+from ..config import FIGURES_DIR
+from .dataset import CONDITIONS, PRECOMPUTED_CONDITIONS, PRECOMPUTED_LENGTHS, Dataset
 
 
 def average_inv_contours(inverse_fn, points, num_samples=5, eps=0.1):
@@ -186,7 +190,7 @@ def show_side_plot(
     scatter_ax.scatter(
         gridpoints[inside == False, 0],
         gridpoints[inside == False, 1],
-        **_outside_marker_kws
+        **_outside_marker_kws,
     )
 
     # Reshape everything to subdiv x subdiv grid
@@ -207,7 +211,70 @@ def show_side_plot(
                 ax.plot(inv_contours[i, j], **_plot_kws)
 
 
-# def plot_dataset():
-#     dataset = Dataset('markov')
-#     markov_contours = markov.representation('pitch_centered', limit=5000)
-#     markov_mapper = umap.UMAP().fit(markov_contours)
+def side_plot(contours, title=None):
+    mapper = umap.UMAP().fit(contours)
+    gridpoints, inside = grid_around_points(mapper.embedding_, subdiv=10, margin=0.1)
+    inv_contours = mapper.inverse_transform(gridpoints)
+    fig = plt.figure(figsize=(16, 8), tight_layout=True)
+    show_side_plot(mapper, gridpoints, inside, inv_contours)
+    if title is not None:
+        fig.supplot(title, fontweight="bold")
+
+    return mapper, gridpoints, inside, inv_contours
+
+
+def create_side_plot(dataset_id, limit: int = 5000):
+    for representation, length in product(PRECOMPUTED_CONDITIONS, PRECOMPUTED_LENGTHS):
+        dataset = Dataset(dataset_id)
+        contours = dataset.representation(
+            representation, limit=limit, length=length, unique=False
+        )
+
+        # UMAP
+        mapper = umap.UMAP(random_state=0).fit(contours)
+        gridpoints, inside = grid_around_points(
+            mapper.embedding_, subdiv=10, margin=0.1
+        )
+        # inv_contours = mapper.inverse_transform(gridpoints)
+        inv_contours = average_inv_contours(
+            mapper.inverse_transform, gridpoints, num_samples=20, eps=0.3
+        )
+
+        # Plot
+        fig = plt.figure(figsize=(16, 8), tight_layout=True)
+        show_side_plot(mapper, gridpoints, inside, inv_contours)
+        title = f"{dataset_id}, representation={representation}, length={length}\n"
+        fig.suptitle(title, fontweight="bold")
+
+        # Save figure
+        plot_fn = os.path.join(
+            FIGURES_DIR,
+            "fig-umap-sideplot",
+            dataset_id,
+            representation,
+            f"{dataset_id}-{representation}-length{length}.pdf",
+        )
+        directory = os.path.dirname(plot_fn)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        plt.savefig(plot_fn)
+
+
+def main():
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="Precompute all similarity scores and so on"
+    )
+    parser.add_argument("plot", type=str, help="Plot type")
+    parser.add_argument("dataset", type=str, help="ID of the dataset to visualize")
+    args = parser.parse_args()
+
+    if args.plot == "sideplot":
+        create_side_plot(args.dataset)
+    else:
+        raise ValueError("Unknown plot type")
+
+
+if __name__ == "__main__":
+    main()

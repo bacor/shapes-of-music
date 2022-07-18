@@ -16,3 +16,6 @@ __pycache__/
 
 # R
 .RHistory
+
+# A lot of figures...
+figures/fig-umap*
