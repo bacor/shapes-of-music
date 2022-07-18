@@ -266,7 +266,7 @@ def create_dtw_plot(dataset_id, limit: int = 500, refresh=False):
 
 def create_side_plot(dataset_id, limit: int = 5000, refresh=False):
     output_dir = os.path.join(FIGURES_DIR, "fig-umap-sideplot", dataset_id)
-    for representation, length in product(PRECOMPUTED_CONDITIONS, PRECOMPUTED_LENGTHS):
+    for representation, length in product(CONDITIONS.keys(), PRECOMPUTED_LENGTHS):
 
         # Output file
         plot_fn = os.path.join(
