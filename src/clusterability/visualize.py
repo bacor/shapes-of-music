@@ -231,23 +231,28 @@ def create_dtw_plot(dataset_id, limit: int = 500, refresh=False):
             if os.path.exists(plot_fn) and not refresh:
                 print(f'Skipping {relpath(plot_fn)}')
                 continue
-
-            dataset = Dataset(dataset_id)
-            sims = dataset.similarities(
-                representation, metric='dtw', limit=limit, length=length, 
-                unique=False
-            )
-
-            # UMAP
-            mapper = umap.UMAP(random_state=0, metric='precomputed')
-            mapper.fit(squareform(sims))
             
-            # Plot
-            fig = plt.figure(figsize=(16, 8), tight_layout=True)
-            umap.plot.points(mapper)
-            title = f"{dataset_id}, representation={representation}, length={length}\n"
-            fig.suptitle(title, fontweight="bold")
-            plt.savefig(plot_fn)
+            try:
+                dataset = Dataset(dataset_id)
+                sims = dataset.similarities(
+                    representation, metric='dtw', limit=limit, length=length, 
+                    unique=False
+                )
+
+                # UMAP
+                mapper = umap.UMAP(random_state=0, metric='precomputed')
+                mapper.fit(squareform(sims))
+                
+                # Plot
+                fig = plt.figure(figsize=(16, 8), tight_layout=True)
+                umap.plot.points(mapper)
+                title = f"{dataset_id}, representation={representation}, length={length}\n"
+                fig.suptitle(title, fontweight="bold")
+                plt.savefig(plot_fn)
+                
+            except Exception as e:
+                print(f'An error occured: {e}')
+                print(f'> dataset={dataset_id}, repres={representation}, length={length}')
 
 
 def create_side_plot(dataset_id, limit: int = 5000, refresh=False):
@@ -296,6 +301,7 @@ def create_side_plot(dataset_id, limit: int = 5000, refresh=False):
 
         except Exception as e:
             print(f'An error occured: {e}')
+            print(f'> dataset={dataset_id}, repres={representation}, length={length}')
 
 def main():
     import argparse
