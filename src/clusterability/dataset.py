@@ -11,6 +11,8 @@ from scipy.spatial.distance import pdist, squareform
 from tslearn.metrics import cdist_dtw
 from scipy.stats import gaussian_kde
 
+from unidip.dip import dip_fn, diptst
+
 from ..config import CONTOUR_DIR, SERIALIZED_DIR
 from .representations import *
 from .representations import contour_array
@@ -28,8 +30,8 @@ CONDITIONS = {
 PRECOMPUTED_CONDITIONS = [c for c in CONDITIONS.keys() if c != "cosine"]
 PRECOMPUTED_METRICS = ["dtw"]
 PRECOMPUTED_LENGTHS = [None, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20]
-PRECOMPUTED_LIMIT = 500
-
+PRECOMPUTED_DTW_LIMIT = 500
+PRECOMPUTED_EUCL_LIMIT = 2000
 
 def save(obj: np.array, name: str, file: h5py.File, refresh: Optional[bool] = False):
     """Save an numpy array to a hdf5 file
@@ -355,11 +357,43 @@ class Dataset(object):
     #         if "kde" in file.keys():
     #             del file["kde"]
 
-    # def hartigans_dip(self, *args, **kwargs, refresh=False):
-    #     sim = self.similarities(*args, **kwargs)
-    #     with h5py.File(self.fn, 'a') as file:
-    #         subset_name = self.subset_name(**subset_kwargs)
-    #         name = f'kde/{representation}/{metric}/{subset_name}'
+    def dist_dip_test(
+        self, representation: str, metric: str, refresh: Optional[bool] = False, serialize: Optional[bool] = True, num_tests: Optional[int] = 2000, **subset_kwargs
+    ) -> Dict:
+        subset_name = self.subset_name(**subset_kwargs)
+        base = f"dist_dip_test/{representation}/{metric}/{subset_name}"
+        keys = ["dip", "pval", "left", "right", "xs", "cdf"]
+        with h5py.File(self.fn, "r+") as file:
+            all_exists = np.all([f"{base}/{key}" in file.keys() for key in keys])
+            if all_exists and not refresh:
+                results = dict(
+                    dip=file[f'{base}/dip'][0], 
+                    pval=file[f'{base}/pval'][0], 
+                    left=file[f'{base}/left'][0], 
+                    right=file[f'{base}/right'][0],
+                    xs=file[f'{base}/xs'][:],
+                    cdf=file[f'{base}/cdf'][:]
+                )
+
+            else:
+                sim = self.similarities(representation, metric, **subset_kwargs)
+
+                # Compute dip and perform dip test on pairwise similarities
+                _, (cdf, xs, _, _, _, _) = dip_fn(sim)
+                dip, pval, (left, right) = diptst(sim, is_hist=False, numt=num_tests)
+                results = dict(
+                    dip=np.array([dip]), 
+                    pval=np.array([pval]), 
+                    left=np.array([left], dtype=int), 
+                    right=np.array([right], dtype=int), 
+                    xs=xs, 
+                    cdf=cdf
+                )
+                if serialize:
+                    for key, value in results.items():
+                        save(value, f"{base}/{key}", file, refresh=refresh)
+
+        return results
 
     def precompute_all(self, refresh: Optional[bool] = False):
         for repres, metric, length, unique in product(
@@ -379,16 +413,29 @@ class Dataset(object):
                 metric=metric,
                 unique=unique,
                 length=length,
-                limit=PRECOMPUTED_LIMIT,
+                limit=PRECOMPUTED_DTW_LIMIT,
                 refresh=refresh,
             )
             self.similarities(**settings)
             self.similarity_kde(**settings)
 
+        for repres, metrics in CONDITIONS.items():
+            for metric, length, unique in product(metrics, PRECOMPUTED_LENGTHS, [True, False]):
+                settings = dict(
+                    representation=repres,
+                    metric=metric,
+                    unique=unique,
+                    length=length,
+                    limit=PRECOMPUTED_DTW_LIMIT if metric == 'dtw' else PRECOMPUTED_EUCL_LIMIT,
+                    refresh=refresh
+                )
+                self.dist_dip_test(**settings)
+
 
 if __name__ == "__main__":
     dataset = Dataset("markov", refresh=True)
-    contours = dataset.representation("pitch", limit=100)
-    pass
+    # contours = dataset.representation("pitch", limit=100)
+    # dataset.dist_dip_test('pitch', 'eucl', limit=20, refresh=True)
+    # pass
     # dataset = Dataset("liber-antiphons-phrase", refresh=True)
-    # dataset.precompute_all()
+    dataset.precompute_all()
