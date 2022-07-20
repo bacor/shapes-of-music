@@ -371,8 +371,8 @@ class Dataset(object):
         base = f"dist_dip_test/{representation}/{metric}/{subset_name}"
         keys = ["dip", "pval", "left", "right", "xs", "cdf"]
         with h5py.File(self.fn, "r+") as file:
-            all_exists = np.all([f"{base}/{key}" in file.keys() for key in keys])
-            if all_exists and not refresh:
+            keys_exists = [f"{base}/{key}" in file.keys() for key in keys]
+            if np.all(keys_exists) and not refresh:
                 results = dict(
                     dip=file[f"{base}/dip"][0],
                     pval=file[f"{base}/pval"][0],
@@ -409,6 +409,8 @@ class Dataset(object):
                     cdf=cdf,
                 )
                 if serialize:
+                    # If some keys exist, but not all, refresh
+                    refresh = True in keys_exists
                     try:
                         for key, value in results.items():
                             save(value, f"{base}/{key}", file, refresh=refresh)
