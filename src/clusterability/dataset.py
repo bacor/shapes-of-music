@@ -33,6 +33,7 @@ PRECOMPUTED_LENGTHS = [None, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20]
 PRECOMPUTED_DTW_LIMIT = 500
 PRECOMPUTED_EUCL_LIMIT = 2000
 
+
 def save(obj: np.array, name: str, file: h5py.File, refresh: Optional[bool] = False):
     """Save an numpy array to a hdf5 file
 
@@ -358,7 +359,13 @@ class Dataset(object):
     #             del file["kde"]
 
     def dist_dip_test(
-        self, representation: str, metric: str, refresh: Optional[bool] = False, serialize: Optional[bool] = True, num_tests: Optional[int] = 2000, **subset_kwargs
+        self,
+        representation: str,
+        metric: str,
+        refresh: Optional[bool] = False,
+        serialize: Optional[bool] = True,
+        num_tests: Optional[int] = 2000,
+        **subset_kwargs,
     ) -> Dict:
         subset_name = self.subset_name(**subset_kwargs)
         base = f"dist_dip_test/{representation}/{metric}/{subset_name}"
@@ -367,27 +374,38 @@ class Dataset(object):
             all_exists = np.all([f"{base}/{key}" in file.keys() for key in keys])
             if all_exists and not refresh:
                 results = dict(
-                    dip=file[f'{base}/dip'][0], 
-                    pval=file[f'{base}/pval'][0], 
-                    left=file[f'{base}/left'][0], 
-                    right=file[f'{base}/right'][0],
-                    xs=file[f'{base}/xs'][:],
-                    cdf=file[f'{base}/cdf'][:]
+                    dip=file[f"{base}/dip"][0],
+                    pval=file[f"{base}/pval"][0],
+                    left=file[f"{base}/left"][0],
+                    right=file[f"{base}/right"][0],
+                    xs=file[f"{base}/xs"][:],
+                    cdf=file[f"{base}/cdf"][:],
                 )
 
             else:
+                self.log(f"Performing dist-dip test")
                 sim = self.similarities(representation, metric, **subset_kwargs)
+                try:
+                    _, (cdf, xs, _, _, _, _) = dip_fn(sim)
+                    dip, pval, (left, right) = diptst(
+                        sim, is_hist=False, numt=num_tests
+                    )
+                except Exception as e:
+                    self.log("ERROR: an error occured: {e}")
+                    dip = np.nan
+                    pval = np.nan
+                    left = np.nan
+                    right = np.nan
+                    xs = np.array([])
+                    cdf = np.array([])
 
-                # Compute dip and perform dip test on pairwise similarities
-                _, (cdf, xs, _, _, _, _) = dip_fn(sim)
-                dip, pval, (left, right) = diptst(sim, is_hist=False, numt=num_tests)
                 results = dict(
-                    dip=np.array([dip]), 
-                    pval=np.array([pval]), 
-                    left=np.array([left], dtype=int), 
-                    right=np.array([right], dtype=int), 
-                    xs=xs, 
-                    cdf=cdf
+                    dip=np.array([dip]),
+                    pval=np.array([pval]),
+                    left=np.array([left], dtype=int),
+                    right=np.array([right], dtype=int),
+                    xs=xs,
+                    cdf=cdf,
                 )
                 if serialize:
                     for key, value in results.items():
@@ -420,14 +438,18 @@ class Dataset(object):
             self.similarity_kde(**settings)
 
         for repres, metrics in CONDITIONS.items():
-            for metric, length, unique in product(metrics, PRECOMPUTED_LENGTHS, [True, False]):
+            for metric, length, unique in product(
+                metrics, PRECOMPUTED_LENGTHS, [True, False]
+            ):
                 settings = dict(
                     representation=repres,
                     metric=metric,
                     unique=unique,
                     length=length,
-                    limit=PRECOMPUTED_DTW_LIMIT if metric == 'dtw' else PRECOMPUTED_EUCL_LIMIT,
-                    refresh=refresh
+                    limit=PRECOMPUTED_DTW_LIMIT
+                    if metric == "dtw"
+                    else PRECOMPUTED_EUCL_LIMIT,
+                    refresh=refresh,
                 )
                 self.dist_dip_test(**settings)
 
