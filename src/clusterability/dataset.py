@@ -403,8 +403,8 @@ class Dataset(object):
                 results = dict(
                     dip=np.array([dip]),
                     pval=np.array([pval]),
-                    left=np.array([left], dtype=int),
-                    right=np.array([right], dtype=int),
+                    left=np.array([left]),
+                    right=np.array([right]),
                     xs=xs,
                     cdf=cdf,
                 )
