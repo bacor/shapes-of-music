@@ -272,6 +272,7 @@ class Dataset(object):
         serialize: Optional[bool] = True,
         global_constraint: Optional[str] = "sakoe_chiba",
         sakoe_chiba_radius: Optional[float] = 20,
+        njobs=4,
         **subset_kwargs,
     ):
         """"""
@@ -289,6 +290,7 @@ class Dataset(object):
                         contours,
                         global_constraint=global_constraint,
                         sakoe_chiba_radius=sakoe_chiba_radius,
+                        njobs=njobs,
                     )
                     similarities = squareform(similarities)
                 else:
@@ -365,6 +367,7 @@ class Dataset(object):
         refresh: Optional[bool] = False,
         serialize: Optional[bool] = True,
         num_tests: Optional[int] = 2000,
+        read_only: Optional[bool] = False,
         **subset_kwargs,
     ) -> Dict:
         subset_name = self.subset_name(**subset_kwargs)
@@ -381,10 +384,13 @@ class Dataset(object):
                     xs=file[f"{base}/xs"][:],
                     cdf=file[f"{base}/cdf"][:],
                 )
-
+            elif read_only:
+                return False
             else:
                 self.log(f"Performing dist-dip test")
-                self.log(f"> representation={representation}, metric={metric}, subset={subset_name}")
+                self.log(
+                    f"> representation={representation}, metric={metric}, subset={subset_name}"
+                )
                 sim = self.similarities(representation, metric, **subset_kwargs)
                 try:
                     _, (cdf, xs, _, _, _, _) = dip_fn(sim)
@@ -462,8 +468,8 @@ class Dataset(object):
 
 if __name__ == "__main__":
     dataset = Dataset("markov", refresh=True)
-    # contours = dataset.representation("pitch", limit=100)
-    # dataset.dist_dip_test('pitch', 'eucl', limit=20, refresh=True)
+    contours = dataset.representation("pitch", limit=100)
+    dataset.dist_dip_test("pitch", "eucl", limit=20, refresh=True)
     # pass
     # dataset = Dataset("liber-antiphons-phrase", refresh=True)
-    dataset.precompute_all()
+    # dataset.precompute_all()
