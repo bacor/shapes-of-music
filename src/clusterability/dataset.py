@@ -384,6 +384,7 @@ class Dataset(object):
 
             else:
                 self.log(f"Performing dist-dip test")
+                self.log(f"> representation={representation}, metric={metric}, subset={subset_name}")
                 sim = self.similarities(representation, metric, **subset_kwargs)
                 try:
                     _, (cdf, xs, _, _, _, _) = dip_fn(sim)
