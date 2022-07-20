@@ -391,7 +391,7 @@ class Dataset(object):
                         sim, is_hist=False, numt=num_tests
                     )
                 except Exception as e:
-                    self.log("ERROR: an error occured: {e}")
+                    self.log(f"ERROR: an error occured: {e}")
                     dip = np.nan
                     pval = np.nan
                     left = np.nan
@@ -408,8 +408,11 @@ class Dataset(object):
                     cdf=cdf,
                 )
                 if serialize:
-                    for key, value in results.items():
-                        save(value, f"{base}/{key}", file, refresh=refresh)
+                    try:
+                        for key, value in results.items():
+                            save(value, f"{base}/{key}", file, refresh=refresh)
+                    except Exception as e:
+                        self.log(f"Could not store results: {e}")
 
         return results
 
