@@ -9,8 +9,8 @@
 import unittest
 import os
 from music21 import humdrum
-from src.extract.phrases import extract_phrases_from_spine
-from src.extract.phrases import extract_phrases_from_kern_file
+from src.preprocess.phrases import extract_phrases_from_spine
+from src.preprocess.phrases import extract_phrases_from_kern_file
 
 
 class TestKernPhraseExtraction(unittest.TestCase):

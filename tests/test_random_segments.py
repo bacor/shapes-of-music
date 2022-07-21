@@ -9,8 +9,8 @@
 import unittest
 import os
 import numpy as np
-from src.extract.random_segments import poisson_segmentation
-from src.extract.random_segments import extract_random_segments_from_file
+from src.preprocess.random_segments import poisson_segmentation
+from src.preprocess.random_segments import extract_random_segments_from_file
 
 
 class TestPoissonSegmentation(unittest.TestCase):
