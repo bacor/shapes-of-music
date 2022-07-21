@@ -195,9 +195,10 @@ unvalidated_conditions = {
 for dataset, condititions in unvalidated_conditions.items():
     unvalidated_conditions[dataset] = deepcopy(condititions)
     for cond in unvalidated_conditions[dataset]:
-        cond['dataset'] = dataset
+        cond["dataset"] = dataset
 
 # Validate those conditions
+
 
 def validate_condition(condition: Dict) -> Dict:
     """Check if a condition is valid"""
@@ -206,6 +207,7 @@ def validate_condition(condition: Dict) -> Dict:
         if np.all(test):
             return False
     return True
+
 
 CONDITIONS_PER_DATASET = {}
 for dataset, conditions in unvalidated_conditions.items():

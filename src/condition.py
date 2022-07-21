@@ -273,7 +273,7 @@ class Condition(object):
     def hash(self) -> str:
         """Compute a hash string from the path."""
         slug = "-".join(self.path())
-        hash = md5(slug.encode('utf-8')).hexdigest()
+        hash = md5(slug.encode("utf-8")).hexdigest()
         return hash
 
     def log(self, message: str):

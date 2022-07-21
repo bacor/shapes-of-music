@@ -11,6 +11,7 @@ def task_all(conditions):
         condition.kde_similarities()
         condition.umap_plot()
 
+
 def task_essential(conditions):
     for condition in conditions:
         condition = Condition(**condition, log=True)
@@ -54,6 +55,24 @@ TASKS = {
 }
 
 
+def run_task(task, dataset):
+    # Validate inputs
+    if task not in TASKS.keys():
+        raise ValueError(
+            f'Unknown task "{task}". Choose one of: {", ".join(TASKS.keys())}'
+        )
+    if dataset not in DATASETS:
+        raise ValueError(f'Unknown dataset "{dataset}"')
+
+    # Collect all conditions
+    conditions = CONDITIONS_PER_DATASET[dataset]
+    print(f'> Performing task "{task}" for dataset {dataset} ({len(conditions)} conditions)')
+
+    # Run!
+    task_fn = TASKS[task]
+    task_fn(conditions)
+
+
 def main():
     import argparse
 
@@ -66,19 +85,42 @@ def main():
     )
     args = parser.parse_args()
 
-    # Validate inputs
-    if args.task not in TASKS.keys():
-        raise ValueError(
-            f'Unknown task "{args.task}". Choose one of: {", ".join(TASKS.keys())}'
-        )
-    if args.dataset not in DATASETS:
-        raise ValueError(f'Unknown dataset "{args.dataset}"')
+    if args.dataset == "combined":
+        run_task(args.task, "combined-phrase")
+        run_task(args.task, "combined-random")
 
-    # Collect all conditions
-    conditions = CONDITIONS_PER_DATASET[args.dataset]
-    print(f'> Performing task "{args.task}" for {len(conditions)} conditions.')
-    task_fn = TASKS[args.task]
-    task_fn(conditions)
+    elif args.dataset == "synthetic":
+        run_task(args.task, "markov")
+        run_task(args.task, "binom")
+
+    elif args.dataset == "western":
+        run_task(args.task, "erk-phrase")
+        run_task(args.task, "erk-random")
+        run_task(args.task, "boehme-phrase")
+        run_task(args.task, "boehme-random")
+        run_task(args.task, "creighton-phrase")
+        run_task(args.task, "creighton-random")
+
+    elif args.dataset == "chinese":
+        run_task(args.task, "han-phrase")
+        run_task(args.task, "han-random")
+        run_task(args.task, "natmin-phrase")
+        run_task(args.task, "natmin-random")
+        run_task(args.task, "shanxi-phrase")
+        run_task(args.task, "shanxi-random")
+
+    elif args.dataset == "liber":
+        for dataset in DATASETS:
+            if dataset.startswith("liber"):
+                run_task(args.task, dataset)
+
+    elif args.dataset == "cantus":
+        for dataset in DATASETS:
+            if dataset.startswith("cantus"):
+                run_task(args.task, dataset)
+
+    else:
+        run_task(args.task, args.dataset)
 
 
 if __name__ == "__main__":
