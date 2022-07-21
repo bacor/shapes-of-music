@@ -1,3 +1,4 @@
+from multiprocessing.sharedctypes import Value
 import os
 import logging
 import json
@@ -128,7 +129,17 @@ class Dataset(object):
                 subpath = f"{path}/{key}"
                 if refresh and subpath in file.keys():
                     del file[subpath]
-                file.create_dataset(subpath, value.shape, value.dtype, value)
+                if value is None:
+                    value = np.nan
+                if np.isscalar(value):
+                    file.create_dataset(subpath, (), type(value), value)
+                elif isinstance(value, np.ndarray):
+                    file.create_dataset(subpath, value.shape, value.dtype, value)
+                else:
+                    raise ValueError(
+                        f"Cannot store an object of type {type(value)}. "
+                        "Only scalars and numpy arrays are supported."
+                    )
 
     def load(self, path: str) -> dict:
         """Loads a dictionary stored to the hd5 store
@@ -146,7 +157,12 @@ class Dataset(object):
         output = dict()
         with h5py.File(self.fn, "r") as file:
             for key in file[path].keys():
-                output[key] = file[path][key][:]
+                field = file[path][key]
+                if field.shape == ():
+                    # It is a scalar!
+                    output[key] = field[()]
+                else:
+                    output[key] = field[:]
         return output
 
     ### Subsets

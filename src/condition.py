@@ -1,18 +1,36 @@
 import os
 import logging
 from functools import wraps
-from typing import Callable, List, Optional, Dict, Union
+from typing import Callable, List, Optional, Dict, Union, Tuple
 
+from hashlib import md5
 import numpy as np
 from scipy.spatial.distance import pdist, squareform
 from scipy.stats import gaussian_kde
 from tslearn.metrics import cdist_dtw
 from unidip.dip import dip_fn, diptst
+from tableone.modality import (
+    cum_distr,
+    dip_and_closest_unimodal_from_cdf,
+    dip_pval_tabinterpol,
+)
+
+import matplotlib.pyplot as plt
+import umap
+from scipy.fft import idct
+
+from src import representations
+
+from .visualize import (
+    average_inv_contours,
+    grid_around_points,
+    show_umap_sideplot,
+    show_umap_plot,
+)
 
 from .config import (
     FIGURES_DIR,
     ALL_METRICS,
-    CONDITIONS_PER_DATASET,
     METRIC_LIMITS,
     MIN_CONTOUR_COUNT,
     validate_condition,
@@ -189,7 +207,8 @@ class Condition(object):
             )
 
         if log:
-            self.log(f"{repr(self)[1:-1]}")
+            self.log("*" * 80)
+            self.log(f"Initializing {repr(self)[1:-1]}")
 
         # Store DTW options
         self.dtw_kws = dict(
@@ -243,14 +262,22 @@ class Condition(object):
         dim = self.dimensionality
         parts = [] if what is None else [what]
         parts += [
+            self.dataset_id,
             f"{self.representation}-{self.metric}",
             f"length_{length}",
             f"limit_{limit}-subset_{subset}-dim_{dim}",
         ]
         return parts
 
+    @property
+    def hash(self) -> str:
+        """Compute a hash string from the path."""
+        slug = "-".join(self.path())
+        hash = md5(slug.encode('utf-8')).hexdigest()
+        return hash
+
     def log(self, message: str):
-        self.dataset.log(message)
+        logging.info(f"[{self.hash[:5]}] {message}")
 
     @memoize
     def contours(self) -> np.array:
@@ -299,9 +326,7 @@ class Condition(object):
     def dtw_similarities(self, **ignored_kws) -> np.array:
         """Pairwise dynamic time warping similarity. By default, these
         are serialized to the datasets HD5 store."""
-        self.log(f"Computing DTW similiarities...")
         sim = cdist_dtw(self.contours(), **self.dtw_kws)
-        self.log(f"> done.")
         return squareform(sim)
 
     @memoize
@@ -309,35 +334,43 @@ class Condition(object):
     @catch_exceptions
     @log_start_end
     def kde_similarities(
-        self, num_points: Optional[int] = 2000
+        self, num_points: Optional[int] = 1000
     ) -> Union[bool, np.array]:
-        self.log(f"Computing kernel density estimate...")
         sim = self.similarities()
         kde = gaussian_kde(sim)
         margin = (sim.max() - sim.min()) * 0.05
         xs = np.linspace(sim.min() - margin, sim.max() + margin, num_points)
         ys = kde(xs)
-        self.log(f"> done.")
         return np.c_[xs, ys]
 
     @memoize
     @serialize
     @catch_exceptions
     @log_start_end
-    def dist_dip_test(self, num_tests: Optional[int] = 1000):
-        self.log(f"Computing dist-dip test")
+    def unidip_dist_dip_test(
+        self, num_tests: Optional[int] = 1000
+    ) -> Tuple[float, float, Tuple[int, int]]:
+        """Compute dist-dip test using the unidip package. This estimates the p-value
+        using bootstrapping."""
         sim = self.similarities()
-        _, (cdf, xs, _, _, _, _) = dip_fn(sim)
-        dip, pval, (left, right) = diptst(sim, is_hist=False, numt=num_tests)
-        self.log(f"> done.")
-        return dict(
-            dip=np.array([dip]),
-            pval=np.array([pval]),
-            left=np.array([left]),
-            right=np.array([right]),
-            xs=xs,
-            cdf=cdf,
-        )
+        # _, (cdf_xs, cdf_ys, _, _, _, _) = dip_fn(sim)
+        dip, p, (left, right) = diptst(sim, is_hist=False, numt=num_tests)
+        return dict(dip=dip, p=p, left=left, right=right)
+
+    @memoize
+    @serialize
+    @catch_exceptions
+    @log_start_end
+    def tableone_dist_dip_test(self) -> Tuple[float, float, Tuple[int, int]]:
+        """Compute dist-dip test using the implementation from the tableone package.
+        The p-value is computed by interpolating a table of precomputed values."""
+        sim = self.similarities()
+        data = sim[~np.isnan(sim)]
+        cdf_xs, cdf_ys = cum_distr(data)
+        dip, (uni_xs, uni_ys) = dip_and_closest_unimodal_from_cdf(cdf_xs, cdf_ys)
+        p = dip_pval_tabinterpol(dip, len(data))
+        # cdf_xs=cdf_xs, cdf_ys=cdf_ys
+        return dict(dip=dip, p=p)
 
     @create_file(output_dir=FIGURES_DIR, ext="pdf")
     def umap_plot(self, path):
@@ -349,16 +382,6 @@ class Condition(object):
     @catch_exceptions
     @log_start_end
     def create_umap_sideplot(self, path: str):
-        import matplotlib.pyplot as plt
-        import umap
-        import umap.plot
-        from scipy.fft import idct
-        from .visualize import (
-            average_inv_contours,
-            grid_around_points,
-            show_side_plot,
-        )
-
         self.log("Creating UMAP side plot...")
 
         # UMAP
@@ -378,7 +401,7 @@ class Condition(object):
 
         # Plot
         fig = plt.figure(figsize=(16, 8), tight_layout=True)
-        show_side_plot(mapper, gridpoints, inside, inv_contours)
+        show_umap_sideplot(mapper, gridpoints, inside, inv_contours)
         fig.suptitle(repr(self)[1:-1], fontweight="bold")
         plt.savefig(path)
         plt.close()
@@ -386,23 +409,20 @@ class Condition(object):
     @catch_exceptions
     @log_start_end
     def create_umap_plot(self, path: str):
-        import matplotlib.pyplot as plt
-        import umap
-        import umap.plot
-
         self.log("Creating simple UMAP plot...")
         sims = squareform(self.similarities())
         mapper = umap.UMAP(random_state=0, metric="precomputed")
         mapper.fit(sims)
 
         fig = plt.figure(figsize=(8, 8), tight_layout=True)
-        umap.plot.points(mapper, ax=plt.gca())
+        show_umap_plot(mapper)
         fig.suptitle(repr(self)[1:-1], fontweight="bold")
         plt.savefig(path)
         plt.close()
 
 
-if __name__ == "__main__":
-    condition = Condition("markov", "cosine", metric="eucl", dimensionality=10)
-    cont = condition.contours()
-    ...
+# if __name__ == "__main__":
+#     condition = Condition("binom", "pitch_tonicized", metric="eucl")
+#     cont = condition.contours()
+#     res = condition.tableone_dist_dip_test(refresh_serialized=True)
+#     ...

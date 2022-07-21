@@ -1,4 +1,3 @@
-from .dataset import Dataset
 from .condition import Condition
 from .config import CONDITIONS_PER_DATASET, DATASETS
 
@@ -7,8 +6,16 @@ def task_all(conditions):
     for condition in conditions:
         condition = Condition(**condition, log=True)
         condition.similarities()
-        condition.dist_dip_test()
+        condition.unidip_dist_dip_test()
+        condition.tableone_dist_dip_test()
         condition.kde_similarities()
+        condition.umap_plot()
+
+def task_essential(conditions):
+    for condition in conditions:
+        condition = Condition(**condition, log=True)
+        condition.similarities()
+        condition.tableone_dist_dip_test()
         condition.umap_plot()
 
 
@@ -27,7 +34,8 @@ def task_visualize(conditions):
 def task_dist_dip(conditions):
     for condition in conditions:
         condition = Condition(**condition, log=True)
-        condition.dist_dip_test()
+        condition.unidip_dist_dip_test()
+        condition.tableone_dist_dip_test()
 
 
 def task_kde(conditions):
@@ -38,6 +46,7 @@ def task_kde(conditions):
 
 TASKS = {
     "all": task_all,
+    "essential": task_essential,
     "precompute": task_precompute,
     "visualize": task_visualize,
     "dist_dip": task_dist_dip,
@@ -67,6 +76,7 @@ def main():
 
     # Collect all conditions
     conditions = CONDITIONS_PER_DATASET[args.dataset]
+    print(f'> Performing task "{args.task}" for {len(conditions)} conditions.')
     task_fn = TASKS[args.task]
     task_fn(conditions)
 

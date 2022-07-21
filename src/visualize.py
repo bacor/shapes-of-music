@@ -1,18 +1,11 @@
-import os
 import numpy as np
 import matplotlib.pyplot as plt
 import umap
 import umap.plot
-
 from itertools import product
 from scipy.spatial import ConvexHull
-from scipy.spatial.distance import squareform
-from scipy.fft import idct
 from matplotlib.path import Path
 from matplotlib.gridspec import GridSpec
-from .config import FIGURES_DIR
-from .helpers import relpath
-from .dataset import Dataset
 
 
 def average_inv_contours(inverse_fn, points, num_samples=5, eps=0.1):
@@ -132,7 +125,7 @@ def show_inset_plot(
             ax_ins.plot(contour, zorder=-1, **_outside_plot_kws)
 
 
-def show_side_plot(
+def show_umap_sideplot(
     points_or_mapper,
     gridpoints,
     inside,
@@ -209,3 +202,17 @@ def show_side_plot(
                 ax.plot(inv_contours[i, j], **_outside_plot_kws)
             else:
                 ax.plot(inv_contours[i, j], **_plot_kws)
+
+
+def show_umap_plot(points_or_mapper, ax=None, umap_plot_kws={}, scatter_kws={}):
+    if ax is None:
+        ax = plt.gca()
+    _umap_plot_kws = dict()
+    _umap_plot_kws.update(umap_plot_kws)
+    _scatter_kws = dict(s=0.1, cmap="Spectral")
+    _scatter_kws.update(scatter_kws)
+
+    if isinstance(points_or_mapper, umap.UMAP):
+        umap.plot.points(points_or_mapper, ax=ax, **_umap_plot_kws)
+    else:
+        ax.scatter(points_or_mapper[:, 0], points_or_mapper[:, 1], **_scatter_kws)

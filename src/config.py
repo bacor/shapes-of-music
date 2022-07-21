@@ -2,6 +2,7 @@ import os
 from typing import List, Optional, Union, Dict
 import numpy as np
 from itertools import product
+from copy import deepcopy
 
 ############################################################
 # Directory structure
@@ -105,15 +106,6 @@ def get_conditions(
     return conditions
 
 
-def validate_condition(condition: Dict) -> Dict:
-    for invalid in INVALID_COMBINATIONS:
-        test = [condition[k] == v for k, v in invalid.items()]
-        if np.all(test):
-            return False
-        else:
-            return condition
-
-
 ############################################################
 ## Particular setups used for various datasets
 ############################################################
@@ -162,7 +154,7 @@ cantus_conditions = get_conditions(
 # The actual conditions
 ############################################################
 
-CONDITIONS_PER_DATASET = {
+unvalidated_conditions = {
     # Cross-cultural subset
     "combined-phrase": all_conditions,
     "combined-random": all_conditions,
@@ -199,15 +191,26 @@ CONDITIONS_PER_DATASET = {
     "cantus-antiphon-words": cantus_conditions,
 }
 
+# Deep copy conditions and add dataset field to each condition
+for dataset, condititions in unvalidated_conditions.items():
+    unvalidated_conditions[dataset] = deepcopy(condititions)
+    for cond in unvalidated_conditions[dataset]:
+        cond['dataset'] = dataset
+
 # Validate those conditions
-for dataset, conditions in CONDITIONS_PER_DATASET.items():
-    valid_conditions = []
-    for condition in conditions:
-        condition["dataset"] = dataset
-        condition = validate_condition(condition)
-        if condition is not False:
-            valid_conditions.append(condition)
-    CONDITIONS_PER_DATASET[dataset] = valid_conditions
+
+def validate_condition(condition: Dict) -> Dict:
+    """Check if a condition is valid"""
+    for invalid in INVALID_COMBINATIONS:
+        test = [condition[k] == v for k, v in invalid.items()]
+        if np.all(test):
+            return False
+    return True
+
+CONDITIONS_PER_DATASET = {}
+for dataset, conditions in unvalidated_conditions.items():
+    filtered = list(filter(validate_condition, conditions))
+    CONDITIONS_PER_DATASET[dataset] = filtered
 
 # Combine all conditions into one list of dictionaries
 DATASETS = list(CONDITIONS_PER_DATASET.keys())
