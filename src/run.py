@@ -11,6 +11,7 @@ def task_all(conditions):
         condition.kde_similarities()
         condition.umap_plot()
 
+
 def task_precompute(conditions):
     for condition in conditions:
         condition = Condition(**condition, log=True)
@@ -68,7 +69,6 @@ def main():
     conditions = CONDITIONS_PER_DATASET[args.dataset]
     task_fn = TASKS[args.task]
     task_fn(conditions)
-    ...
 
 
 if __name__ == "__main__":

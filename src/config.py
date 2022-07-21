@@ -203,7 +203,7 @@ CONDITIONS_PER_DATASET = {
 for dataset, conditions in CONDITIONS_PER_DATASET.items():
     valid_conditions = []
     for condition in conditions:
-        condition['dataset'] = dataset
+        condition["dataset"] = dataset
         condition = validate_condition(condition)
         if condition is not False:
             valid_conditions.append(condition)
