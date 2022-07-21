@@ -19,5 +19,6 @@ __pycache__/
 
 # A lot of figures...
 figures/fig-umap*
+figures/umap*
 
 fetch.sh

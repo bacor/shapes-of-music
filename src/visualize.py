@@ -1,8 +1,6 @@
 import os
-import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
 import umap
 import umap.plot
 
@@ -12,9 +10,9 @@ from scipy.spatial.distance import squareform
 from scipy.fft import idct
 from matplotlib.path import Path
 from matplotlib.gridspec import GridSpec
-from ..config import FIGURES_DIR
-from ..helpers import relpath
-from .dataset import CONDITIONS, PRECOMPUTED_CONDITIONS, PRECOMPUTED_LENGTHS, Dataset
+from .config import FIGURES_DIR
+from .helpers import relpath
+from .dataset import Dataset
 
 
 def average_inv_contours(inverse_fn, points, num_samples=5, eps=0.1):
@@ -85,11 +83,11 @@ def show_inset_plot(
     _scatter_kws.update(scatter_kws)
     _umap_plot_kws = dict()
     _umap_plot_kws.update(umap_plot_kws)
-    _inset_plot_kws = dict(lw=1.5, c="k")
+    _inset_plot_kws = dict(lw=1.5, color="k")
     _inset_plot_kws.update(inset_plot_kws)
-    _inset_bg_plot_kws = dict(lw=4 * _inset_plot_kws["lw"], c="w", alpha=0.7)
+    _inset_bg_plot_kws = dict(lw=4 * _inset_plot_kws["lw"], color="w", alpha=0.7)
     _inset_bg_plot_kws.update(inset_bg_plot_kws)
-    _marker_kws = dict(marker="+", c="C3", s=30, lw=1)
+    _marker_kws = dict(marker="+", color="C3", s=30, lw=1)
     _marker_kws.update(marker_kws)
     _outside_plot_kws = dict(**_inset_plot_kws)
     _outside_plot_kws.update(dict(alpha=0.2))
@@ -153,12 +151,12 @@ def show_side_plot(
     _scatter_kws.update(scatter_kws)
     _umap_plot_kws = dict()
     _umap_plot_kws.update(umap_plot_kws)
-    _marker_kws = dict(c="k", marker="x", s=25, lw=1)
+    _marker_kws = dict(color="k", marker="x", s=25, lw=1)
     _marker_kws.update(marker_kws)
     _outside_marker_kws = dict(**_marker_kws)
     _outside_marker_kws.update(dict(alpha=0.1))
     _outside_marker_kws.update(outside_marker_kws)
-    _plot_kws = dict(c="k", ls="-")
+    _plot_kws = dict(color="k", ls="-")
     _plot_kws.update(plot_kws)
     _outside_plot_kws = dict(**_plot_kws)
     _outside_plot_kws.update(dict(alpha=0.1))
@@ -211,128 +209,3 @@ def show_side_plot(
                 ax.plot(inv_contours[i, j], **_outside_plot_kws)
             else:
                 ax.plot(inv_contours[i, j], **_plot_kws)
-
-
-def create_dtw_plot(dataset_id, limit: int = 500, refresh=False):
-    output_dir = os.path.join(FIGURES_DIR, "fig-umap-dtwplot", dataset_id)
-
-    for representation, metrics in CONDITIONS.items():
-        if "dtw" not in metrics:
-            continue
-        for length in PRECOMPUTED_LENGTHS:
-
-            # Output file
-            plot_fn = os.path.join(
-                output_dir,
-                representation,
-                f"{dataset_id}-{representation}-DTW-length{length}.pdf",
-            )
-            directory = os.path.dirname(plot_fn)
-            if not os.path.exists(directory):
-                os.makedirs(directory)
-            if os.path.exists(plot_fn) and not refresh:
-                print(f"Skipping {relpath(plot_fn)}")
-                continue
-
-            try:
-                dataset = Dataset(dataset_id)
-                sims = dataset.similarities(
-                    representation,
-                    metric="dtw",
-                    limit=limit,
-                    length=length,
-                    unique=False,
-                )
-
-                # UMAP
-                mapper = umap.UMAP(random_state=0, metric="precomputed")
-                mapper.fit(squareform(sims))
-
-                # Plot
-                fig = plt.figure(figsize=(16, 8), tight_layout=True)
-                umap.plot.points(mapper)
-                title = (
-                    f"{dataset_id}, representation={representation}, length={length}\n"
-                )
-                fig.suptitle(title, fontweight="bold")
-                plt.savefig(plot_fn)
-
-            except Exception as e:
-                print(f"An error occured: {e}")
-                print(
-                    f"> dataset={dataset_id}, repres={representation}, length={length}"
-                )
-
-
-def create_side_plot(dataset_id, limit: int = 5000, refresh=False):
-    output_dir = os.path.join(FIGURES_DIR, "fig-umap-sideplot", dataset_id)
-    for representation, length in product(CONDITIONS.keys(), PRECOMPUTED_LENGTHS):
-
-        # Output file
-        plot_fn = os.path.join(
-            output_dir,
-            representation,
-            f"{dataset_id}-{representation}-length{length}.pdf",
-        )
-        directory = os.path.dirname(plot_fn)
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-        if os.path.exists(plot_fn) and not refresh:
-            print(f"Skipping {relpath(plot_fn)}")
-            continue
-
-        try:
-            # Load dataset
-            dataset = Dataset(dataset_id)
-            contours = dataset.representation(
-                representation, limit=limit, length=length, unique=False
-            )
-
-            # UMAP
-            mapper = umap.UMAP(random_state=0).fit(contours)
-            gridpoints, inside = grid_around_points(
-                mapper.embedding_, subdiv=10, margin=0.1
-            )
-            # inv_contours = mapper.inverse_transform(gridpoints)
-            inv_contours = average_inv_contours(
-                mapper.inverse_transform, gridpoints, num_samples=20, eps=0.3
-            )
-
-            # Inverse operations
-            if representation == "cosine":
-                inv_contours = idct(inv_contours, axis=1)
-            elif representation in ["interval", "smooth_derivative"]:
-                inv_contours = np.cumsum(inv_contours, axis=1)
-
-            # Plot
-            fig = plt.figure(figsize=(16, 8), tight_layout=True)
-            show_side_plot(mapper, gridpoints, inside, inv_contours)
-            title = f"{dataset_id}, representation={representation}, length={length}\n"
-            fig.suptitle(title, fontweight="bold")
-            plt.savefig(plot_fn)
-
-        except Exception as e:
-            print(f"An error occured: {e}")
-            print(f"> dataset={dataset_id}, repres={representation}, length={length}")
-
-
-def main():
-    import argparse
-
-    parser = argparse.ArgumentParser(
-        description="Precompute all similarity scores and so on"
-    )
-    parser.add_argument("plot", type=str, help="Plot type")
-    parser.add_argument("dataset", type=str, help="ID of the dataset to visualize")
-    args = parser.parse_args()
-
-    if args.plot == "sideplot":
-        create_side_plot(args.dataset)
-    elif args.plot == "dtwplot":
-        create_dtw_plot(args.dataset)
-    else:
-        raise ValueError("Unknown plot type")
-
-
-if __name__ == "__main__":
-    main()
