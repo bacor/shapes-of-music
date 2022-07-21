@@ -143,11 +143,13 @@ def log_start_end(func: Callable) -> Callable:
     @wraps(func)
     def wrapper(self, *args, **kwargs):
         name = func.__name__
-        self.log(f'Start running {name}')
+        self.log(f"Start running {name}")
         output = func(self, *args, **kwargs)
-        self.log(f'> Done running {name}')
+        self.log(f"> Done running {name}")
         return output
+
     return wrapper
+
 
 ####
 
@@ -185,11 +187,9 @@ class Condition(object):
                 "See the variable `INVALID_COMBINATIONS` in `config.py` for "
                 "all invalid combinations."
             )
-        
+
         if log:
-            self.log(
-                f'{repr(self)[1:-1]}'
-            )
+            self.log(f"{repr(self)[1:-1]}")
 
         # Store DTW options
         self.dtw_kws = dict(
@@ -268,7 +268,15 @@ class Condition(object):
                 f"{MIN_CONTOUR_COUNT} are required."
             )
 
-        # TODO : dimensionality
+        # If another dimensionality is used, subsample the contours
+        if self.dimensionality < contours.shape[1]:
+            if self.representation == "cosine":
+                contours = contours[:, : self.dimensionality]
+            else:
+                idx = np.linspace(0, contours.shape[1] - 1, self.dimensionality)
+                contours = contours[:, idx.astype(int)]
+
+        assert contours.shape[1] == self.dimensionality
         return contours
 
     @memoize
@@ -295,7 +303,6 @@ class Condition(object):
         sim = cdist_dtw(self.contours(), **self.dtw_kws)
         self.log(f"> done.")
         return squareform(sim)
-    
 
     @memoize
     @serialize
@@ -394,6 +401,8 @@ class Condition(object):
         plt.savefig(path)
         plt.close()
 
+
 if __name__ == "__main__":
-    condition = Condition("markov", "cosine", metric="dtw", limit=10)
+    condition = Condition("markov", "cosine", metric="eucl", dimensionality=10)
+    cont = condition.contours()
     ...
