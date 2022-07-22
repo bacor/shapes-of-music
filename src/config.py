@@ -130,12 +130,7 @@ most_conditions = get_conditions(
 )
 
 basic_conditions = get_conditions(
-    representations=[
-        "pitch_centered",
-        "pitch_tonicized",
-        "cosine",
-        "interval",
-    ],
+    representations=ALL_REPRESENTATIONS,
     metrics=["eucl"],
     lengths=[None],
     uniques=[False],
