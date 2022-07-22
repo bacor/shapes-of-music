@@ -7,7 +7,7 @@ import pandas as pd
 import h5py
 from typing import List, Optional, Dict
 
-from .config import CONTOUR_DIR, SERIALIZED_DIR, DATASETS, ALL_REPRESENTATIONS
+from .config import CONTOUR_DIR, SERIALIZED_DIR, ALL_DATASETS, ALL_REPRESENTATIONS
 from .representations import *
 from .representations import contour_array
 
@@ -39,7 +39,7 @@ def save(obj: np.array, name: str, file: h5py.File, refresh: Optional[bool] = Fa
 
 class Dataset(object):
     def __init__(self, dataset: str, refresh: Optional[bool] = False, log=False):
-        if dataset not in DATASETS:
+        if dataset not in ALL_DATASETS:
             raise InvalidDatasetException(f"Unknown dataset {dataset}")
 
         self.dataset = dataset
@@ -280,6 +280,10 @@ class Dataset(object):
                 if np.isinf(contours).any():
                     logging.warn("Some contours contain np.nan")
             return contours
+
+    def representation(self, *args, **kwargs):
+        logging.warn('The method "representation()" is deprecated, use "contours()" instead') 
+        return self.contours(*args, **kwargs)
 
 
 # if __name__ == "__main__":

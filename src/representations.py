@@ -27,8 +27,10 @@ def contour_array(df):
     DataFrame with contours. Timesteps are assumed to be numbered by sting-integers
     0, ..., num_steps"""
     num_samples = int(df.columns[-1]) + 1
-    return df[[str(i) for i in range(num_samples)]].values
-
+    try:
+        return df[[str(i) for i in range(num_samples)]].values
+    except:
+        return df[np.arange(num_samples)].values
 
 def repr_pitch(contours, **kwargs):
     """Return a numpy array of shape (num_contours, num_samples)"""

@@ -34,6 +34,44 @@ VARIABLES: List[str] = [
     "dimensionality",
 ]
 
+ALL_DATASETS: List[str] = [
+    "combined-phrase",
+    "combined-random",
+    # Synthetic baselines
+    "markov",
+    "binom",
+    "clustered",
+    # Western folksongs
+    "erk-phrase",
+    "erk-random",
+    "boehme-phrase",
+    "boehme-random",
+    "creighton-phrase",
+    "creighton-random",
+    # Chinese subset of Essen
+    "han-phrase",
+    "han-random",
+    "natmin-phrase",
+    "natmin-random",
+    "shanxi-phrase",
+    "shanxi-random",
+    # Gregobase
+    "liber-antiphons-phrase",
+    "liber-antiphons-random",
+    "liber-responsories-phrase",
+    "liber-responsories-random",
+    "liber-alleluias-phrase",
+    "liber-alleluias-random",
+    # Cantus
+    "cantus-responsory-neumes",
+    "cantus-responsory-syllables",
+    "cantus-responsory-words",
+    "cantus-antiphon-neumes",
+    "cantus-antiphon-syllables",
+    "cantus-antiphon-words",
+]
+
+
 ALL_REPRESENTATIONS: List[str] = [
     "pitch",
     "pitch_centered",
@@ -210,5 +248,4 @@ for dataset, conditions in unvalidated_conditions.items():
     CONDITIONS_PER_DATASET[dataset] = filtered
 
 # Combine all conditions into one list of dictionaries
-DATASETS = list(CONDITIONS_PER_DATASET.keys())
 CONDITIONS = [c for conditions in CONDITIONS_PER_DATASET.values() for c in conditions]

@@ -197,6 +197,10 @@ class Condition(object):
         self.limit = limit
         self.dimensionality = dimensionality
 
+        if log:
+            self.log("*" * 80)
+            self.log(f"Initializing {repr(self)[1:-1]}")
+        
         if metric not in ALL_METRICS:
             raise ValueError(f"Unknown metric: {metric}")
         if not validate_condition(self.as_dict()):
@@ -205,10 +209,12 @@ class Condition(object):
                 "See the variable `INVALID_COMBINATIONS` in `config.py` for "
                 "all invalid combinations."
             )
-
-        if log:
-            self.log("*" * 80)
-            self.log(f"Initializing {repr(self)[1:-1]}")
+        if len(self) < MIN_CONTOUR_COUNT:
+            raise TooFewContoursException(
+                "Not enough contours were found for this condition. Only "
+                f"{len(self)} contours were found, but at least "
+                f"{MIN_CONTOUR_COUNT} are required."
+            )
 
         # Store DTW options
         self.dtw_kws = dict(
@@ -228,6 +234,14 @@ class Condition(object):
         return (
             f"<Condition {self.dataset_id} repr={self.representation} metric={self.metric} "
             f"{props}limit={self.limit}>"
+        )
+
+    @memoize
+    def __len__(self) -> int:
+        return self.dataset.subset_size(
+            length=self.length,
+            unique=self.unique,
+            limit=self.limit,
         )
 
     def as_dict(self) -> Dict:
@@ -279,6 +293,10 @@ class Condition(object):
     def log(self, message: str):
         logging.info(f"[{self.hash[:5]}] {message}")
 
+    def is_serialized(self, what: str) -> bool:
+        path = "/".join(self.path(what=what))
+        return self.dataset.exists(path)
+
     @memoize
     def contours(self) -> np.array:
         """The numpy array of contours"""
@@ -288,13 +306,7 @@ class Condition(object):
             unique=self.unique,
             limit=self.limit,
         )
-        if contours.shape[0] < MIN_CONTOUR_COUNT:
-            raise TooFewContoursException(
-                "Not enough contours were found for this condition. Only "
-                f"{contours.shape[0]} contours were found, but at least "
-                f"{MIN_CONTOUR_COUNT} are required."
-            )
-
+        
         # If another dimensionality is used, subsample the contours
         if self.dimensionality < contours.shape[1]:
             if self.representation == "cosine":
@@ -398,10 +410,19 @@ class Condition(object):
             inv_contours = idct(inv_contours, axis=1)
         elif self.representation in ["interval", "smooth_derivative"]:
             inv_contours = np.cumsum(inv_contours, axis=1)
+        
+        umap_plot_kws = dict()
+        if 'label' in self.dataset.df.columns:
+            labels = self.dataset.subset_column('label', 
+                length=self.length,
+                unique=self.unique,
+                limit=self.limit
+            )
+            umap_plot_kws['labels'] = labels
 
         # Plot
         fig = plt.figure(figsize=(16, 8), tight_layout=True)
-        show_umap_sideplot(mapper, gridpoints, inside, inv_contours)
+        show_umap_sideplot(mapper, gridpoints, inside, inv_contours, umap_plot_kws=umap_plot_kws)
         fig.suptitle(repr(self)[1:-1], fontweight="bold")
         plt.savefig(path)
         plt.close()
@@ -414,8 +435,17 @@ class Condition(object):
         mapper = umap.UMAP(random_state=0, metric="precomputed")
         mapper.fit(sims)
 
+        umap_plot_kws = dict()
+        if 'label' in self.dataset.df.columns:
+            labels = self.dataset.subset_column('label', 
+                length=self.length,
+                unique=self.unique,
+                limit=self.limit
+            )
+            umap_plot_kws['labels'] = labels
+
         fig = plt.figure(figsize=(8, 8), tight_layout=True)
-        show_umap_plot(mapper)
+        show_umap_plot(mapper, umap_plot_kws=umap_plot_kws)
         fig.suptitle(repr(self)[1:-1], fontweight="bold")
         plt.savefig(path)
         plt.close()

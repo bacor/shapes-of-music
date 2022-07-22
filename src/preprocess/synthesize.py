@@ -5,10 +5,13 @@ import scipy.stats
 import numpy as np
 import pandas as pd
 
+from sklearn.cluster import KMeans
+from sklearn.neighbors import BallTree
+
 from ..contour import Contour
 from ..config import CONTOUR_DIR
 from .extract_contours import store_shuffled_indices
-
+from ..representations import contour_array
 
 def binom(mean: float, var: float) -> scipy.stats.binom:
     """Construct a binomial distribution from its mean and variance
@@ -195,9 +198,53 @@ class BinomialWalkSynthesizer(ContourSynthesizer):
             return contour[i - 1] + step
 
 
+def subsample_clustered_contours(contours: np.array, k: int, cluster_size: int):
+    # Cluster on pruned cosine representations so we really look at shape
+    from src.representations import repr_cosine
+    contours = repr_cosine(contours)
+    contours[:, 25:] = 0
+
+    # Use the centroids found by k means and select the nearest neighbours to 
+    # form the clusters
+    kmeans = KMeans(n_clusters=k, random_state=0).fit(contours)
+    tree = BallTree(contours)
+    _, idxs = tree.query(kmeans.cluster_centers_, k=cluster_size)
+
+    # Flaten the indices, randomize their order, and store labels
+    labels = np.tile(np.arange(k)[:, None], cluster_size).ravel()
+    order = np.arange(k * cluster_size)
+    # np.random.shuffle(order)
+    shuffled_idx = idxs.ravel()[order]
+    labels = labels[order]
+    clustered_contours = contours[shuffled_idx]
+    
+    return clustered_contours, labels, shuffled_idx, kmeans.cluster_centers_
+
+def create_clustered_dataset(contours_df: pd.DataFrame, k: int, cluster_size: int):
+    contours = contour_array(contours_df)
+    _, labels, indices, _ = subsample_clustered_contours(contours, k, cluster_size)
+    df = contours_df.iloc[indices, :].copy()
+    df['label'] = labels
+    df['new_index'] = [f'clustered-{i:0>5}' for i in range(1, len(df)+1)]
+    df = df.reset_index().set_index('new_index').drop(columns='contour_id')
+    df.index.name = "contour_id"
+    columns = [
+        "song_id",
+        "unit_num",
+        "unit_length",
+        "unit_duration",
+        "tonic_krumhansl",
+        "tonic_mode",
+        "final",
+        "mode",
+        "label"
+    ] + [i for i in range(contours.shape[1])]
+    df = df.reindex(columns=columns)
+    return df
+
 def main():
     import argparse
-    from ..clusterability import Dataset
+    from ..dataset import Dataset
 
     parser = argparse.ArgumentParser(
         description="Generate a dataset of synthetic Markov contours"
@@ -210,18 +257,25 @@ def main():
     args = parser.parse_args()
 
     dataset = Dataset("combined-phrase")
-    contours = dataset.representation("pitch")
+    contours = dataset.contours("pitch")
 
     # Fit synthesizer
-    if args.synthesizer == "markov":
+    if args.synthesizer == "clustered":
         synthesizer = MarkovSynthesizer()
         synthesizer.fit(contours, dataset.df["unit_length"])
-    elif args.synthesizer == "binom":
-        synthesizer = BinomialWalkSynthesizer()
-        synthesizer.fit(dataset.df["unit_length"])
+        unclustered = synthesizer.generate_dataset(num_contours=25000)
+        synth_contours = create_clustered_dataset(unclustered, k=5, cluster_size=1000)
 
-    # Generate contours dataset
-    synth_contours = synthesizer.generate_dataset(num_contours=5000)
+    else:
+        if args.synthesizer == "markov":
+            synthesizer = MarkovSynthesizer()
+            synthesizer.fit(contours, dataset.df["unit_length"])
+        elif args.synthesizer == "binom":
+            synthesizer = BinomialWalkSynthesizer()
+            synthesizer.fit(dataset.df["unit_length"])
+    
+        # Generate contours dataset
+        synth_contours = synthesizer.generate_dataset(num_contours=5000)
 
     # Save
     contours_fn = os.path.join(CONTOUR_DIR, f"{args.synthesizer}-contours.csv.gz")
