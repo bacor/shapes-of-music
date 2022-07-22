@@ -13,6 +13,7 @@ from ..config import CONTOUR_DIR
 from .extract_contours import store_shuffled_indices
 from ..representations import contour_array
 
+
 def binom(mean: float, var: float) -> scipy.stats.binom:
     """Construct a binomial distribution from its mean and variance
 
@@ -201,10 +202,11 @@ class BinomialWalkSynthesizer(ContourSynthesizer):
 def subsample_clustered_contours(contours: np.array, k: int, cluster_size: int):
     # Cluster on pruned cosine representations so we really look at shape
     from src.representations import repr_cosine
+
     contours = repr_cosine(contours)
     contours[:, 25:] = 0
 
-    # Use the centroids found by k means and select the nearest neighbours to 
+    # Use the centroids found by k means and select the nearest neighbours to
     # form the clusters
     kmeans = KMeans(n_clusters=k, random_state=0).fit(contours)
     tree = BallTree(contours)
@@ -217,16 +219,17 @@ def subsample_clustered_contours(contours: np.array, k: int, cluster_size: int):
     shuffled_idx = idxs.ravel()[order]
     labels = labels[order]
     clustered_contours = contours[shuffled_idx]
-    
+
     return clustered_contours, labels, shuffled_idx, kmeans.cluster_centers_
+
 
 def create_clustered_dataset(contours_df: pd.DataFrame, k: int, cluster_size: int):
     contours = contour_array(contours_df)
     _, labels, indices, _ = subsample_clustered_contours(contours, k, cluster_size)
     df = contours_df.iloc[indices, :].copy()
-    df['label'] = labels
-    df['new_index'] = [f'clustered-{i:0>5}' for i in range(1, len(df)+1)]
-    df = df.reset_index().set_index('new_index').drop(columns='contour_id')
+    df["label"] = labels
+    df["new_index"] = [f"clustered-{i:0>5}" for i in range(1, len(df) + 1)]
+    df = df.reset_index().set_index("new_index").drop(columns="contour_id")
     df.index.name = "contour_id"
     columns = [
         "song_id",
@@ -237,10 +240,11 @@ def create_clustered_dataset(contours_df: pd.DataFrame, k: int, cluster_size: in
         "tonic_mode",
         "final",
         "mode",
-        "label"
+        "label",
     ] + [i for i in range(contours.shape[1])]
     df = df.reindex(columns=columns)
     return df
+
 
 def main():
     import argparse
@@ -273,7 +277,7 @@ def main():
         elif args.synthesizer == "binom":
             synthesizer = BinomialWalkSynthesizer()
             synthesizer.fit(dataset.df["unit_length"])
-    
+
         # Generate contours dataset
         synth_contours = synthesizer.generate_dataset(num_contours=5000)
 

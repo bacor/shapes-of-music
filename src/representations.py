@@ -32,6 +32,7 @@ def contour_array(df):
     except:
         return df[np.arange(num_samples)].values
 
+
 def repr_pitch(contours, **kwargs):
     """Return a numpy array of shape (num_contours, num_samples)"""
     return contours

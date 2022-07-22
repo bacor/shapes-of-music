@@ -200,7 +200,7 @@ class Condition(object):
         if log:
             self.log("*" * 80)
             self.log(f"Initializing {repr(self)[1:-1]}")
-        
+
         if metric not in ALL_METRICS:
             raise ValueError(f"Unknown metric: {metric}")
         if not validate_condition(self.as_dict()):
@@ -306,7 +306,7 @@ class Condition(object):
             unique=self.unique,
             limit=self.limit,
         )
-        
+
         # If another dimensionality is used, subsample the contours
         if self.dimensionality < contours.shape[1]:
             if self.representation == "cosine":
@@ -410,19 +410,19 @@ class Condition(object):
             inv_contours = idct(inv_contours, axis=1)
         elif self.representation in ["interval", "smooth_derivative"]:
             inv_contours = np.cumsum(inv_contours, axis=1)
-        
+
         umap_plot_kws = dict()
-        if 'label' in self.dataset.df.columns:
-            labels = self.dataset.subset_column('label', 
-                length=self.length,
-                unique=self.unique,
-                limit=self.limit
+        if "label" in self.dataset.df.columns:
+            labels = self.dataset.subset_column(
+                "label", length=self.length, unique=self.unique, limit=self.limit
             )
-            umap_plot_kws['labels'] = labels
+            umap_plot_kws["labels"] = labels
 
         # Plot
         fig = plt.figure(figsize=(16, 8), tight_layout=True)
-        show_umap_sideplot(mapper, gridpoints, inside, inv_contours, umap_plot_kws=umap_plot_kws)
+        show_umap_sideplot(
+            mapper, gridpoints, inside, inv_contours, umap_plot_kws=umap_plot_kws
+        )
         fig.suptitle(repr(self)[1:-1], fontweight="bold")
         plt.savefig(path)
         plt.close()
@@ -436,13 +436,11 @@ class Condition(object):
         mapper.fit(sims)
 
         umap_plot_kws = dict()
-        if 'label' in self.dataset.df.columns:
-            labels = self.dataset.subset_column('label', 
-                length=self.length,
-                unique=self.unique,
-                limit=self.limit
+        if "label" in self.dataset.df.columns:
+            labels = self.dataset.subset_column(
+                "label", length=self.length, unique=self.unique, limit=self.limit
             )
-            umap_plot_kws['labels'] = labels
+            umap_plot_kws["labels"] = labels
 
         fig = plt.figure(figsize=(8, 8), tight_layout=True)
         show_umap_plot(mapper, umap_plot_kws=umap_plot_kws)

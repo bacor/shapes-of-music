@@ -193,6 +193,7 @@ unvalidated_conditions = {
     "combined-random": all_conditions,
     # Synthetic baselines
     "markov": all_conditions,
+    "clustered": most_conditions,
     "binom": basic_conditions,
     # Western folksongs
     "erk-phrase": most_conditions,

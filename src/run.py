@@ -1,5 +1,5 @@
 from .condition import Condition
-from .config import CONDITIONS_PER_DATASET, DATASETS
+from .config import CONDITIONS_PER_DATASET, ALL_DATASETS
 
 
 def task_all(conditions):
@@ -61,12 +61,14 @@ def run_task(task, dataset):
         raise ValueError(
             f'Unknown task "{task}". Choose one of: {", ".join(TASKS.keys())}'
         )
-    if dataset not in DATASETS:
+    if dataset not in ALL_DATASETS:
         raise ValueError(f'Unknown dataset "{dataset}"')
 
     # Collect all conditions
     conditions = CONDITIONS_PER_DATASET[dataset]
-    print(f'> Performing task "{task}" for dataset {dataset} ({len(conditions)} conditions)')
+    print(
+        f'> Performing task "{task}" for dataset {dataset} ({len(conditions)} conditions)'
+    )
 
     # Run!
     task_fn = TASKS[task]
@@ -110,7 +112,7 @@ def main():
         run_task(args.task, "shanxi-random")
 
     elif args.dataset == "liber":
-        for dataset in DATASETS:
+        for dataset in ALL_DATASETS:
             if dataset.startswith("liber"):
                 run_task(args.task, dataset)
 

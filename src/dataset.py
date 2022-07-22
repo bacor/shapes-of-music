@@ -282,7 +282,9 @@ class Dataset(object):
             return contours
 
     def representation(self, *args, **kwargs):
-        logging.warn('The method "representation()" is deprecated, use "contours()" instead') 
+        logging.warn(
+            'The method "representation()" is deprecated, use "contours()" instead'
+        )
         return self.contours(*args, **kwargs)
 
 
