@@ -33,6 +33,7 @@ from .config import (
     ALL_METRICS,
     METRIC_LIMITS,
     MIN_CONTOUR_COUNT,
+    SIM_DISTR_SAMPLE_SIZE,
     validate_condition,
 )
 from .dataset import Dataset
@@ -183,6 +184,7 @@ class Condition(object):
         unique: Optional[int] = False,
         dimensionality: Optional[int] = 50,
         dtw_kws: Optional[Dict] = {},
+        umap_embed_kws: Optional[Dict] = {},
         log: Optional[bool] = False,
     ):
         if limit is None:
@@ -221,6 +223,15 @@ class Condition(object):
             global_constraint="sakoe_chiba", sakoe_chiba_radius=20, n_jobs=4
         )
         self.dtw_kws.update(dtw_kws)
+
+        # Store UMAP embedding options
+        self.umap_embed_kws = dict(
+            n_neighbors=30,
+            min_dist=0.0,
+            n_components=10,
+            random_state=42,
+        )
+        self.umap_embed_kws.update(umap_embed_kws)
 
     def __repr__(self) -> str:
         """A string representation of the condition"""
@@ -297,6 +308,21 @@ class Condition(object):
         path = "/".join(self.path(what=what))
         return self.dataset.exists(path)
 
+    def file_path(self, what: str, output_dir: str, ext: str) -> bool:
+        parts = self.path(what=what)
+        path = os.path.join(output_dir, *parts[:-1], f"{parts[-1]}.{ext}")
+        return path
+
+    def figure_path(self, what: str) -> str:
+        return self.file_path(what=what, output_dir=FIGURES_DIR, ext="pdf")
+
+    @property
+    def df(self):
+        index = self.dataset.subset_index(
+            length=self.length, unique=self.unique, limit=self.limit
+        )
+        return self.dataset.df.iloc[index, :]
+
     @memoize
     def contours(self) -> np.array:
         """The numpy array of contours"""
@@ -342,13 +368,47 @@ class Condition(object):
         return squareform(sim)
 
     @memoize
+    @catch_exceptions
+    def similarities_sample(
+        self, limit: Optional[int] = SIM_DISTR_SAMPLE_SIZE
+    ) -> np.array:
+        """Return a sample of pairwise similarities
+
+        Returns
+        -------
+        np.array
+            A subsample of pairwise similarities
+        """
+        sim = self.similarities()
+        limit = min(len(sim), limit)
+        np.random.seed(42)
+        sim = np.random.choice(sim, size=limit, replace=False)
+        return sim
+
+    @serialize
+    @catch_exceptions
+    @log_start_end
+    def umap_embeddings(self, **ignored_kws) -> np.array:
+        mapper = umap.UMAP(**self.umap_embed_kws)
+        return mapper.fit_transform(self.contours())
+
+    @serialize
+    @catch_exceptions
+    @log_start_end
+    def umap_2d_embeddings(self, **ignored_kws) -> np.array:
+        mapper = umap.UMAP(metric="precomputed", n_components=2)
+        similarities = squareform(self.similarities())
+        embeddings = mapper.fit_transform(similarities)
+        return embeddings
+
+    @memoize
     @serialize
     @catch_exceptions
     @log_start_end
     def kde_similarities(
         self, num_points: Optional[int] = 1000
     ) -> Union[bool, np.array]:
-        sim = self.similarities()
+        sim = self.similarities_sample()
         kde = gaussian_kde(sim)
         margin = (sim.max() - sim.min()) * 0.05
         xs = np.linspace(sim.min() - margin, sim.max() + margin, num_points)
@@ -364,7 +424,7 @@ class Condition(object):
     ) -> Tuple[float, float, Tuple[int, int]]:
         """Compute dist-dip test using the unidip package. This estimates the p-value
         using bootstrapping."""
-        sim = self.similarities()
+        sim = self.similarities_sample()
         # _, (cdf_xs, cdf_ys, _, _, _, _) = dip_fn(sim)
         dip, p, (left, right) = diptst(sim, is_hist=False, numt=num_tests)
         return dict(dip=dip, p=p, left=left, right=right)
@@ -376,25 +436,27 @@ class Condition(object):
     def tableone_dist_dip_test(self) -> Tuple[float, float, Tuple[int, int]]:
         """Compute dist-dip test using the implementation from the tableone package.
         The p-value is computed by interpolating a table of precomputed values."""
-        sim = self.similarities()
-        data = sim[~np.isnan(sim)]
-        cdf_xs, cdf_ys = cum_distr(data)
-        dip, (uni_xs, uni_ys) = dip_and_closest_unimodal_from_cdf(cdf_xs, cdf_ys)
-        p = dip_pval_tabinterpol(dip, len(data))
-        # cdf_xs=cdf_xs, cdf_ys=cdf_ys
-        return dict(dip=dip, p=p)
+        sim = self.similarities_sample()
+        return tableone_dist_dip_test(sim)
 
-    @create_file(output_dir=FIGURES_DIR, ext="pdf")
-    def umap_plot(self, path):
-        if self.metric == "eucl":
-            self.create_umap_sideplot(path)
-        elif self.metric == "dtw":
-            self.create_umap_plot(path)
-
+    @memoize
+    @serialize
     @catch_exceptions
     @log_start_end
-    def create_umap_sideplot(self, path: str):
-        self.log("Creating UMAP side plot...")
+    def umap_dist_dip_test(self) -> Tuple[float, float, Tuple[int, int]]:
+        """Compute the dist-dip test on the pariwise distances of UMAP embeddings"""
+        sim = pdist(self.umap_embeddings())
+        limit = min(len(sim), SIM_DISTR_SAMPLE_SIZE)
+        np.random.seed(42)
+        data = np.random.choice(sim, size=limit, replace=False)
+        return tableone_dist_dip_test(data)
+
+    @create_file(output_dir=FIGURES_DIR, ext="pdf")
+    @catch_exceptions
+    @log_start_end
+    def umap_sideplot(self, path: str):
+        if self.metric == 'dtw':
+            raise ValueError('Cannot create sideplot using a dtw metric')
 
         # UMAP
         mapper = umap.UMAP(random_state=0).fit(self.contours())
@@ -412,11 +474,8 @@ class Condition(object):
             inv_contours = np.cumsum(inv_contours, axis=1)
 
         umap_plot_kws = dict()
-        if "label" in self.dataset.df.columns:
-            labels = self.dataset.subset_column(
-                "label", length=self.length, unique=self.unique, limit=self.limit
-            )
-            umap_plot_kws["labels"] = labels
+        if "label" in self.df.columns:
+            umap_plot_kws["labels"] = self.df["label"]
 
         # Plot
         fig = plt.figure(figsize=(16, 8), tight_layout=True)
@@ -427,30 +486,34 @@ class Condition(object):
         plt.savefig(path)
         plt.close()
 
-    @catch_exceptions
+    @create_file(output_dir=FIGURES_DIR, ext="pdf")
+    # @catch_exceptions
     @log_start_end
-    def create_umap_plot(self, path: str):
-        self.log("Creating simple UMAP plot...")
-        sims = squareform(self.similarities())
-        mapper = umap.UMAP(random_state=0, metric="precomputed")
-        mapper.fit(sims)
-
-        umap_plot_kws = dict()
-        if "label" in self.dataset.df.columns:
-            labels = self.dataset.subset_column(
-                "label", length=self.length, unique=self.unique, limit=self.limit
-            )
-            umap_plot_kws["labels"] = labels
-
+    def umap_plot(self, path: str):
+        kws = dict()
+        if "label" in self.df.columns:
+            kws["c"] = self.df["label"]
+        embeddings = self.umap_2d_embeddings()
         fig = plt.figure(figsize=(8, 8), tight_layout=True)
-        show_umap_plot(mapper, umap_plot_kws=umap_plot_kws)
+        show_umap_plot(embeddings, scatter_kws=kws)
         fig.suptitle(repr(self)[1:-1], fontweight="bold")
         plt.savefig(path)
         plt.close()
 
 
-# if __name__ == "__main__":
-#     condition = Condition("binom", "pitch_tonicized", metric="eucl")
-#     cont = condition.contours()
+def tableone_dist_dip_test(data) -> Tuple[float, float, Tuple[int, int]]:
+    """Compute dist-dip test using the implementation from the tableone package.
+    The p-value is computed by interpolating a table of precomputed values."""
+    data = data[~np.isnan(data)]
+    cdf_xs, cdf_ys = cum_distr(data)
+    dip, (uni_xs, uni_ys) = dip_and_closest_unimodal_from_cdf(cdf_xs, cdf_ys)
+    p = dip_pval_tabinterpol(dip, len(data))
+    return dict(dip=dip, p=p)
+
+
+if __name__ == "__main__":
+    condition = Condition("clustered", "pitch_normalized", metric="eucl", limit=1000)
+    # test = condition.umap_dist_dip_test(refresh_serialized=True)
+    test = condition.umap_plot(refresh_file=True)
 #     res = condition.tableone_dist_dip_test(refresh_serialized=True)
-#     ...
+    ...

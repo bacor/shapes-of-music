@@ -1,0 +1,400 @@
+INFO 23-07-22 11:24:55 Collecting results from 2578 conditions...
+WARNING 23-07-22 11:24:58 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl limit=3000>
+WARNING 23-07-22 11:24:58 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl len=3 limit=3000>
+WARNING 23-07-22 11:24:58 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl unique len=5 limit=3000>
+WARNING 23-07-22 11:24:58 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl unique len=6 limit=3000>
+WARNING 23-07-22 11:24:58 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:24:58 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:24:59 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl unique len=9 limit=3000>
+WARNING 23-07-22 11:24:59 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl len=9 limit=3000>
+WARNING 23-07-22 11:24:59 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl unique len=10 limit=3000>
+WARNING 23-07-22 11:24:59 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:24:59 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl unique len=12 limit=3000>
+WARNING 23-07-22 11:24:59 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl len=12 limit=3000>
+WARNING 23-07-22 11:25:00 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=dtw len=3 limit=500>
+WARNING 23-07-22 11:25:00 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=dtw unique len=5 limit=500>
+WARNING 23-07-22 11:25:00 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=dtw len=5 limit=500>
+WARNING 23-07-22 11:25:00 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=dtw len=8 limit=500>
+WARNING 23-07-22 11:25:01 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=eucl unique limit=3000>
+WARNING 23-07-22 11:25:01 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=eucl limit=3000>
+WARNING 23-07-22 11:25:02 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=eucl len=12 limit=3000>
+WARNING 23-07-22 11:25:03 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=dtw unique limit=500>
+WARNING 23-07-22 11:25:03 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=dtw unique len=5 limit=500>
+WARNING 23-07-22 11:25:04 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=dtw len=8 limit=500>
+WARNING 23-07-22 11:25:04 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=dtw len=10 limit=500>
+WARNING 23-07-22 11:25:04 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=dtw unique len=14 limit=500>
+WARNING 23-07-22 11:25:11 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl unique limit=3000>
+WARNING 23-07-22 11:25:11 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl len=3 limit=3000>
+WARNING 23-07-22 11:25:12 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl unique len=8 limit=3000>
+WARNING 23-07-22 11:25:12 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl unique len=9 limit=3000>
+WARNING 23-07-22 11:25:12 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:25:12 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl unique len=11 limit=3000>
+WARNING 23-07-22 11:25:12 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl len=16 limit=3000>
+WARNING 23-07-22 11:25:16 Unidip result could not be computed: <Condition combined-phrase repr=smooth_derivative metric=eucl unique len=6 limit=3000>
+WARNING 23-07-22 11:25:20 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=eucl dim=10 limit=3000>
+WARNING 23-07-22 11:25:20 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl dim=10 limit=3000>
+WARNING 23-07-22 11:25:20 Unidip result could not be computed: <Condition combined-phrase repr=smooth_derivative metric=eucl dim=10 limit=3000>
+WARNING 23-07-22 11:25:23 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl limit=3000>
+WARNING 23-07-22 11:25:23 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl unique len=4 limit=3000>
+WARNING 23-07-22 11:25:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl unique len=7 limit=3000>
+WARNING 23-07-22 11:25:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:25:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl unique len=8 limit=3000>
+WARNING 23-07-22 11:25:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:25:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl unique len=10 limit=3000>
+WARNING 23-07-22 11:25:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:25:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl unique len=12 limit=3000>
+WARNING 23-07-22 11:25:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl len=12 limit=3000>
+WARNING 23-07-22 11:25:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl unique len=13 limit=3000>
+WARNING 23-07-22 11:25:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl len=13 limit=3000>
+WARNING 23-07-22 11:25:25 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl unique len=20 limit=3000>
+WARNING 23-07-22 11:25:25 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl len=20 limit=3000>
+WARNING 23-07-22 11:25:29 Unidip result could not be computed: <Condition combined-random repr=pitch_normalized metric=dtw unique len=7 limit=500>
+WARNING 23-07-22 11:25:29 Unidip result could not be computed: <Condition combined-random repr=pitch_normalized metric=dtw unique len=9 limit=500>
+WARNING 23-07-22 11:25:29 Unidip result could not be computed: <Condition combined-random repr=pitch_normalized metric=dtw len=11 limit=500>
+WARNING 23-07-22 11:25:38 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl limit=3000>
+WARNING 23-07-22 11:25:38 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl unique len=8 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl unique len=9 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl len=9 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl unique len=10 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl unique len=11 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl len=11 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl unique len=13 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl len=13 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl unique len=15 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl len=15 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl unique len=17 limit=3000>
+WARNING 23-07-22 11:25:39 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl len=17 limit=3000>
+WARNING 23-07-22 11:25:46 Unidip result could not be computed: <Condition combined-random repr=pitch_normalized metric=eucl dim=10 limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl unique limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl unique len=7 limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl unique len=8 limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl unique len=12 limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl len=12 limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl unique len=13 limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl len=13 limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl unique len=14 limit=3000>
+WARNING 23-07-22 11:25:49 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl len=14 limit=3000>
+WARNING 23-07-22 11:25:50 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl unique len=16 limit=3000>
+WARNING 23-07-22 11:25:50 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl len=16 limit=3000>
+WARNING 23-07-22 11:25:50 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=dtw unique len=11 limit=500>
+WARNING 23-07-22 11:25:52 Unidip result could not be computed: <Condition markov repr=pitch_normalized metric=dtw len=5 limit=500>
+WARNING 23-07-22 11:25:52 Unidip result could not be computed: <Condition markov repr=pitch_normalized metric=dtw unique len=8 limit=500>
+WARNING 23-07-22 11:25:52 Unidip result could not be computed: <Condition markov repr=pitch_normalized metric=dtw len=8 limit=500>
+WARNING 23-07-22 11:25:55 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl unique limit=3000>
+WARNING 23-07-22 11:25:55 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl limit=3000>
+WARNING 23-07-22 11:25:55 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl unique len=6 limit=3000>
+WARNING 23-07-22 11:25:55 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:25:55 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl unique len=7 limit=3000>
+WARNING 23-07-22 11:25:55 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:25:55 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl unique len=8 limit=3000>
+WARNING 23-07-22 11:25:55 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:25:56 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl unique len=11 limit=3000>
+WARNING 23-07-22 11:25:56 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl len=11 limit=3000>
+WARNING 23-07-22 11:25:56 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl unique len=12 limit=3000>
+WARNING 23-07-22 11:25:56 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl len=12 limit=3000>
+WARNING 23-07-22 11:25:59 Unidip result could not be computed: <Condition markov repr=smooth_derivative metric=eucl unique len=7 limit=3000>
+WARNING 23-07-22 11:25:59 Unidip result could not be computed: <Condition markov repr=smooth_derivative metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:00 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl dim=10 limit=3000>
+WARNING 23-07-22 11:26:01 Unidip result could not be computed: <Condition clustered repr=pitch_centered metric=eucl limit=3000>
+WARNING 23-07-22 11:26:01 Unidip result could not be computed: <Condition clustered repr=pitch_centered metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:01 Unidip result could not be computed: <Condition clustered repr=pitch_centered metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:01 Unidip result could not be computed: <Condition clustered repr=pitch_centered metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:26:01 Unidip result could not be computed: <Condition clustered repr=pitch_centered metric=dtw len=8 limit=500>
+WARNING 23-07-22 11:26:01 Unidip result could not be computed: <Condition clustered repr=pitch_normalized metric=dtw len=5 limit=500>
+WARNING 23-07-22 11:26:01 Unidip result could not be computed: <Condition clustered repr=pitch_normalized metric=dtw len=7 limit=500>
+WARNING 23-07-22 11:26:01 Unidip result could not be computed: <Condition clustered repr=pitch_normalized metric=dtw len=8 limit=500>
+WARNING 23-07-22 11:26:01 Tableone result could not be computed: <Condition clustered repr=pitch_tonicized metric=eucl limit=3000>
+WARNING 23-07-22 11:26:01 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=eucl limit=3000>
+WARNING 23-07-22 11:26:01 Tableone result could not be computed: <Condition clustered repr=pitch_tonicized metric=eucl len=5 limit=3000>
+WARNING 23-07-22 11:26:01 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=eucl len=5 limit=3000>
+WARNING 23-07-22 11:26:01 Tableone result could not be computed: <Condition clustered repr=pitch_tonicized metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:01 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:01 Tableone result could not be computed: <Condition clustered repr=pitch_tonicized metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:01 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:01 Tableone result could not be computed: <Condition clustered repr=pitch_tonicized metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:01 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:02 Tableone result could not be computed: <Condition clustered repr=pitch_tonicized metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=dtw limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=dtw len=5 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=dtw len=6 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=dtw len=7 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=dtw len=8 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_tonicized metric=dtw len=10 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=5 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=5 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=6 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=7 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=8 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=10 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=5 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=5 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=5 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=6 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=7 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=8 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=10 limit=500>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=5 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:02 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:26:03 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw limit=500>
+WARNING 23-07-22 11:26:03 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=5 limit=500>
+WARNING 23-07-22 11:26:03 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=6 limit=500>
+WARNING 23-07-22 11:26:03 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=7 limit=500>
+WARNING 23-07-22 11:26:03 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=8 limit=500>
+WARNING 23-07-22 11:26:03 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=10 limit=500>
+WARNING 23-07-22 11:26:03 Tableone results have not been serialized: <Condition binom repr=pitch metric=eucl limit=3000>
+WARNING 23-07-22 11:26:03 Unidip results have not been serialized: <Condition binom repr=pitch metric=eucl limit=3000>
+WARNING 23-07-22 11:26:03 Unidip result could not be computed: <Condition binom repr=pitch_centered metric=eucl limit=3000>
+WARNING 23-07-22 11:26:03 Tableone results have not been serialized: <Condition binom repr=pitch_normalized metric=eucl limit=3000>
+WARNING 23-07-22 11:26:03 Unidip results have not been serialized: <Condition binom repr=pitch_normalized metric=eucl limit=3000>
+WARNING 23-07-22 11:26:03 Tableone results have not been serialized: <Condition binom repr=pitch_finalized metric=eucl limit=3000>
+WARNING 23-07-22 11:26:03 Unidip results have not been serialized: <Condition binom repr=pitch_finalized metric=eucl limit=3000>
+WARNING 23-07-22 11:26:03 Tableone results have not been serialized: <Condition binom repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:03 Unidip results have not been serialized: <Condition binom repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:03 Unidip result could not be computed: <Condition erk-phrase repr=pitch_centered metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:03 Unidip result could not be computed: <Condition erk-phrase repr=pitch_centered metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:04 Unidip result could not be computed: <Condition erk-phrase repr=pitch_normalized metric=eucl len=5 limit=3000>
+WARNING 23-07-22 11:26:04 Unidip result could not be computed: <Condition erk-phrase repr=pitch_normalized metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:04 Unidip result could not be computed: <Condition erk-phrase repr=pitch_normalized metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:26:04 Unidip result could not be computed: <Condition erk-phrase repr=pitch_normalized metric=dtw limit=500>
+WARNING 23-07-22 11:26:06 Unidip result could not be computed: <Condition erk-phrase repr=cosine metric=eucl len=5 limit=3000>
+WARNING 23-07-22 11:26:06 Unidip result could not be computed: <Condition erk-phrase repr=cosine metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:06 Unidip result could not be computed: <Condition erk-phrase repr=cosine metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:08 Unidip result could not be computed: <Condition erk-random repr=pitch_centered metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:08 Unidip result could not be computed: <Condition erk-random repr=pitch_centered metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:08 Unidip result could not be computed: <Condition erk-random repr=pitch_centered metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:08 Unidip result could not be computed: <Condition erk-random repr=pitch_normalized metric=dtw len=7 limit=500>
+WARNING 23-07-22 11:26:09 Unidip result could not be computed: <Condition erk-random repr=cosine metric=eucl limit=3000>
+WARNING 23-07-22 11:26:09 Unidip result could not be computed: <Condition erk-random repr=cosine metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:10 Unidip result could not be computed: <Condition erk-random repr=cosine metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:11 Unidip result could not be computed: <Condition boehme-phrase repr=pitch_centered metric=eucl limit=3000>
+WARNING 23-07-22 11:26:11 Unidip result could not be computed: <Condition boehme-phrase repr=cosine metric=eucl limit=3000>
+WARNING 23-07-22 11:26:11 Unidip result could not be computed: <Condition boehme-random repr=cosine metric=eucl limit=3000>
+WARNING 23-07-22 11:26:11 Unidip result could not be computed: <Condition creighton-phrase repr=pitch_centered metric=eucl limit=3000>
+WARNING 23-07-22 11:26:11 Unidip result could not be computed: <Condition creighton-random repr=pitch_centered metric=eucl limit=3000>
+WARNING 23-07-22 11:26:11 Unidip result could not be computed: <Condition creighton-random repr=cosine metric=eucl limit=3000>
+WARNING 23-07-22 11:26:11 Unidip result could not be computed: <Condition han-phrase repr=pitch_centered metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:11 Unidip result could not be computed: <Condition han-phrase repr=pitch_centered metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:11 Unidip result could not be computed: <Condition han-phrase repr=pitch_centered metric=dtw len=5 limit=500>
+WARNING 23-07-22 11:26:13 Unidip result could not be computed: <Condition han-phrase repr=cosine metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:14 Unidip result could not be computed: <Condition han-random repr=pitch_centered metric=dtw len=5 limit=500>
+WARNING 23-07-22 11:26:16 Unidip result could not be computed: <Condition han-random repr=cosine metric=eucl limit=3000>
+WARNING 23-07-22 11:26:16 Unidip result could not be computed: <Condition han-random repr=cosine metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:16 Unidip result could not be computed: <Condition natmin-phrase repr=pitch_centered metric=eucl limit=3000>
+WARNING 23-07-22 11:26:16 Unidip result could not be computed: <Condition natmin-phrase repr=pitch_normalized metric=eucl limit=3000>
+WARNING 23-07-22 11:26:16 Unidip result could not be computed: <Condition natmin-phrase repr=cosine metric=eucl limit=3000>
+WARNING 23-07-22 11:26:16 Unidip result could not be computed: <Condition shanxi-phrase repr=pitch_normalized metric=eucl limit=3000>
+WARNING 23-07-22 11:26:17 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_centered metric=eucl limit=3000>
+WARNING 23-07-22 11:26:17 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_centered metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:17 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_centered metric=dtw len=6 limit=500>
+WARNING 23-07-22 11:26:17 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_centered metric=dtw len=8 limit=500>
+WARNING 23-07-22 11:26:17 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_normalized metric=eucl limit=3000>
+WARNING 23-07-22 11:26:17 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_normalized metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:26:17 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_normalized metric=dtw limit=500>
+WARNING 23-07-22 11:26:17 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_normalized metric=dtw len=5 limit=500>
+WARNING 23-07-22 11:26:17 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_normalized metric=dtw len=7 limit=500>
+WARNING 23-07-22 11:26:18 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=cosine metric=eucl len=10 limit=3000>
+WARNING 23-07-22 11:26:19 Unidip result could not be computed: <Condition liber-antiphons-random repr=pitch_centered metric=eucl len=6 limit=3000>
+WARNING 23-07-22 11:26:19 Unidip result could not be computed: <Condition liber-antiphons-random repr=pitch_centered metric=dtw len=8 limit=500>
+WARNING 23-07-22 11:26:19 Unidip result could not be computed: <Condition liber-antiphons-random repr=pitch_centered metric=dtw len=10 limit=500>
+WARNING 23-07-22 11:26:19 Unidip result could not be computed: <Condition liber-antiphons-random repr=pitch_normalized metric=dtw limit=500>
+WARNING 23-07-22 11:26:19 Unidip result could not be computed: <Condition liber-antiphons-random repr=pitch_normalized metric=dtw len=6 limit=500>
+WARNING 23-07-22 11:26:20 Unidip result could not be computed: <Condition liber-antiphons-random repr=cosine metric=eucl len=7 limit=3000>
+WARNING 23-07-22 11:26:20 Unidip result could not be computed: <Condition liber-antiphons-random repr=cosine metric=eucl len=8 limit=3000>
+WARNING 23-07-22 11:26:20 Unidip result could not be computed: <Condition liber-antiphons-random repr=smooth_derivative metric=eucl len=5 limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+INFO 23-07-22 11:26:21 Stored dist-dip test results to results/dist-dip-test-results.csv
+INFO 23-07-22 11:26:21 md5 checksum: f6177b0c6656cdf6e99693701b4cbf07

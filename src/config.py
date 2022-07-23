@@ -1,4 +1,5 @@
 import os
+from tabnanny import check
 from typing import List, Optional, Union, Dict
 import numpy as np
 from itertools import product
@@ -19,6 +20,51 @@ CONTOUR_DIR = os.path.join(ROOT_DIR, "contours")
 SERIALIZED_DIR = os.path.join(ROOT_DIR, "serialized")
 
 FIGURES_DIR = os.path.join(ROOT_DIR, "figures")
+
+RESULTS_DIR = os.path.join(ROOT_DIR, "results")
+
+directory_structure: Dict[str, str] = {
+    "datasets": dict(path=DATASETS_DIR, desc="Directory with the raw datasets"),
+    "contours": dict(
+        path=CONTOUR_DIR,
+        desc=(
+            "Contains gzipped csv files with the interpolated contours. This is "
+            "the input data used in this study."
+        ),
+    ),
+    "serialized": dict(
+        path=SERIALIZED_DIR,
+        desc=(
+            "Used to serialize intermediate computations. If it does not exist "
+            "results have to be recomputed, which takes a considerable amount "
+            "of time"
+        ),
+    ),
+    "figures": dict(
+        path=FIGURES_DIR, desc="Contains all figures generated in this study."
+    ),
+    "results": dict(
+        path=RESULTS_DIR, desc="Contains the main results in summarized form."
+    ),
+}
+
+
+def check_directories():
+    import os
+
+    print("Checking directory structure...")
+    for name, info in directory_structure.items():
+        path = info["path"]
+        if os.path.exists(path):
+            print(f"+ {name} directory exists: {path}")
+
+        else:
+            print(f"- {name} directory does not exist")
+            print(f"  {info['desc']}")
+            print(f"  Generating directory: {path}")
+            os.makedirs(path)
+    print("Done.")
+
 
 ############################################################
 # Experimental setup
@@ -83,7 +129,7 @@ ALL_REPRESENTATIONS: List[str] = [
     "smooth_derivative",
 ]
 
-ALL_METRICS: List[str] = ["eucl", "dtw"]
+ALL_METRICS: List[str] = ["eucl", "dtw", "umap"]
 
 ALL_LENGTHS: List[Optional[int]] = [
     None,
@@ -107,11 +153,14 @@ ALL_LENGTHS: List[Optional[int]] = [
     20,
 ]
 
-METRIC_LIMITS: Dict[str, int] = {"eucl": 3000, "dtw": 500}
+METRIC_LIMITS: Dict[str, int] = {"eucl": 3000, "dtw": 500, "umap": 3000}
+
+SIM_DISTR_SAMPLE_SIZE: int = 30000
 
 INVALID_COMBINATIONS: List[Dict[str, Union[str, int]]] = [
     dict(representation="cosine", metric="dtw"),
     dict(dataset="markov", representation="pitch_tonicized"),
+    dict(dataset="clustered", representation="pitch_tonicized"),
     dict(dataset="binom", representation="pitch_tonicized"),
 ]
 
@@ -250,3 +299,6 @@ for dataset, conditions in unvalidated_conditions.items():
 
 # Combine all conditions into one list of dictionaries
 CONDITIONS = [c for conditions in CONDITIONS_PER_DATASET.values() for c in conditions]
+
+if __name__ == "__main__":
+    check_directories()

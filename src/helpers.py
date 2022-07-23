@@ -18,7 +18,7 @@ def md5checksum(path):
     return hash_md5.hexdigest()
 
 
-def log_file(filename, name):
+def log_file(filename: str, name: str):
     md5 = md5checksum(filename)
     logging.info(f"Stored {name} to {relpath(filename)}")
     logging.info(f"md5 checksum: {md5}")
