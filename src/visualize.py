@@ -208,7 +208,7 @@ def show_umap_plot(points_or_mapper, umap_plot_kws={}, scatter_kws={}, ax=None):
         ax = plt.gca()
     _umap_plot_kws = dict()
     _umap_plot_kws.update(umap_plot_kws)
-    _scatter_kws = dict(s=2, cmap="Spectral")
+    _scatter_kws = dict(s=2.5, cmap="Spectral")
     _scatter_kws.update(scatter_kws)
 
     if isinstance(points_or_mapper, umap.UMAP):

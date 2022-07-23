@@ -1,10 +1,11 @@
-from .condition import Condition
+import logging
+from .condition import Condition, TooFewContoursException
 from .config import CONDITIONS_PER_DATASET, ALL_DATASETS
+from tqdm import tqdm
 
 
 def task_all(conditions):
     for condition in conditions:
-        condition = Condition(**condition, log=True)
         condition.similarities()
         condition.unidip_dist_dip_test()
         condition.tableone_dist_dip_test()
@@ -14,34 +15,30 @@ def task_all(conditions):
 
 def task_essential(conditions):
     for condition in conditions:
-        condition = Condition(**condition, log=True)
         condition.similarities()
         condition.tableone_dist_dip_test()
+        condition.kde_similarities()
         condition.umap_plot()
 
 
 def task_precompute(conditions):
     for condition in conditions:
-        condition = Condition(**condition, log=True)
         condition.similarities()
 
 
 def task_visualize(conditions):
     for condition in conditions:
-        condition = Condition(**condition, log=True)
         condition.umap_plot()
 
 
 def task_dist_dip(conditions):
     for condition in conditions:
-        condition = Condition(**condition, log=True)
         condition.unidip_dist_dip_test()
         condition.tableone_dist_dip_test()
 
 
 def task_kde(conditions):
     for condition in conditions:
-        condition = Condition(**condition, log=True)
         condition.kde_similarities()
 
 
@@ -54,6 +51,14 @@ TASKS = {
     "kde": task_kde,
 }
 
+def iter_conditions(conditions):
+    for i in tqdm(range(len(conditions))):
+        settings = conditions[i]
+        try:
+            condition = Condition(**settings, log=True)
+            yield condition
+        except TooFewContoursException:
+            logging.warn(f'Skipping condition {i}: too few contours found: {settings}')
 
 def run_task(task, dataset):
     # Validate inputs
@@ -72,11 +77,15 @@ def run_task(task, dataset):
 
     # Run!
     task_fn = TASKS[task]
-    task_fn(conditions)
+    task_fn(iter_conditions(conditions))
 
 
 def main():
     import argparse
+    import warnings
+    warnings.filterwarnings("ignore", category=DeprecationWarning) 
+    warnings.filterwarnings("ignore", category=UserWarning) 
+
 
     parser = argparse.ArgumentParser(description="CLI for the experiments")
     parser.add_argument("task", type=str, help="The task to be executed")
@@ -117,7 +126,7 @@ def main():
                 run_task(args.task, dataset)
 
     elif args.dataset == "cantus":
-        for dataset in DATASETS:
+        for dataset in ALL_DATASETS:
             if dataset.startswith("cantus"):
                 run_task(args.task, dataset)
 

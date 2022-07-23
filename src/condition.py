@@ -125,10 +125,10 @@ def catch_exceptions(func: Callable) -> Callable:
             self._exception_catching_enabled = True
 
         if not self._exception_catching_enabled:
-            return func(self, *args, *kwargs)
+            return func(self, *args, **kwargs)
         else:
             try:
-                return func(self, *args, *kwargs)
+                return func(self, *args, **kwargs)
             except Exception as e:
                 logging.error(f'An exception occured when executing "{func.__name__}":')
                 logging.error(f"> {e.__class__.__name__}: {e}")
