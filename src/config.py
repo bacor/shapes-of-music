@@ -133,7 +133,6 @@ ALL_METRICS: List[str] = ["eucl", "dtw", "umap"]
 
 ALL_LENGTHS: List[Optional[int]] = [
     None,
-    3,
     4,
     5,
     6,
@@ -141,15 +140,10 @@ ALL_LENGTHS: List[Optional[int]] = [
     8,
     9,
     10,
-    11,
     12,
-    13,
     14,
-    15,
     16,
-    17,
     18,
-    19,
     20,
 ]
 
@@ -202,18 +196,21 @@ all_conditions = get_conditions(
     representations=ALL_REPRESENTATIONS,
     metrics=ALL_METRICS,
     lengths=ALL_LENGTHS,
-    uniques=[True, False],
+    uniques=[False],
     dims=[50],
+) + get_conditions(
+    ALL_REPRESENTATIONS, ALL_METRICS, lengths=[None], uniques=[True], dims=[50]
 ) + get_conditions(
     ALL_REPRESENTATIONS, ALL_METRICS, lengths=[None], uniques=[False], dims=[10]
 )
 
+
 most_conditions = get_conditions(
     representations=ALL_REPRESENTATIONS,
     metrics=ALL_METRICS,
-    lengths=[None, 5, 6, 7, 8, 10],
+    lengths=[None],
     uniques=[False],
-    dims=[50],
+    dims=[50, 10],
 )
 
 basic_conditions = get_conditions(
@@ -242,7 +239,7 @@ unvalidated_conditions = {
     "combined-random": all_conditions,
     # Synthetic baselines
     "markov": all_conditions,
-    "clustered": most_conditions,
+    "clustered": all_conditions,
     "binom": basic_conditions,
     # Western folksongs
     "erk-phrase": most_conditions,

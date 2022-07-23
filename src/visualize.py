@@ -136,9 +136,8 @@ def show_umap_sideplot(
     marker_kws={},
     outside_marker_kws={},
     plot_kws={},
-    outside_plot_kws={},
+    outside_plot_kws={}
 ):
-
     # Default styles
     _scatter_kws = dict(s=0.1, cmap="Spectral")
     _scatter_kws.update(scatter_kws)
@@ -204,7 +203,7 @@ def show_umap_sideplot(
                 ax.plot(inv_contours[i, j], **_plot_kws)
 
 
-def show_umap_plot(points_or_mapper, ax=None, umap_plot_kws={}, scatter_kws={}):
+def show_umap_plot(points_or_mapper, umap_plot_kws={}, scatter_kws={}, ax=None):
     if ax is None:
         ax = plt.gca()
     _umap_plot_kws = dict()

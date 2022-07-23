@@ -352,8 +352,9 @@ class Condition(object):
             return self.eucl_similarities(**kwargs)
         elif self.metric == "dtw":
             return self.dtw_similarities(**kwargs)
+        elif self.metric == "umap":
+            return self.umap_similarities(**kwargs)
 
-    @catch_exceptions
     def eucl_similarities(self, **ignored_kws) -> np.array:
         """Pairwise euclidean distance"""
         return pdist(self.contours(), metric="euclidean")
@@ -367,8 +368,10 @@ class Condition(object):
         sim = cdist_dtw(self.contours(), **self.dtw_kws)
         return squareform(sim)
 
+    def umap_similarities(self, **ingored_kws) -> np.array:
+        return pdist(self.umap_embeddings())
+
     @memoize
-    @catch_exceptions
     def similarities_sample(
         self, limit: Optional[int] = SIM_DISTR_SAMPLE_SIZE
     ) -> np.array:
@@ -385,6 +388,7 @@ class Condition(object):
         sim = np.random.choice(sim, size=limit, replace=False)
         return sim
 
+    @memoize
     @serialize
     @catch_exceptions
     @log_start_end
@@ -392,13 +396,18 @@ class Condition(object):
         mapper = umap.UMAP(**self.umap_embed_kws)
         return mapper.fit_transform(self.contours())
 
+    @memoize
     @serialize
     @catch_exceptions
     @log_start_end
     def umap_2d_embeddings(self, **ignored_kws) -> np.array:
-        mapper = umap.UMAP(metric="precomputed", n_components=2)
-        similarities = squareform(self.similarities())
-        embeddings = mapper.fit_transform(similarities)
+        if self.metric == 'umap':
+            mapper = umap.UMAP(n_components=2)
+            embeddings = mapper.fit_transform(self.contours())
+        else:
+            mapper = umap.UMAP(metric="precomputed", n_components=2)
+            similarities = squareform(self.similarities())
+            embeddings = mapper.fit_transform(similarities)
         return embeddings
 
     @memoize
@@ -439,24 +448,12 @@ class Condition(object):
         sim = self.similarities_sample()
         return tableone_dist_dip_test(sim)
 
-    @memoize
-    @serialize
-    @catch_exceptions
-    @log_start_end
-    def umap_dist_dip_test(self) -> Tuple[float, float, Tuple[int, int]]:
-        """Compute the dist-dip test on the pariwise distances of UMAP embeddings"""
-        sim = pdist(self.umap_embeddings())
-        limit = min(len(sim), SIM_DISTR_SAMPLE_SIZE)
-        np.random.seed(42)
-        data = np.random.choice(sim, size=limit, replace=False)
-        return tableone_dist_dip_test(data)
-
     @create_file(output_dir=FIGURES_DIR, ext="pdf")
     @catch_exceptions
     @log_start_end
-    def umap_sideplot(self, path: str):
-        if self.metric == 'dtw':
-            raise ValueError('Cannot create sideplot using a dtw metric')
+    def umap_sideplot(self, path: str = None, fig=None):
+        if self.metric == "dtw":
+            raise ValueError("Cannot create sideplot using a dtw metric")
 
         # UMAP
         mapper = umap.UMAP(random_state=0).fit(self.contours())
@@ -478,27 +475,33 @@ class Condition(object):
             umap_plot_kws["labels"] = self.df["label"]
 
         # Plot
-        fig = plt.figure(figsize=(16, 8), tight_layout=True)
+        if fig is None:
+            fig = plt.figure(figsize=(16, 8), tight_layout=True)
+            fig.suptitle(repr(self)[1:-1], fontweight="bold")
         show_umap_sideplot(
-            mapper, gridpoints, inside, inv_contours, umap_plot_kws=umap_plot_kws
+            mapper, gridpoints, inside, inv_contours, umap_plot_kws=umap_plot_kws, fig=fig
         )
-        fig.suptitle(repr(self)[1:-1], fontweight="bold")
-        plt.savefig(path)
-        plt.close()
+        if path is not None:
+            plt.savefig(path)
+            plt.close()
 
     @create_file(output_dir=FIGURES_DIR, ext="pdf")
-    # @catch_exceptions
+    @catch_exceptions
     @log_start_end
-    def umap_plot(self, path: str):
+    def umap_plot(self, path: str = None, ax=None):
         kws = dict()
         if "label" in self.df.columns:
             kws["c"] = self.df["label"]
         embeddings = self.umap_2d_embeddings()
-        fig = plt.figure(figsize=(8, 8), tight_layout=True)
-        show_umap_plot(embeddings, scatter_kws=kws)
-        fig.suptitle(repr(self)[1:-1], fontweight="bold")
-        plt.savefig(path)
-        plt.close()
+        figure_level = ax is None
+        if figure_level:
+            plt.figure(figsize=(8, 8), tight_layout=True)
+            plt.suptitle(repr(self)[1:-1], fontweight="bold")
+            ax = plt.gca()
+        show_umap_plot(embeddings, scatter_kws=kws, ax=ax)
+        if path is not None:
+            plt.savefig(path)
+            plt.close()
 
 
 def tableone_dist_dip_test(data) -> Tuple[float, float, Tuple[int, int]]:
@@ -515,5 +518,5 @@ if __name__ == "__main__":
     condition = Condition("clustered", "pitch_normalized", metric="eucl", limit=1000)
     # test = condition.umap_dist_dip_test(refresh_serialized=True)
     test = condition.umap_plot(refresh_file=True)
-#     res = condition.tableone_dist_dip_test(refresh_serialized=True)
+    #     res = condition.tableone_dist_dip_test(refresh_serialized=True)
     ...
