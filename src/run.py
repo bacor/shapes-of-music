@@ -7,17 +7,13 @@ from tqdm import tqdm
 def task_all(conditions):
     for condition in conditions:
         condition.similarities()
-        condition.unidip_dist_dip_test()
-        condition.tableone_dist_dip_test()
-        condition.kde_similarities()
+        condition.dist_dip_test_bootstrapped()
         condition.umap_plot()
 
 
 def task_essential(conditions):
     for condition in conditions:
         condition.similarities()
-        condition.tableone_dist_dip_test()
-        condition.kde_similarities()
         condition.umap_plot()
 
 
@@ -33,13 +29,8 @@ def task_visualize(conditions):
 
 def task_dist_dip(conditions):
     for condition in conditions:
+        condition.dist_dip_test_bootstrapped()
         condition.unidip_dist_dip_test()
-        condition.tableone_dist_dip_test()
-
-
-def task_kde(conditions):
-    for condition in conditions:
-        condition.kde_similarities()
 
 
 TASKS = {
@@ -48,8 +39,8 @@ TASKS = {
     "precompute": task_precompute,
     "visualize": task_visualize,
     "dist_dip": task_dist_dip,
-    "kde": task_kde,
 }
+
 
 def iter_conditions(conditions):
     for i in tqdm(range(len(conditions))):
@@ -58,7 +49,8 @@ def iter_conditions(conditions):
             condition = Condition(**settings, log=True)
             yield condition
         except TooFewContoursException:
-            logging.warn(f'Skipping condition {i}: too few contours found: {settings}')
+            logging.warn(f"Skipping condition {i}: too few contours found: {settings}")
+
 
 def run_task(task, dataset):
     # Validate inputs
@@ -83,9 +75,9 @@ def run_task(task, dataset):
 def main():
     import argparse
     import warnings
-    warnings.filterwarnings("ignore", category=DeprecationWarning) 
-    warnings.filterwarnings("ignore", category=UserWarning) 
 
+    warnings.filterwarnings("ignore", category=DeprecationWarning)
+    warnings.filterwarnings("ignore", category=UserWarning)
 
     parser = argparse.ArgumentParser(description="CLI for the experiments")
     parser.add_argument("task", type=str, help="The task to be executed")

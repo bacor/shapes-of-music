@@ -136,7 +136,7 @@ def show_umap_sideplot(
     marker_kws={},
     outside_marker_kws={},
     plot_kws={},
-    outside_plot_kws={}
+    outside_plot_kws={},
 ):
     # Default styles
     _scatter_kws = dict(s=0.1, cmap="Spectral")

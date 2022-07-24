@@ -8,12 +8,15 @@ import numpy as np
 from scipy.spatial.distance import pdist, squareform
 from scipy.stats import gaussian_kde
 from tslearn.metrics import cdist_dtw
-from unidip.dip import dip_fn, diptst
+
+# Three diptest implementations
+from unidip.dip import diptst as unidip_diptest
 from tableone.modality import (
     cum_distr,
     dip_and_closest_unimodal_from_cdf,
     dip_pval_tabinterpol,
 )
+import diptest
 
 import matplotlib.pyplot as plt
 import umap
@@ -375,18 +378,21 @@ class Condition(object):
     def similarities_sample(
         self, limit: Optional[int] = SIM_DISTR_SAMPLE_SIZE
     ) -> np.array:
-        """Return a sample of pairwise similarities
+        """Return a sorted sample of pairwise similarities
 
         Returns
         -------
         np.array
-            A subsample of pairwise similarities
+            A sorted subsample of pairwise similarities
         """
         sim = self.similarities()
         limit = min(len(sim), limit)
         np.random.seed(42)
         sim = np.random.choice(sim, size=limit, replace=False)
+        sim = np.msort(sim)
         return sim
+
+    # UMAP embeddings
 
     @memoize
     @serialize
@@ -401,7 +407,7 @@ class Condition(object):
     @catch_exceptions
     @log_start_end
     def umap_2d_embeddings(self, **ignored_kws) -> np.array:
-        if self.metric == 'umap':
+        if self.metric == "umap":
             mapper = umap.UMAP(n_components=2)
             embeddings = mapper.fit_transform(self.contours())
         else:
@@ -410,10 +416,9 @@ class Condition(object):
             embeddings = mapper.fit_transform(similarities)
         return embeddings
 
-    @memoize
-    @serialize
+    ### Plotting
+
     @catch_exceptions
-    @log_start_end
     def kde_similarities(
         self, num_points: Optional[int] = 1000
     ) -> Union[bool, np.array]:
@@ -424,29 +429,35 @@ class Condition(object):
         ys = kde(xs)
         return np.c_[xs, ys]
 
-    @memoize
-    @serialize
     @catch_exceptions
-    @log_start_end
-    def unidip_dist_dip_test(
-        self, num_tests: Optional[int] = 1000
-    ) -> Tuple[float, float, Tuple[int, int]]:
-        """Compute dist-dip test using the unidip package. This estimates the p-value
-        using bootstrapping."""
+    def dist_dip_test(self) -> Tuple[float, float, Tuple[int, int]]:
         sim = self.similarities_sample()
-        # _, (cdf_xs, cdf_ys, _, _, _, _) = dip_fn(sim)
-        dip, p, (left, right) = diptst(sim, is_hist=False, numt=num_tests)
-        return dict(dip=dip, p=p, left=left, right=right)
+        return diptest.diptest(sim, sort_x=False, boot_pval=False)
 
-    @memoize
     @serialize
     @catch_exceptions
     @log_start_end
+    def dist_dip_test_bootstrap(self) -> Tuple[float, float, Tuple[int, int]]:
+        sim = self.similarities_sample()
+        return diptest.diptest(sim, sort_x=False, boot_pval=True, n_boot=5000)
+
     def tableone_dist_dip_test(self) -> Tuple[float, float, Tuple[int, int]]:
         """Compute dist-dip test using the implementation from the tableone package.
         The p-value is computed by interpolating a table of precomputed values."""
         sim = self.similarities_sample()
         return tableone_dist_dip_test(sim)
+
+    @serialize
+    @catch_exceptions
+    @log_start_end
+    def unidip_dist_dip_test(self) -> Tuple[float, float, Tuple[int, int]]:
+        """Compute dist-dip test using the unidip package. This estimates the p-value
+        using bootstrapping."""
+        sim = self.similarities_sample()
+        dip, p, _ = unidip_diptest(sim, is_hist=False, numt=num_tests)
+        return dict(dip=dip, p=p)
+
+    ### Plotting
 
     @create_file(output_dir=FIGURES_DIR, ext="pdf")
     @catch_exceptions
@@ -479,7 +490,12 @@ class Condition(object):
             fig = plt.figure(figsize=(16, 8), tight_layout=True)
             fig.suptitle(repr(self)[1:-1], fontweight="bold")
         show_umap_sideplot(
-            mapper, gridpoints, inside, inv_contours, umap_plot_kws=umap_plot_kws, fig=fig
+            mapper,
+            gridpoints,
+            inside,
+            inv_contours,
+            umap_plot_kws=umap_plot_kws,
+            fig=fig,
         )
         if path is not None:
             plt.savefig(path)

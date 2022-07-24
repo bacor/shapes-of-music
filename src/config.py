@@ -192,16 +192,20 @@ def get_conditions(
 ############################################################
 
 
-all_conditions = get_conditions(
-    representations=ALL_REPRESENTATIONS,
-    metrics=ALL_METRICS,
-    lengths=ALL_LENGTHS,
-    uniques=[False],
-    dims=[50],
-) + get_conditions(
-    ALL_REPRESENTATIONS, ALL_METRICS, lengths=[None], uniques=[True], dims=[50]
-) + get_conditions(
-    ALL_REPRESENTATIONS, ALL_METRICS, lengths=[None], uniques=[False], dims=[10]
+all_conditions = (
+    get_conditions(
+        representations=ALL_REPRESENTATIONS,
+        metrics=ALL_METRICS,
+        lengths=ALL_LENGTHS,
+        uniques=[False],
+        dims=[50],
+    )
+    + get_conditions(
+        ALL_REPRESENTATIONS, ALL_METRICS, lengths=[None], uniques=[True], dims=[50]
+    )
+    + get_conditions(
+        ALL_REPRESENTATIONS, ALL_METRICS, lengths=[None], uniques=[False], dims=[10]
+    )
 )
 
 
