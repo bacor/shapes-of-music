@@ -398,3 +398,1047 @@ WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-a
 WARNING 23-07-22 11:26:21 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
 INFO 23-07-22 11:26:21 Stored dist-dip test results to results/dist-dip-test-results.csv
 INFO 23-07-22 11:26:21 md5 checksum: f6177b0c6656cdf6e99693701b4cbf07
+INFO 24-07-22 11:47:09 Collecting results from 1837 conditions...
+WARNING 24-07-22 11:47:10 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap limit=3000>
+WARNING 24-07-22 11:47:10 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:10 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl limit=3000>
+WARNING 24-07-22 11:47:11 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl len=6 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl len=7 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl len=9 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl len=10 limit=3000>
+WARNING 24-07-22 11:47:11 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:12 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=dtw len=5 limit=500>
+WARNING 24-07-22 11:47:12 Unidip result could not be computed: <Condition combined-phrase repr=pitch_centered metric=dtw len=8 limit=500>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap limit=3000>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:12 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:13 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:13 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=eucl limit=3000>
+WARNING 24-07-22 11:47:13 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:13 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=dtw len=8 limit=500>
+WARNING 24-07-22 11:47:14 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=dtw len=10 limit=500>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:14 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:15 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap limit=3000>
+WARNING 24-07-22 11:47:15 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:15 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:15 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:16 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:16 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:16 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:16 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:16 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:16 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:16 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:16 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:16 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:17 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl len=10 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl len=16 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:18 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:20 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:21 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap limit=3000>
+WARNING 24-07-22 11:47:21 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:21 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:21 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:21 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:21 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:21 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:21 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:21 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:21 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:21 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:22 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=eucl unique limit=3000>
+WARNING 24-07-22 11:47:22 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=dtw unique limit=500>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:22 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl unique limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=pitch metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_centered metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip result could not be computed: <Condition combined-phrase repr=pitch_normalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_normalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_tonicized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=pitch_finalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip result could not be computed: <Condition combined-phrase repr=cosine metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=cosine metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=interval metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip result could not be computed: <Condition combined-phrase repr=smooth_derivative metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:22 Unidip results have not been serialized: <Condition combined-phrase repr=smooth_derivative metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:23 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap limit=3000>
+WARNING 24-07-22 11:47:23 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:23 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:23 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:23 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:23 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:23 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:23 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:23 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:23 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:24 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:24 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:24 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl limit=3000>
+WARNING 24-07-22 11:47:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl len=7 limit=3000>
+WARNING 24-07-22 11:47:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl len=8 limit=3000>
+WARNING 24-07-22 11:47:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl len=10 limit=3000>
+WARNING 24-07-22 11:47:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:24 Unidip result could not be computed: <Condition combined-random repr=pitch_centered metric=eucl len=20 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:25 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:26 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:26 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:26 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:26 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:26 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:26 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:26 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:26 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:26 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:27 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:27 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:27 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:27 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:28 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:29 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:29 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:29 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:29 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:29 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:29 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:29 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:29 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:29 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl limit=3000>
+WARNING 24-07-22 11:47:30 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl len=7 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl len=9 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip result could not be computed: <Condition combined-random repr=cosine metric=eucl len=10 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:30 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:31 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:31 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:31 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:31 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:32 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:33 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap limit=3000>
+WARNING 24-07-22 11:47:33 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:33 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:33 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:33 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:33 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:33 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:33 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:33 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=pitch metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=pitch_centered metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip result could not be computed: <Condition combined-random repr=pitch_normalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=pitch_normalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=pitch_tonicized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=pitch_finalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=cosine metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=interval metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:34 Unidip results have not been serialized: <Condition combined-random repr=smooth_derivative metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl limit=3000>
+WARNING 24-07-22 11:47:35 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl len=7 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl len=8 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl len=14 limit=3000>
+WARNING 24-07-22 11:47:35 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl len=16 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:36 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip result could not be computed: <Condition markov repr=pitch_normalized metric=dtw len=5 limit=500>
+WARNING 24-07-22 11:47:37 Unidip result could not be computed: <Condition markov repr=pitch_normalized metric=dtw len=8 limit=500>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:37 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl limit=3000>
+WARNING 24-07-22 11:47:38 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl len=6 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl len=7 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl len=8 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:38 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=interval metric=umap limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:39 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:40 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:40 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:40 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:40 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:40 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:40 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:40 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:40 Unidip results have not been serialized: <Condition markov repr=interval metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:40 Unidip result could not be computed: <Condition markov repr=smooth_derivative metric=eucl len=7 limit=3000>
+WARNING 24-07-22 11:47:40 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap limit=3000>
+WARNING 24-07-22 11:47:40 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap len=20 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:41 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl unique limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:41 Unidip result could not be computed: <Condition markov repr=cosine metric=eucl unique limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=interval metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=pitch metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip result could not be computed: <Condition markov repr=pitch_centered metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=pitch_centered metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=pitch_normalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=pitch_finalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=cosine metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=interval metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition markov repr=smooth_derivative metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition clustered repr=pitch metric=eucl len=4 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition clustered repr=pitch metric=eucl len=9 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition clustered repr=pitch metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition clustered repr=pitch metric=eucl len=14 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition clustered repr=pitch metric=eucl len=16 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition clustered repr=pitch metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:41 Condition could not be initialized: <Condition clustered repr=pitch metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:41 Unidip results have not been serialized: <Condition clustered repr=pitch metric=dtw len=4 limit=500>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=dtw len=9 limit=500>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=dtw len=12 limit=500>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=dtw len=14 limit=500>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=dtw len=16 limit=500>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:42 Condition could not be initialized: <Condition clustered repr=pitch metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:42 Condition could not be initialized: <Condition clustered repr=pitch metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip result could not be computed: <Condition clustered repr=pitch_centered metric=eucl limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=eucl len=4 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip result could not be computed: <Condition clustered repr=pitch_centered metric=eucl len=6 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip result could not be computed: <Condition clustered repr=pitch_centered metric=eucl len=7 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=eucl len=9 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip result could not be computed: <Condition clustered repr=pitch_centered metric=eucl len=10 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=eucl len=14 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=eucl len=16 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:42 Condition could not be initialized: <Condition clustered repr=pitch_centered metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:42 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=dtw len=4 limit=500>
+WARNING 24-07-22 11:47:43 Unidip result could not be computed: <Condition clustered repr=pitch_centered metric=dtw len=8 limit=500>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=dtw len=9 limit=500>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=dtw len=12 limit=500>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=dtw len=14 limit=500>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=dtw len=16 limit=500>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:43 Condition could not be initialized: <Condition clustered repr=pitch_centered metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:43 Condition could not be initialized: <Condition clustered repr=pitch_centered metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=eucl len=4 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=eucl len=9 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=eucl len=14 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=eucl len=16 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:43 Condition could not be initialized: <Condition clustered repr=pitch_normalized metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:43 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=dtw len=4 limit=500>
+WARNING 24-07-22 11:47:43 Unidip result could not be computed: <Condition clustered repr=pitch_normalized metric=dtw len=5 limit=500>
+WARNING 24-07-22 11:47:43 Unidip result could not be computed: <Condition clustered repr=pitch_normalized metric=dtw len=7 limit=500>
+WARNING 24-07-22 11:47:43 Unidip result could not be computed: <Condition clustered repr=pitch_normalized metric=dtw len=8 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=dtw len=9 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=dtw len=12 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=dtw len=14 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=dtw len=16 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:44 Condition could not be initialized: <Condition clustered repr=pitch_normalized metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:44 Condition could not be initialized: <Condition clustered repr=pitch_normalized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=4 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=5 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=6 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=7 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=8 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=9 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=10 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=14 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=16 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:44 Condition could not be initialized: <Condition clustered repr=pitch_finalized metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=4 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=5 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=6 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=7 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=8 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=9 limit=500>
+WARNING 24-07-22 11:47:44 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=10 limit=500>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=12 limit=500>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=14 limit=500>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=16 limit=500>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:45 Condition could not be initialized: <Condition clustered repr=pitch_finalized metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:45 Condition could not be initialized: <Condition clustered repr=pitch_finalized metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=4 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=5 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=6 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=7 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=8 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=9 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=10 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=14 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=16 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:45 Condition could not be initialized: <Condition clustered repr=cosine metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:45 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:46 Condition could not be initialized: <Condition clustered repr=cosine metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=4 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=5 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=6 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=7 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=8 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=9 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=10 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=14 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=16 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:46 Condition could not be initialized: <Condition clustered repr=interval metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=4 limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=5 limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=6 limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=7 limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=8 limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=9 limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=10 limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=12 limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=14 limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=16 limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:46 Condition could not be initialized: <Condition clustered repr=interval metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:46 Condition could not be initialized: <Condition clustered repr=interval metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=4 limit=3000>
+WARNING 24-07-22 11:47:46 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=5 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=6 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=7 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=8 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=9 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=10 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=12 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=14 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=16 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:47 Condition could not be initialized: <Condition clustered repr=smooth_derivative metric=eucl len=18 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=4 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=5 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=6 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=7 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=8 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=9 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=10 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=12 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=14 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=16 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:47 Condition could not be initialized: <Condition clustered repr=smooth_derivative metric=dtw len=18 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap len=4 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap len=5 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap len=6 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap len=7 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap len=8 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap len=9 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap len=10 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap len=12 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap len=14 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap len=16 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:47 Condition could not be initialized: <Condition clustered repr=smooth_derivative metric=umap len=18 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch metric=eucl unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch metric=dtw unique limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=eucl unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=dtw unique limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=eucl unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=dtw unique limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw unique limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw unique limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw unique limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap unique limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_centered metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:47 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=pitch_normalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=pitch_finalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=cosine metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=cosine metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=interval metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=interval metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=interval metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition clustered repr=smooth_derivative metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition binom repr=pitch metric=eucl limit=3000>
+WARNING 24-07-22 11:47:48 Unidip result could not be computed: <Condition binom repr=pitch_centered metric=eucl limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition binom repr=pitch_normalized metric=eucl limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition binom repr=pitch_finalized metric=eucl limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition binom repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_centered metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_centered metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_centered metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_centered metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_normalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip result could not be computed: <Condition erk-phrase repr=pitch_normalized metric=dtw limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_normalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_normalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_normalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_tonicized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_tonicized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_tonicized metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_tonicized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_finalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_finalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_finalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=pitch_finalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=cosine metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=cosine metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=cosine metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=interval metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=interval metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=interval metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=interval metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=smooth_derivative metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=smooth_derivative metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=smooth_derivative metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-phrase repr=smooth_derivative metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_centered metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_centered metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_centered metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_centered metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_normalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_normalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_normalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_normalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_tonicized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_tonicized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_tonicized metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_tonicized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_finalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_finalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_finalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=pitch_finalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip result could not be computed: <Condition erk-random repr=cosine metric=eucl limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=cosine metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=cosine metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=cosine metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=interval metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=interval metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=interval metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=interval metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=smooth_derivative metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=smooth_derivative metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=smooth_derivative metric=umap limit=3000>
+WARNING 24-07-22 11:47:48 Unidip results have not been serialized: <Condition erk-random repr=smooth_derivative metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:48 Unidip result could not be computed: <Condition boehme-phrase repr=pitch_centered metric=eucl limit=3000>
+WARNING 24-07-22 11:47:48 Unidip result could not be computed: <Condition boehme-phrase repr=cosine metric=eucl limit=3000>
+WARNING 24-07-22 11:47:49 Unidip result could not be computed: <Condition boehme-random repr=cosine metric=eucl limit=3000>
+WARNING 24-07-22 11:47:49 Unidip result could not be computed: <Condition creighton-phrase repr=pitch_centered metric=eucl limit=3000>
+WARNING 24-07-22 11:47:49 Unidip result could not be computed: <Condition creighton-random repr=pitch_centered metric=eucl limit=3000>
+WARNING 24-07-22 11:47:49 Unidip result could not be computed: <Condition creighton-random repr=cosine metric=eucl limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_centered metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_centered metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_centered metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_centered metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_normalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_normalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_normalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_normalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_tonicized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_tonicized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_tonicized metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_tonicized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_finalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_finalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_finalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=pitch_finalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=cosine metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=cosine metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=cosine metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=interval metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=interval metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=interval metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=interval metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=smooth_derivative metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=smooth_derivative metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=smooth_derivative metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-phrase repr=smooth_derivative metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_centered metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_centered metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_centered metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_centered metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_normalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_normalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_normalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_normalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_tonicized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_tonicized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_tonicized metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_tonicized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_finalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_finalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_finalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=pitch_finalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip result could not be computed: <Condition han-random repr=cosine metric=eucl limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=cosine metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=cosine metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=cosine metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=interval metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=interval metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=interval metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=interval metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=smooth_derivative metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=smooth_derivative metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=smooth_derivative metric=umap limit=3000>
+WARNING 24-07-22 11:47:49 Unidip results have not been serialized: <Condition han-random repr=smooth_derivative metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:49 Unidip result could not be computed: <Condition natmin-phrase repr=pitch_centered metric=eucl limit=3000>
+WARNING 24-07-22 11:47:49 Unidip result could not be computed: <Condition natmin-phrase repr=pitch_normalized metric=eucl limit=3000>
+WARNING 24-07-22 11:47:49 Unidip result could not be computed: <Condition natmin-phrase repr=cosine metric=eucl limit=3000>
+WARNING 24-07-22 11:47:50 Unidip result could not be computed: <Condition shanxi-phrase repr=pitch_normalized metric=eucl limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_centered metric=eucl limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_centered metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_centered metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_centered metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_centered metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_normalized metric=eucl limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_normalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip result could not be computed: <Condition liber-antiphons-phrase repr=pitch_normalized metric=dtw limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_normalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_normalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_normalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_tonicized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_tonicized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_tonicized metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_tonicized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_finalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_finalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_finalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=pitch_finalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=cosine metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=cosine metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=cosine metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=interval metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=interval metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=interval metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=interval metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=smooth_derivative metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=smooth_derivative metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=smooth_derivative metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-phrase repr=smooth_derivative metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_centered metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_centered metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_centered metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_centered metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_normalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip result could not be computed: <Condition liber-antiphons-random repr=pitch_normalized metric=dtw limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_normalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_normalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_normalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_tonicized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_tonicized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_tonicized metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_tonicized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_finalized metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_finalized metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_finalized metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=pitch_finalized metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=cosine metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=cosine metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=cosine metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=interval metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=interval metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=interval metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=interval metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=smooth_derivative metric=eucl dim=10 limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=smooth_derivative metric=dtw dim=10 limit=500>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=smooth_derivative metric=umap limit=3000>
+WARNING 24-07-22 11:47:50 Unidip results have not been serialized: <Condition liber-antiphons-random repr=smooth_derivative metric=umap dim=10 limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+WARNING 24-07-22 11:47:51 Condition could not be initialized: <Condition liber-alleluias-random repr=smooth_derivative metric=eucl limit=3000>
+INFO 24-07-22 11:47:51 Stored dist-dip test results to results/dist-dip-test-results.csv
+INFO 24-07-22 11:47:51 md5 checksum: 78ad086e6ad5429d3d6828ba916584ba
