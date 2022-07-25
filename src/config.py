@@ -121,7 +121,7 @@ ALL_DATASETS: List[str] = [
 
 ALL_REPRESENTATIONS: List[str] = REPRESENTATIONS
 
-ALL_METRICS: List[str] = ["eucl", "dtw", "umap"]
+ALL_METRICS: List[str] = ["eucl", "dtw", "umap", "corr"]
 
 ALL_LENGTHS: List[Optional[int]] = [
     None,
@@ -139,7 +139,7 @@ ALL_LENGTHS: List[Optional[int]] = [
     20,
 ]
 
-METRIC_LIMITS: Dict[str, int] = {"eucl": 3000, "dtw": 500, "umap": 3000}
+METRIC_LIMITS: Dict[str, int] = {"eucl": 3000, "dtw": 500, "umap": 3000, "corr": 3000}
 
 SIM_DISTR_SAMPLE_SIZE: int = 30000
 

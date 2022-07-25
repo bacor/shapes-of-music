@@ -53,7 +53,7 @@ def collect_dist_dip_test_results(conditions: List[Dict] = CONDITIONS) -> pd.Dat
 
         # Diptest
         diptest = condition.dist_dip_test()
-        if not type(diptest) is dict and np.isnan(diptest):
+        if not type(diptest) is dict and (diptest is None or np.isnan(diptest)):
             logging.warning(f"Dist dip test result could not be computed: {condition}")
         else:
             outcome["diptest_exists"] = True

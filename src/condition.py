@@ -215,7 +215,7 @@ class Condition(object):
         self.umap_embed_kws = dict(
             n_neighbors=30,
             min_dist=0.0,
-            n_components=10,
+            n_components=min(10, self.dimensionality),
             random_state=42,
         )
         self.umap_embed_kws.update(umap_embed_kws)
@@ -341,10 +341,16 @@ class Condition(object):
             return self.dtw_similarities(**kwargs)
         elif self.metric == "umap":
             return self.umap_similarities(**kwargs)
+        elif self.metric == "corr":
+            return self.corr_similarities(**kwargs)
 
     def eucl_similarities(self, **ignored_kws) -> np.array:
         """Pairwise euclidean distance"""
         return pdist(self.contours(), metric="euclidean")
+    
+    def corr_similarities(self, **ignored_kws) -> np.array:
+        """Pairwise euclidean distance"""
+        return pdist(self.contours(), metric="correlation")
 
     @serialize
     @catch_exceptions
@@ -536,8 +542,9 @@ def tableone_dist_dip_test(data) -> Dict[str, float]:
 
 
 if __name__ == "__main__":
-    condition = Condition("clustered", "pitch_normalized", metric="eucl", limit=1000)
+    condition = Condition("clustered", "pitch_normalized", metric="corr", limit=1000)
+    sim = condition.similarities()
     # test = condition.umap_dist_dip_test(refresh_serialized=True)
-    test = condition.umap_plot(refresh_file=True)
+    # test = condition.umap_plot(refresh_file=True)
     #     res = condition.tableone_dist_dip_test(refresh_serialized=True)
     ...
