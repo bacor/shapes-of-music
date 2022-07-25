@@ -1,34 +1,18 @@
 import os
 import logging
 from functools import wraps
-from typing import Callable, List, Optional, Dict, Union, Tuple
+from typing import Callable, List, Optional, Dict, Union
 
-from hashlib import md5
 import numpy as np
 from scipy.spatial.distance import pdist, squareform
 from scipy.stats import gaussian_kde
-from tslearn.metrics import cdist_dtw
+from hashlib import md5
 
-# Three diptest implementations
-from unidip.dip import diptst as unidip_diptest
+from diptest import diptest
 from tableone.modality import (
     cum_distr,
     dip_and_closest_unimodal_from_cdf,
     dip_pval_tabinterpol,
-)
-import diptest
-
-import matplotlib.pyplot as plt
-import umap
-from scipy.fft import idct
-
-from src import representations
-
-from .visualize import (
-    average_inv_contours,
-    grid_around_points,
-    show_umap_sideplot,
-    show_umap_plot,
 )
 
 from .config import (
@@ -368,6 +352,8 @@ class Condition(object):
     def dtw_similarities(self, **ignored_kws) -> np.array:
         """Pairwise dynamic time warping similarity. By default, these
         are serialized to the datasets HD5 store."""
+        from tslearn.metrics import cdist_dtw
+
         sim = cdist_dtw(self.contours(), **self.dtw_kws)
         return squareform(sim)
 
@@ -399,6 +385,8 @@ class Condition(object):
     @catch_exceptions
     @log_start_end
     def umap_embeddings(self, **ignored_kws) -> np.array:
+        import umap
+
         mapper = umap.UMAP(**self.umap_embed_kws)
         return mapper.fit_transform(self.contours())
 
@@ -407,6 +395,8 @@ class Condition(object):
     @catch_exceptions
     @log_start_end
     def umap_2d_embeddings(self, **ignored_kws) -> np.array:
+        import umap
+
         if self.metric == "umap":
             mapper = umap.UMAP(n_components=2)
             embeddings = mapper.fit_transform(self.contours())
@@ -430,18 +420,20 @@ class Condition(object):
         return np.c_[xs, ys]
 
     @catch_exceptions
-    def dist_dip_test(self) -> Tuple[float, float, Tuple[int, int]]:
+    def dist_dip_test(self) -> Dict[str, float]:
         sim = self.similarities_sample()
-        return diptest.diptest(sim, sort_x=False, boot_pval=False)
+        dip, p = diptest(sim, sort_x=False, boot_pval=False)
+        return dict(dip=dip, p=p)
 
     @serialize
     @catch_exceptions
     @log_start_end
-    def dist_dip_test_bootstrap(self) -> Tuple[float, float, Tuple[int, int]]:
+    def dist_dip_test_bootstrap(self) -> Dict[str, float]:
         sim = self.similarities_sample()
-        return diptest.diptest(sim, sort_x=False, boot_pval=True, n_boot=5000)
+        dip, p = diptest(sim, sort_x=False, boot_pval=True, n_boot=5000)
+        return dict(dip=dip, p=p)
 
-    def tableone_dist_dip_test(self) -> Tuple[float, float, Tuple[int, int]]:
+    def tableone_dist_dip_test(self) -> Dict[str, float]:
         """Compute dist-dip test using the implementation from the tableone package.
         The p-value is computed by interpolating a table of precomputed values."""
         sim = self.similarities_sample()
@@ -450,11 +442,13 @@ class Condition(object):
     @serialize
     @catch_exceptions
     @log_start_end
-    def unidip_dist_dip_test(self) -> Tuple[float, float, Tuple[int, int]]:
+    def unidip_dist_dip_test(self) -> Dict[str, float]:
         """Compute dist-dip test using the unidip package. This estimates the p-value
         using bootstrapping."""
+        from unidip.dip import diptst as unidip_diptest
+
         sim = self.similarities_sample()
-        dip, p, _ = unidip_diptest(sim, is_hist=False, numt=num_tests)
+        dip, p, _ = unidip_diptest(sim, is_hist=False, numt=1000)
         return dict(dip=dip, p=p)
 
     ### Plotting
@@ -463,6 +457,14 @@ class Condition(object):
     @catch_exceptions
     @log_start_end
     def umap_sideplot(self, path: str = None, fig=None):
+        import matplotlib.pyplot as plt
+        from scipy.fft import idct
+        from .visualize import (
+            average_inv_contours,
+            grid_around_points,
+            show_umap_sideplot,
+        )
+
         if self.metric == "dtw":
             raise ValueError("Cannot create sideplot using a dtw metric")
 
@@ -505,6 +507,9 @@ class Condition(object):
     @catch_exceptions
     @log_start_end
     def umap_plot(self, path: str = None, ax=None):
+        import matplotlib.pyplot as plt
+        from .visualize import show_umap_plot
+
         kws = dict()
         if "label" in self.df.columns:
             kws["c"] = self.df["label"]
@@ -520,7 +525,7 @@ class Condition(object):
             plt.close()
 
 
-def tableone_dist_dip_test(data) -> Tuple[float, float, Tuple[int, int]]:
+def tableone_dist_dip_test(data) -> Dict[str, float]:
     """Compute dist-dip test using the implementation from the tableone package.
     The p-value is computed by interpolating a table of precomputed values."""
     data = data[~np.isnan(data)]

@@ -1,7 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import umap
-import umap.plot
 from itertools import product
 from scipy.spatial import ConvexHull
 from matplotlib.path import Path
@@ -72,6 +70,9 @@ def show_inset_plot(
     marker_kws={},
     ax=None,
 ):
+    import umap
+    import umap.plot
+
     _scatter_kws = dict(s=0.1, cmap="Spectral")
     _scatter_kws.update(scatter_kws)
     _umap_plot_kws = dict()
@@ -138,6 +139,9 @@ def show_umap_sideplot(
     plot_kws={},
     outside_plot_kws={},
 ):
+    import umap
+    import umap.plot
+
     # Default styles
     _scatter_kws = dict(s=0.1, cmap="Spectral")
     _scatter_kws.update(scatter_kws)
@@ -204,6 +208,9 @@ def show_umap_sideplot(
 
 
 def show_umap_plot(points_or_mapper, umap_plot_kws={}, scatter_kws={}, ax=None):
+    import umap
+    import umap.plot
+
     if ax is None:
         ax = plt.gca()
     _umap_plot_kws = dict()

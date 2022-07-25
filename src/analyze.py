@@ -1,3 +1,4 @@
+from tkinter import N
 from typing import List, Dict
 import logging
 import os
@@ -34,29 +35,53 @@ def collect_dist_dip_test_results(conditions: List[Dict] = CONDITIONS) -> pd.Dat
             hash=condition.hash[:5],
             **settings,
             num_contours=len(condition),
+            diptest_exists=False,
+            diptest_p=None,
+            diptest_dip=None,
+            diptest_boot_exists=False,
+            diptest_boot_p=None,
+            diptest_boot_dip=None,
             tableone_exists=False,
             tableone_p=None,
             tableone_dip=None,
             unidip_exists=False,
             unidip_p=None,
             unidip_dip=None,
-            unidip_left=None,
-            unidip_right=None,
             umap_exists=False,
             umap_path=None,
         )
 
-        # Tableone
-        if condition.is_serialized("tableone_dist_dip_test"):
-            tableone = condition.tableone_dist_dip_test()
-            if not type(tableone) is dict and np.isnan(tableone):
-                logging.warning(f"Tableone result could not be computed: {condition}")
-            else:
-                outcome["tableone_exists"] = True
-                for key, value in tableone.items():
-                    outcome[f"tableone_{key}"] = value
+        # Diptest
+        diptest = condition.dist_dip_test()
+        if not type(diptest) is dict and np.isnan(diptest):
+            logging.warning(f"Dist dip test result could not be computed: {condition}")
         else:
-            logging.warning(f"Tableone results have not been serialized: {condition}")
+            outcome["diptest_exists"] = True
+            outcome["diptest_p"] = diptest["p"]
+            outcome["diptest_dip"] = diptest["dip"]
+
+        # Diptest bootstrapped
+        if condition.is_serialized("dist_dip_test_bootstrap"):
+            diptest_boot = condition.dist_dip_test_bootstrap()
+            if not type(diptest_boot) is dict and np.isnan(diptest_boot):
+                logging.warning(
+                    f"Diptest bootstrapped result could not be computed: {condition}"
+                )
+            else:
+                outcome["diptest_boot_exists"] = True
+                outcome["diptest_boot_p"] = diptest_boot["p"]
+                outcome["diptest_boot_dip"] = diptest_boot["dip"]
+        else:
+            logging.warning(f"Unidip results have not been serialized: {condition}")
+
+        # Tableone
+        tableone = condition.tableone_dist_dip_test()
+        if not type(tableone) is dict and np.isnan(tableone):
+            logging.warning(f"Tableone result could not be computed: {condition}")
+        else:
+            outcome["tableone_exists"] = True
+            outcome["tableone_p"] = tableone["p"]
+            outcome["tableone_dip"] = tableone["dip"]
 
         # Unidip
         if condition.is_serialized("unidip_dist_dip_test"):

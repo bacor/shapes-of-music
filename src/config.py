@@ -1,9 +1,10 @@
 import os
-from tabnanny import check
 from typing import List, Optional, Union, Dict
 import numpy as np
 from itertools import product
 from copy import deepcopy
+
+from src.representations import REPRESENTATIONS
 
 ############################################################
 # Directory structure
@@ -118,16 +119,7 @@ ALL_DATASETS: List[str] = [
 ]
 
 
-ALL_REPRESENTATIONS: List[str] = [
-    "pitch",
-    "pitch_centered",
-    "pitch_normalized",
-    "pitch_tonicized",
-    "pitch_finalized",
-    "cosine",
-    "interval",
-    "smooth_derivative",
-]
+ALL_REPRESENTATIONS: List[str] = REPRESENTATIONS
 
 ALL_METRICS: List[str] = ["eucl", "dtw", "umap"]
 
