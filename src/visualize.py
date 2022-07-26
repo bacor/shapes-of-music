@@ -124,6 +124,8 @@ def show_inset_plot(
             ax_ins.plot(contour, zorder=-1, **_inset_plot_kws)
         else:
             ax_ins.plot(contour, zorder=-1, **_outside_plot_kws)
+    
+    return inset_axes
 
 
 def show_umap_sideplot(

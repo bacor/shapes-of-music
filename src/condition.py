@@ -359,7 +359,6 @@ class Condition(object):
         """Pairwise dynamic time warping similarity. By default, these
         are serialized to the datasets HD5 store."""
         from tslearn.metrics import cdist_dtw
-
         sim = cdist_dtw(self.contours(), **self.dtw_kws)
         return squareform(sim)
 
