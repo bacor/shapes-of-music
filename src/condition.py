@@ -347,7 +347,7 @@ class Condition(object):
     def eucl_similarities(self, **ignored_kws) -> np.array:
         """Pairwise euclidean distance"""
         return pdist(self.contours(), metric="euclidean")
-    
+
     def corr_similarities(self, **ignored_kws) -> np.array:
         """Pairwise euclidean distance"""
         return pdist(self.contours(), metric="correlation")
@@ -359,6 +359,7 @@ class Condition(object):
         """Pairwise dynamic time warping similarity. By default, these
         are serialized to the datasets HD5 store."""
         from tslearn.metrics import cdist_dtw
+
         sim = cdist_dtw(self.contours(), **self.dtw_kws)
         return squareform(sim)
 
@@ -528,6 +529,52 @@ class Condition(object):
         if path is not None:
             plt.savefig(path)
             plt.close()
+
+    def show_distance_distribution(
+        self,
+        alpha_level: Optional[float] = 0.05,
+        annot: Optional[bool] = True,
+        clean: Optional[bool] = True,
+        as_kde: Optional[bool] = False,
+        uni_fmt: Optional[str] = "$p={}$",
+        multi_fmt: Optional[str] = "$p={}$",
+        text_kws: Optional[Dict] = {},
+        ax=None,
+        **kwargs
+    ):
+        import matplotlib.pyplot as plt
+        from .visualize import get_pval_cmap, format_pval
+        from matplotlib.colors import LogNorm
+        import seaborn as sns
+
+        if ax is None:
+            ax = plt.gca()
+        _text_kws = dict(xy=(1, 1), xycoords="axes fraction", ha="right", va="top")
+        _text_kws.update(text_kws)
+
+        pval = self.dist_dip_test()["p"]
+        cmap = get_pval_cmap(min_gray=0.2, vmin=1e-5)
+        norm = LogNorm(vmin=1e-5, vmax=1)
+        _kwargs = dict(color=cmap(norm(pval + 1e-8)), ax=ax)
+        if not as_kde: 
+            _kwargs.update(dict(stat='density', lw=0))
+        _kwargs.update(kwargs)
+        
+        plot_fn = sns.kdeplot if as_kde else sns.histplot
+        plot_fn(self.similarities_sample(), **_kwargs)
+
+        if annot:
+            fmt = multi_fmt if pval < alpha_level else uni_fmt
+            result = fmt.format(format_pval(pval))
+            ax.annotate(result, **_text_kws)
+
+        ax.set_xlabel(f"{self.metric.title()} distance")
+        if clean:
+            ax.set_ylabel("")
+            ax.set_yticks([])
+            sns.despine(left=True, ax=ax)
+
+        return ax, _kwargs['color']
 
 
 def tableone_dist_dip_test(data) -> Dict[str, float]:
