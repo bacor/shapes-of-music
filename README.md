@@ -1,6 +1,5 @@
-Shapes of music: Contour typology revisited
-===========================================
-
+Shapes of music
+===============
 
 This repository contains data and code for the paper 'Shapes of music: Contour typology revisited', which is currently being prepared for publication.
 
