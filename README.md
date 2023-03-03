@@ -1,4 +1,4 @@
-Shapes of Music: Contour typology revisited
+Shapes of music: Contour typology revisited
 ===========================================
 
 
