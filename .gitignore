@@ -3,6 +3,7 @@ contours/*.csv
 
 # Exclude serialized data in hdf5 format
 serialized
+excluded
 
 # Various
 tmp/
@@ -13,13 +14,14 @@ __pycache__/
 .ipynb_checkpoints/
 .vscode/
 .DS_Store
+*.pyc
 
 # R
 .RHistory
 
 # A lot of figures...
-figures/fig-umap*
-figures/umap*
+figures/umap_plot
+figures/umap_sideplot
 
 fetch.sh
 Trash
